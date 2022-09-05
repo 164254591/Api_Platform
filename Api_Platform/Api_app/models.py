@@ -26,13 +26,21 @@ class DB_project_list(models.Model):
     name = models.CharField(max_length=50, null=True, blank=True, default='-')
     desc = models.CharField(max_length=100, null=True, blank=True, default='-')
     creator = models.IntegerField(default=0)
-    mock = models.CharField(max_length=50, null=True, blank=True, default='mock_data')  # mock_data or redirect
+    # mock = models.CharField(max_length=50, null=True, blank=True, default='mock_data')  # mock_data or redirect
     priviate = models.BooleanField(default=True)  # 私密项目
-    power = models.CharField(max_length=50, null=True, blank=True, default='[]')  # 权限：自己、同事、领导、所有人
+    # power = models.CharField(max_length=50, null=True, blank=True, default='[]')  # 权限：自己、同事、领导、所有人
     bus_type = models.CharField(max_length=50, null=True, blank=True, default='')  # 业务线:app,web
-    P_data = models.CharField(max_length=500, null=True, blank=True, default='_')  # 公共变量
-    L_data = models.CharField(max_length=500, null=True, blank=True, default='_')  # 登录状态变量
-    sign = models.CharField(max_length=500, null=True, blank=True, default='_')  # 加密算法
+    # P_data = models.CharField(max_length=500, null=True, blank=True, default='_')  # 公共变量
+    # L_data = models.CharField(max_length=500, null=True, blank=True, default='_')  # 登录状态变量
+    # sign = models.CharField(max_length=500, null=True, blank=True, default='_')  # 加密算法
+    email = models.CharField(max_length=500, null=True, blank=True, default='[]')  # 邮箱设置,默认列表，方便后续eval进行列表操作
+    sql_host = models.CharField(max_length=50, null=True, blank=True, default='')  # 数据库设置
+    sql_port = models.IntegerField(default=0)  # 数据库设置
+    sql_user = models.CharField(max_length=50, null=True, blank=True, default='')  # 数据库设置
+    sql_pwd = models.CharField(max_length=50, null=True, blank=True, default='')  # 数据库设置
+    doing_api = models.CharField(max_length=50, null=True, blank=True, default='')
+    end_result = models.TextField(default='')
+    choose_api = models.CharField(max_length=500, null=True, blank=True, default='')
     deleted = models.BooleanField(default=False)  # 假删除
 
     def __str__(self):
@@ -69,5 +77,3 @@ class DB_power_list(models.Model):
 
     def __str__(self):
         return self.name
-
-

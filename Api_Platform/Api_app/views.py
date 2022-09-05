@@ -165,7 +165,6 @@ def delete_project(request):
 def get_project_detail(request):
     id = request.GET['id']
     form = list(DB_project_list.objects.filter(id=id).values())[0]
-    form['power'] = eval(form['power'])
     return HttpResponse(json.dumps(form), content_type='application/json')
 
 

@@ -10350,3 +10350,807 @@ AttributeError: 'AnonymousUser' object has no attribute '_meta'
 [2022-08-21 20:24:47,314][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
 [2022-08-21 20:24:57,315][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
 [2022-08-21 20:25:07,326][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-04 17:16:00,351][INFO]Watching for file changes with StatReloader
+[2022-09-04 17:17:51,833][INFO]Watching for file changes with StatReloader
+[2022-09-04 21:21:41,924][INFO]Watching for file changes with StatReloader
+[2022-09-04 21:28:39,391][INFO]Watching for file changes with StatReloader
+[2022-09-04 21:32:45,715][INFO]Watching for file changes with StatReloader
+[2022-09-04 21:42:08,649][INFO]Watching for file changes with StatReloader
+[2022-09-04 21:42:18,833][INFO]"GET / HTTP/1.1" 200 4830
+[2022-09-04 21:42:18,887][INFO]"GET /static/dlz_download_login/assets/css/demo.css HTTP/1.1" 200 13815
+[2022-09-04 21:42:18,888][INFO]"GET /static/dlz_download_login/assets/js/demo.js HTTP/1.1" 200 4682
+[2022-09-04 21:42:18,889][INFO]"GET /static/dlz_download_login/assets/js/jquery-1.11.0.min.js HTTP/1.1" 200 96383
+[2022-09-04 21:42:18,892][INFO]"GET /static/dlz_download_login/assets/js/TweenMax.min.js HTTP/1.1" 200 115913
+[2022-09-04 21:42:20,120][INFO]"GET /static/favicon.ico HTTP/1.1" 200 1150
+[2022-09-04 21:42:50,289][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-09-04 21:42:50,291][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-04 21:42:50,292][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 14:23:25,336][INFO]Watching for file changes with StatReloader
+[2022-09-05 14:24:53,311][INFO]"GET / HTTP/1.1" 200 4830
+[2022-09-05 14:24:53,352][INFO]"GET /static/dlz_download_login/assets/css/demo.css HTTP/1.1" 200 13815
+[2022-09-05 14:24:53,353][INFO]"GET /static/dlz_download_login/assets/js/demo.js HTTP/1.1" 200 4682
+[2022-09-05 14:24:53,353][INFO]"GET /static/dlz_download_login/assets/js/jquery-1.11.0.min.js HTTP/1.1" 200 96383
+[2022-09-05 14:24:53,354][INFO]"GET /static/dlz_download_login/assets/js/TweenMax.min.js HTTP/1.1" 200 115913
+[2022-09-05 14:24:55,352][INFO]"GET /static/dlz_download_login/assets/img/m-open-close.png HTTP/1.1" 200 37755
+[2022-09-05 14:24:55,358][INFO]"GET /static/dlz_download_login/assets/img/landscape.png HTTP/1.1" 200 71492
+[2022-09-05 14:24:55,358][INFO]"GET /static/dlz_download_login/assets/img/close.svg HTTP/1.1" 200 794
+[2022-09-05 14:24:55,358][INFO]"GET /static/dlz_download_login/assets/img/icon-correct.png HTTP/1.1" 200 944
+[2022-09-05 14:24:55,358][INFO]"GET /static/dlz_download_login/assets/img/m-signup.png HTTP/1.1" 200 37187
+[2022-09-05 14:24:55,358][INFO]"GET /static/dlz_download_login/assets/img/m-close.png HTTP/1.1" 200 52947
+[2022-09-05 14:25:02,768][INFO]"POST /login_action/ HTTP/1.1" 302 0
+[2022-09-05 14:25:02,772][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-09-05 14:25:02,778][INFO]"GET /static/css/app.4a65e1ad.css HTTP/1.1" 200 3511
+[2022-09-05 14:25:02,779][INFO]"GET /static/js/app.5212ee98.js HTTP/1.1" 200 40277
+[2022-09-05 14:25:02,781][INFO]"GET /static/css/chunk-vendors.dd50ba92.css HTTP/1.1" 200 240819
+[2022-09-05 14:25:02,785][INFO]"GET /static/js/chunk-vendors.978f4292.js HTTP/1.1" 200 897591
+[2022-09-05 14:25:02,863][INFO]"GET /static/fonts/element-icons.535877f5.woff HTTP/1.1" 200 28200
+[2022-09-05 14:25:02,880][INFO]"GET /favicon.ico HTTP/1.1" 301 0
+[2022-09-05 14:25:02,883][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:25:03,165][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-09-05 14:25:03,170][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-05 14:25:03,171][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 14:25:12,851][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 14:25:19,780][INFO]"GET /get_project_list/ HTTP/1.1" 200 1406
+[2022-09-05 14:25:19,780][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:25:22,851][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 14:25:25,490][INFO]"GET /get_env_list/ HTTP/1.1" 200 549
+[2022-09-05 14:25:25,504][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:25:27,694][INFO]"GET /get_api_shop_list/ HTTP/1.1" 200 552
+[2022-09-05 14:25:27,697][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:25:32,851][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 14:25:42,849][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 14:25:47,870][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:25:49,350][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:25:49,360][INFO]"GET /get_api_shop_list/ HTTP/1.1" 200 552
+[2022-09-05 14:25:51,278][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:25:52,394][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:25:52,400][INFO]"GET /get_api_shop_list/ HTTP/1.1" 200 552
+[2022-09-05 14:25:52,854][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 14:25:53,852][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:25:55,004][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:25:55,005][INFO]"GET /get_api_shop_list/ HTTP/1.1" 200 552
+[2022-09-05 14:25:56,579][INFO]"GET /get_user_list/ HTTP/1.1" 200 71
+[2022-09-05 14:25:56,585][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:25:56,596][WARNING]"GET /static/user_avatar/userimage_null.jpg HTTP/1.1" 404 1948
+[2022-09-05 14:25:56,599][INFO]"GET /static/user_avatar/%E9%BB%98%E8%AE%A4%E5%A4%B4%E5%83%8F.jpg HTTP/1.1" 200 4150
+[2022-09-05 14:26:00,532][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:26:02,867][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 14:26:03,080][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:26:03,081][INFO]"GET /get_user_list/ HTTP/1.1" 200 71
+[2022-09-05 14:26:03,093][WARNING]"GET /static/user_avatar/userimage_null.jpg HTTP/1.1" 404 1948
+[2022-09-05 14:26:04,087][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:26:04,100][INFO]"GET /get_to_user_list/ HTTP/1.1" 200 438
+[2022-09-05 14:26:05,238][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:26:06,825][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:26:06,828][INFO]"GET /get_to_user_list/ HTTP/1.1" 200 438
+[2022-09-05 14:26:11,384][INFO]"GET /admin/auth/user/ HTTP/1.1" 302 0
+[2022-09-05 14:26:11,435][INFO]"GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 2236
+[2022-09-05 14:26:11,445][INFO]"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+[2022-09-05 14:26:11,447][INFO]"GET /static/admin/css/base.css HTTP/1.1" 200 19513
+[2022-09-05 14:26:11,449][INFO]"GET /static/admin/css/login.css HTTP/1.1" 200 939
+[2022-09-05 14:26:11,454][INFO]"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[2022-09-05 14:26:11,454][INFO]"GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+[2022-09-05 14:26:11,459][INFO]"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+[2022-09-05 14:26:11,490][INFO]"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[2022-09-05 14:26:11,490][INFO]"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[2022-09-05 14:26:11,502][INFO]"GET /favicon.ico HTTP/1.1" 301 0
+[2022-09-05 14:26:11,508][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:26:13,270][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 14:26:13,286][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:26:15,340][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:26:18,070][WARNING] 试图进入权限管理模块，已被固定最高级别权限拦截！
+[2022-09-05 14:26:18,075][INFO]"GET /get_power_list/ HTTP/1.1" 200 2
+[2022-09-05 14:26:18,077][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:26:22,863][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 14:26:32,852][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 14:26:35,879][INFO]"GET /get_api_shop_list/ HTTP/1.1" 200 552
+[2022-09-05 14:26:35,892][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:26:42,850][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 14:26:52,863][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 14:27:02,854][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 14:27:12,858][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 14:27:15,179][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-09-05 14:27:15,188][INFO]"GET /get_project_list/ HTTP/1.1" 200 1406
+[2022-09-05 14:27:15,254][INFO]"GET /get_api_shop_list/ HTTP/1.1" 200 552
+[2022-09-05 14:27:15,272][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:27:22,321][INFO]"GET /get_project_list/ HTTP/1.1" 200 1406
+[2022-09-05 14:27:28,188][INFO]"GET /get_project_list/ HTTP/1.1" 200 1406
+[2022-09-05 14:27:28,191][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:27:29,576][INFO]"GET /get_project_detail/?id=58 HTTP/1.1" 200 214
+[2022-09-05 14:27:29,590][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:32:50,789][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:32:51,096][INFO]"GET /get_project_list/ HTTP/1.1" 200 1406
+[2022-09-05 14:32:52,350][INFO]"GET /get_project_detail/?id=58 HTTP/1.1" 200 214
+[2022-09-05 14:32:52,364][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 14:39:36,412][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 14:39:36,944][INFO]Watching for file changes with StatReloader
+[2022-09-05 15:15:12,496][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-09-05 15:15:12,503][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 15:15:12,503][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-05 15:15:15,999][ERROR]Internal Server Error: /get_project_list/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: Api_app_db_project_list.email
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 138, in get_project_list
+    project_list_data = list(DB_project_list.objects.filter(deleted=False).values())[::-1]  # 不显示逻辑删除的数据
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 280, in __iter__
+    self._fetch_all()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 109, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1130, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: Api_app_db_project_list.email
+[2022-09-05 15:15:16,001][ERROR]"GET /get_project_list/ HTTP/1.1" 500 142898
+[2022-09-05 15:15:17,840][INFO]"GET /get_env_list/ HTTP/1.1" 200 549
+[2022-09-05 15:15:22,189][INFO]"GET /get_api_shop_list/ HTTP/1.1" 200 552
+[2022-09-05 15:15:22,204][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 15:15:32,186][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 15:15:33,748][ERROR]Internal Server Error: /get_project_list/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: Api_app_db_project_list.email
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 138, in get_project_list
+    project_list_data = list(DB_project_list.objects.filter(deleted=False).values())[::-1]  # 不显示逻辑删除的数据
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 280, in __iter__
+    self._fetch_all()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 109, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1130, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\backends\sqlite3\base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: Api_app_db_project_list.email
+[2022-09-05 15:15:33,750][ERROR]"GET /get_project_list/ HTTP/1.1" 500 142898
+[2022-09-05 15:15:42,198][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 15:15:52,198][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 15:16:02,200][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 15:16:12,199][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 15:16:22,194][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 15:16:32,187][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 15:16:42,196][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 15:16:52,194][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 15:17:02,187][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 15:17:12,203][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 15:17:22,203][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 15:17:48,344][INFO]"GET /get_project_list/ HTTP/1.1" 200 1082
+[2022-09-05 15:17:53,976][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 15:17:53,977][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 15:18:29,088][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 15:18:29,089][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 15:19:00,073][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 15:19:00,074][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 15:29:47,372][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 15:29:47,373][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 15:30:33,026][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 15:30:33,027][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 15:37:58,745][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 15:37:58,746][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 15:44:29,184][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 15:44:29,184][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:03:31,842][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:03:31,842][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:03:41,314][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:03:41,315][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:03:57,691][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:03:57,692][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:04:34,920][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:04:34,921][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:05:25,468][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:05:25,469][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:14:37,137][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:14:37,138][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:14:44,649][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:14:44,650][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:28:24,582][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:28:24,583][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:28:33,918][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:28:33,920][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:38:21,357][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:38:21,358][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:38:37,774][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:38:37,774][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:39:26,188][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:39:26,189][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:44:25,878][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:44:25,879][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:44:47,930][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:44:47,931][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:48:15,261][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:48:15,262][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:48:25,396][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:48:25,397][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:55:47,112][ERROR]Internal Server Error: /get_project_detail/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 386, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 400, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 168, in get_project_detail
+    form['power'] = eval(form['power'])
+KeyError: 'power'
+[2022-09-05 16:55:47,113][ERROR]"GET /get_project_detail/?id=58 HTTP/1.1" 500 74150
+[2022-09-05 16:59:18,186][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-09-05 16:59:18,741][INFO]Watching for file changes with StatReloader
+[2022-09-05 16:59:19,121][INFO]"GET /get_project_detail/?id=58 HTTP/1.1" 200 162
+[2022-09-05 17:00:01,534][INFO]"GET /get_project_list/ HTTP/1.1" 200 1082
+[2022-09-05 17:00:04,412][INFO]"GET /add_project/ HTTP/1.1" 200 1287
+[2022-09-05 17:00:05,919][INFO]"GET /add_project/ HTTP/1.1" 200 1492
+[2022-09-05 17:00:07,851][INFO]"GET /get_project_detail/?id=60 HTTP/1.1" 200 162
+[2022-09-05 17:00:15,169][INFO]"OPTIONS /save_project/ HTTP/1.1" 200 0
+[2022-09-05 17:00:15,175][INFO]"POST /save_project/ HTTP/1.1" 200 0
+[2022-09-05 17:00:18,150][INFO]"GET /get_project_list/ HTTP/1.1" 200 1503
+[2022-09-05 17:00:22,210][INFO]"GET /get_project_list/ HTTP/1.1" 200 1503
+[2022-09-05 17:03:02,709][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 17:03:03,243][INFO]Watching for file changes with StatReloader
+[2022-09-05 17:03:08,992][INFO]"GET /delete_project/?project_id=60 HTTP/1.1" 200 12
+[2022-09-05 17:03:10,195][INFO]"GET /delete_project/?project_id=60 HTTP/1.1" 200 12
+[2022-09-05 17:03:12,578][INFO]"GET /get_project_list/ HTTP/1.1" 200 1503
+[2022-09-05 17:03:14,440][INFO]"GET /delete_project/?project_id=60 HTTP/1.1" 200 12
+[2022-09-05 17:03:49,333][INFO]"GET /delete_project/?project_id=60 HTTP/1.1" 200 12
+[2022-09-05 17:03:54,614][INFO]"GET /get_project_list/ HTTP/1.1" 200 1503
+[2022-09-05 17:04:10,594][INFO]"GET /get_project_detail/?id=60 HTTP/1.1" 200 173
+[2022-09-05 17:04:18,201][INFO]"GET /get_project_list/ HTTP/1.1" 200 1503
+[2022-09-05 17:04:39,063][INFO]"GET /get_project_list/ HTTP/1.1" 200 1503
+[2022-09-05 17:04:42,072][INFO]"GET /add_project/ HTTP/1.1" 200 1709
+[2022-09-05 17:04:43,369][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:05:20,418][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:05:20,947][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:21,213][INFO]"GET /get_project_list/ HTTP/1.1" 200 1709
+[2022-09-05 17:08:30,196][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-09-05 17:08:30,208][INFO]"GET /static/css/chunk-vendors.dd50ba92.css HTTP/1.1" 304 0
+[2022-09-05 17:08:30,209][INFO]"GET /static/css/app.4a65e1ad.css HTTP/1.1" 304 0
+[2022-09-05 17:08:30,212][INFO]"GET /static/js/app.5212ee98.js HTTP/1.1" 200 40277
+[2022-09-05 17:08:30,220][INFO]"GET /static/js/chunk-vendors.978f4292.js HTTP/1.1" 200 897591
+[2022-09-05 17:08:30,284][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-05 17:08:30,295][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-05 17:08:30,295][INFO]"GET /static/fonts/element-icons.535877f5.woff HTTP/1.1" 200 28200
+[2022-09-05 17:08:30,328][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 17:08:32,843][INFO]"GET /get_project_list/ HTTP/1.1" 200 1709
+[2022-09-05 17:08:32,848][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 17:08:34,154][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:35,609][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:36,259][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:36,715][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:36,908][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:37,083][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:37,261][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:37,629][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:37,806][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:37,949][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:39,249][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-09-05 17:08:39,298][INFO]"GET /get_project_list/ HTTP/1.1" 200 1709
+[2022-09-05 17:08:39,313][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 17:08:40,858][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:41,033][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:41,194][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:41,354][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:41,514][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:41,674][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:41,851][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:51,552][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:08:55,611][INFO]"GET /static/js/app.5212ee98.js.map HTTP/1.1" 200 154513
+[2022-09-05 17:08:55,631][INFO]"GET /static/js/chunk-vendors.978f4292.js.map HTTP/1.1" 200 3558816
+[2022-09-05 17:09:08,856][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:09:30,962][INFO]"GET /delete_project/?project_id=61 HTTP/1.1" 200 12
+[2022-09-05 17:10:40,771][INFO]"GET /add_project/ HTTP/1.1" 200 1915
+[2022-09-05 17:10:42,694][INFO]"GET /delete_project/?project_id=62 HTTP/1.1" 200 12
+[2022-09-05 17:11:51,796][INFO]"GET /add_project/ HTTP/1.1" 200 2121
+[2022-09-05 17:11:56,322][INFO]"GET /get_project_detail/?id=63 HTTP/1.1" 200 163
+[2022-09-05 17:14:14,089][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 17:14:14,557][INFO]Watching for file changes with StatReloader
+[2022-09-05 17:15:08,070][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 17:15:08,529][INFO]Watching for file changes with StatReloader
+[2022-09-05 17:15:22,007][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 17:15:22,439][INFO]Watching for file changes with StatReloader
+[2022-09-05 17:15:30,742][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 17:15:31,163][INFO]Watching for file changes with StatReloader
+[2022-09-05 17:15:43,588][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 17:15:44,025][INFO]Watching for file changes with StatReloader
+[2022-09-05 17:16:01,618][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 17:16:02,056][INFO]Watching for file changes with StatReloader
+[2022-09-05 17:16:16,576][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 17:16:17,007][INFO]Watching for file changes with StatReloader
+[2022-09-05 17:16:29,487][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 17:16:29,922][INFO]Watching for file changes with StatReloader
+[2022-09-05 17:16:43,410][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 17:16:43,830][INFO]Watching for file changes with StatReloader
+[2022-09-05 17:19:33,735][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 17:19:34,193][INFO]Watching for file changes with StatReloader
+[2022-09-05 17:19:44,606][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 17:19:45,037][INFO]Watching for file changes with StatReloader
+[2022-09-05 17:20:09,803][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 17:20:10,236][INFO]Watching for file changes with StatReloader
+[2022-09-05 17:20:25,811][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 17:20:26,234][INFO]Watching for file changes with StatReloader
+[2022-09-05 17:20:35,586][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-09-05 17:20:36,101][INFO]Watching for file changes with StatReloader
+[2022-09-05 17:22:13,015][INFO]"GET /get_project_list/ HTTP/1.1" 200 3265
+[2022-09-05 17:22:16,479][INFO]"GET /add_project/ HTTP/1.1" 200 3575
+[2022-09-05 17:22:38,586][INFO]"GET /admin/ HTTP/1.1" 302 0
+[2022-09-05 17:22:38,667][INFO]"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2216
+[2022-09-05 17:22:38,680][INFO]"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+[2022-09-05 17:22:38,681][INFO]"GET /static/admin/css/base.css HTTP/1.1" 200 19513
+[2022-09-05 17:22:38,683][INFO]"GET /static/admin/css/login.css HTTP/1.1" 200 939
+[2022-09-05 17:22:38,683][INFO]"GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+[2022-09-05 17:22:38,685][INFO]"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+[2022-09-05 17:22:38,700][INFO]"GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[2022-09-05 17:22:38,720][INFO]"GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[2022-09-05 17:22:38,721][INFO]"GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[2022-09-05 17:22:38,745][INFO]"GET /favicon.ico HTTP/1.1" 301 0
+[2022-09-05 17:22:38,748][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 17:22:46,884][INFO]"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2022-09-05 17:22:46,900][INFO]"GET /admin/ HTTP/1.1" 200 8845
+[2022-09-05 17:22:46,906][INFO]"GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[2022-09-05 17:22:46,911][INFO]"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[2022-09-05 17:22:46,911][INFO]"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[2022-09-05 17:22:46,936][INFO]"GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[2022-09-05 17:22:46,953][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 17:22:51,024][INFO]"GET /admin/Api_app/db_project_list/ HTTP/1.1" 200 13352
+[2022-09-05 17:22:51,035][INFO]"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[2022-09-05 17:22:51,035][INFO]"GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+[2022-09-05 17:22:51,035][INFO]"GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[2022-09-05 17:22:51,040][INFO]"GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2022-09-05 17:22:51,042][INFO]"GET /static/admin/js/actions.js HTTP/1.1" 200 7867
+[2022-09-05 17:22:51,042][INFO]"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+[2022-09-05 17:22:51,043][INFO]"GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[2022-09-05 17:22:51,044][INFO]"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[2022-09-05 17:22:51,046][INFO]"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[2022-09-05 17:22:51,047][INFO]"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[2022-09-05 17:22:51,071][INFO]"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[2022-09-05 17:22:51,083][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 17:23:09,763][INFO]"POST /admin/Api_app/db_project_list/ HTTP/1.1" 200 10598
+[2022-09-05 17:23:09,771][INFO]"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+[2022-09-05 17:23:09,802][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 17:23:14,912][INFO]"POST /admin/Api_app/db_project_list/ HTTP/1.1" 302 0
+[2022-09-05 17:23:14,930][INFO]"GET /admin/Api_app/db_project_list/ HTTP/1.1" 200 6429
+[2022-09-05 17:23:14,946][INFO]"GET /admin/jsi18n/ HTTP/1.1" 200 8398
+[2022-09-05 17:23:14,955][INFO]"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[2022-09-05 17:23:14,963][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-05 17:23:35,275][INFO]"GET /get_project_list/ HTTP/1.1" 200 2
+[2022-09-05 17:23:37,823][INFO]"GET /add_project/ HTTP/1.1" 200 310
+[2022-09-05 17:23:39,852][INFO]"GET /delete_project/?project_id=65 HTTP/1.1" 200 12
+[2022-09-05 17:29:37,405][INFO]"GET /get_project_list/ HTTP/1.1" 200 310
+[2022-09-05 17:29:40,916][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 17:30:28,997][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 17:31:51,175][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 17:45:38,226][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 17:50:23,258][ERROR]Internal Server Error: /save_project/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 608, in get_field
+    return self.fields_map[field_name]
+KeyError: 'email_to'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 385, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 399, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 175, in save_project
+    DB_project_list.objects.filter(id=form['id']).update(**form)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 779, in update
+    query.add_update_values(kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\subqueries.py", line 85, in add_update_values
+    field = self.get_meta().get_field(name)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\options.py", line 610, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: DB_project_list has no field named 'email_to'
+[2022-09-05 17:50:23,260][ERROR]"POST /save_project/ HTTP/1.1" 500 95139
+[2022-09-05 17:50:25,521][INFO]"GET /get_project_list/ HTTP/1.1" 200 310
+[2022-09-05 17:50:30,600][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 17:50:34,935][INFO]"GET /get_project_list/ HTTP/1.1" 200 310
+[2022-09-05 17:50:44,025][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 17:50:54,337][INFO]"GET /get_project_list/ HTTP/1.1" 200 310
+[2022-09-05 17:56:30,903][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 17:58:10,449][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 17:58:44,315][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 18:01:09,470][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 18:01:28,011][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 18:04:25,712][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 18:04:54,527][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 18:05:45,474][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 18:06:12,801][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 18:06:22,258][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 20:53:19,793][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 20:53:29,700][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 20:57:36,082][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 20:58:44,504][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 20:59:13,769][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 20:59:50,515][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:00:02,545][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:00:27,775][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:00:38,922][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:05:56,948][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:06:39,591][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:11:09,683][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:11:25,183][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:11:33,976][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:13:06,353][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:13:32,865][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:13:47,964][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:14:51,126][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:15:05,731][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:17:11,940][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:20:27,160][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:20:37,718][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:20:45,231][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:20:59,338][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:27:25,554][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:43:38,124][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
+[2022-09-05 21:48:16,918][INFO]"GET /get_project_detail/?id=65 HTTP/1.1" 200 267
