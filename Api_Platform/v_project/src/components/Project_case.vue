@@ -1,5 +1,5 @@
 <template>
-<div>
+<div >
     <el-card id='right_id' style="float:right;width:-webkit-calc(100% - 350px);">
       <div v-if="right_api">
         <el-button size="mini" type="primary">发送</el-button>
@@ -44,7 +44,6 @@
                   label="操作">
               </el-table-column>
               </el-table>
-
             </el-tab-pane>
             <el-tab-pane label="Headers">请求头</el-tab-pane>
             <el-tab-pane label="Body">
@@ -132,10 +131,11 @@
 
       </div>
 
-      <div v-if="right_configure"><span>配置详情页{{setting_configure.label}}</span></div>
+      <div v-if="right_configure"><span>配置详情页:{{setting_configure.label}}</span></div>
     </el-card>
+
   <h1>接口用例页 &#12288
-    <el-button size="mini" type="primary">新增接口</el-button>
+    <el-button size="mini" type="primary" @click="add_apis">新增接口</el-button>
   </h1>
   <el-tree
   id="left_div"
@@ -144,22 +144,31 @@
   show-checkbox
   node-key="id"
   :default-checked-keys="dck"
-  :default-expanded-keys="dek">
+  :default-expanded-keys="dek"
+  @check-change="handleCheckChange">
     <span slot-scope="{data}">
       <span size="mini">{{data.label}} &#12288</span>
       <el-button
             type="text"
             size="mini"
             @click="() => set(data)"
-      style="color: darkturquoise">
+            style="color: darkturquoise">
             设置
-          </el-button>
-          <el-button
+      </el-button>
+      <el-button
+            v-if="v_if(data)"
+            type="text"
+            size="mini"
+            @click="() => add_configure(data)"
+            style="color: darkgreen">
+            增加
+      </el-button>
+      <el-button
             type="text"
             size="mini"
             @click="() => remove(data)">
             删除
-          </el-button>
+      </el-button>
 
     </span>
   </el-tree>
@@ -182,6 +191,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "Project_case",
   data(){
@@ -192,31 +202,57 @@ export default {
       userable_par:'',
       setting_api:{},
       setting_configure:{},
+      dck:[], // 默认选中的节点
+      dek:[], //默认展开的节点
+      ref:"tree",
+      tableData: [{name:"name",des:'des'}],
+      activeName:"", //body中默认显示哪个tab页
       apis:[
-          {id:1,type:'api',label:'接口1号',children:[{id:'set_1',label:'设置1'},{id:'set_2',label:'设置2'},{id:'set_3',label:'设置3'}]},
-          {id:2,type:'api',label:'接口2号',children:[]},
-          {id:3,type:'api',label:'接口3号',children:[]},
-          {id:2,type:'api',label:'接口2号',children:[]},
-          {id:2,type:'api',label:'接口2号',children:[]},
-          {id:3,type:'api',label:'接口3号',children:[]},
-          {id:2,type:'api',label:'接口2号',children:[]},
-          {id:2,type:'api',label:'接口2号',children:[]},
-          {id:3,type:'api',label:'接口3号',children:[]},
-          {id:2,type:'api',label:'接口2号',children:[]},
-          {id:2,type:'api',label:'接口2号',children:[]},
-          {id:3,type:'api',label:'接口3号',children:[]},
-          {id:2,type:'api',label:'接口2号',children:[]},
-          {id:2,type:'api',label:'接口2号',children:[]},
-          {id:2,type:'api',label:'接口2号',children:[]},
-
+          // {id:1,type:'api',label:'接口1号',children:[{id:'1_1',type:'configure',label:'设置1'},{id:'1_2',type:'configure',label:'设置2'},{id:'1_3',type:'configure',label:'设置3'}]},
+          // {id:2,type:'api',label:'接口2号',children:[]},
+          // {id:3,type:'api',label:'接口3号',children:[]},
+          // {id:4,type:'api',label:'接口2号',children:[]},
+          // {id:5,type:'api',label:'接口2号',children:[]},
+          // {id:6,type:'api',label:'接口3号',children:[]},
+          // {id:7,type:'api',label:'接口2号',children:[]},
         ],
     }
   },
+  props:["project_id",],
   mounted() {
     document.getElementById('right_id').style.minHeight = (document.documentElement.clientHeight-240).toString()+'px';
+    document.getElementById('right_id').style.maxHeight = (document.documentElement.clientHeight-240).toString()+'px';
     document.getElementById('left_div').style.height= (document.documentElement.clientHeight-286).toString()+'px'
+    axios.get('http://localhost:8000/get_apis/', {
+      params:{
+        project_id:this.project_id,
+      }
+    }).then(res=>{
+      this.apis=res.data
+    });
+    // 获取选中的接口
+    axios.get('http://localhost:8000/get_dck/',{
+      params:{
+        project_id:this.project_id,
+      }
+    }).then(res=>{
+      this.dck=res.data
+    });
+
   },
   methods:{
+    handleCheckChange(data, checked) {
+        console.log(data, checked);
+        axios.get('http://localhost:8000/set_dck',{
+          params:{
+            project:this.project_id,
+            dck:this.$refs.tree.getCheckedKeys().toString(),
+          }
+        }).then(res=>{
+          this.dck=res.data
+        })
+      },
+    // 如果是接口，则展示接口详情页；否则展示配置详情
     set(data){
       console.log(data)
       if(data.type=='api'){
@@ -231,9 +267,55 @@ export default {
       }
 
     },
+    // 删除，增加二次确认
     remove(data){
+      if(confirm("确定删除吗？")==false){return}
+      axios.get('http://localhost:8000/remove_ac',{
+          params:{
+            project_id:this.project_id,
+            id:data.id,
+          }
+        }).then(res=>{
+          this.apis=res.data
+      })
+      },
 
-    }
+
+    v_if(data){
+      if(data.type=='api'){
+        return true
+      }else{
+        return false
+      }
+    },
+    handleClick(tab,event){
+      console.log(tab,event)
+    },
+    // 新增配置后，让该接口展开
+    add_configure(data){
+      axios.get('http://localhost:8000/add_configure/',{
+        params:{
+          project:this.project_id,
+          id:data.id,
+        }
+      }).then(res=>{
+        this.apis=res.data;
+        this.dek=[data.id];
+      })
+
+    },
+    add_apis(){
+      axios.get('http://localhost:8000/add_apis/',{
+        params:{
+          project_id:this.project_id,
+        }
+      }).then(res=>{
+        this.apis=res.data
+      })
+
+    },
+
+
   }
 }
 </script>

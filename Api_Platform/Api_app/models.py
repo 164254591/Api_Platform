@@ -38,9 +38,9 @@ class DB_project_list(models.Model):
     sql_port = models.IntegerField(default=0)  # 数据库设置
     sql_user = models.CharField(max_length=50, null=True, blank=True, default='')  # 数据库设置
     sql_pwd = models.CharField(max_length=50, null=True, blank=True, default='')  # 数据库设置
-    doing_api = models.CharField(max_length=50, null=True, blank=True, default='')
-    end_result = models.TextField(default='')
-    choose_api = models.CharField(max_length=500, null=True, blank=True, default='')
+    doing_api = models.CharField(max_length=50, null=True, blank=True, default='')  # 执行中的接口
+    end_result = models.TextField(default='')  # 结果
+    dck = models.CharField(max_length=500, null=True, blank=True, default='')  # 选中的
     deleted = models.BooleanField(default=False)  # 假删除
 
     def __str__(self):
@@ -77,3 +77,13 @@ class DB_power_list(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class DB_apis(models.Model):
+    project_id = models.IntegerField(default=0)
+    label = models.CharField(max_length=100, null=True, blank=True, default='新接口')
+    type = models.CharField(max_length=10, null=True, blank=True, default='api')
+    children = models.CharField(max_length=5000, null=True, blank=True, default='[]')
+
+    def __str__(self):
+        return self.label

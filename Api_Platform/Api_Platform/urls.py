@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, re_path
 from Api_app.views import *
 from django.views.generic import TemplateView
+from Api_app.views_api import *
 
 urlpatterns = [
     # ------------------------------------------权限系统无法管理的--------------------------------------------------------
@@ -28,6 +29,10 @@ urlpatterns = [
     # path('index/', TemplateView.as_view(template_name='index.html')),
     path('index/', index),
     path('logout/', logout),
+    path('get_apis/', get_apis),
+    path('get_dck/', get_dck),
+    path('set_dck/', set_dck),
+    path('add_apis/',add_apis),
 
     # -----------------------------------------权限系统可以管理的，但不一定监管（接口path只有一级，且path和函数名必须相同）---------
     re_path('(?P<path>.+)/', diy_power),

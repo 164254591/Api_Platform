@@ -13,7 +13,7 @@
             <Project_set :project_id="$route.query.project_id"></Project_set>
           </el-tab-pane>
           <el-tab-pane label="接口用例" name="second">
-            <Project_case></Project_case>
+            <Project_case :project_id="$route.query.project_id"></Project_case>
           </el-tab-pane>
         </el-tabs>
       </el-main>

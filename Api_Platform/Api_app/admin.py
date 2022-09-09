@@ -7,4 +7,6 @@ admin.site.register(DB_news)
 admin.site.register(DB_project_list)
 admin.site.register(DB_env_list)
 admin.site.register(DB_power_list)
+admin.site.register(DB_apis)
+
 
