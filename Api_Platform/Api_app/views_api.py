@@ -47,3 +47,33 @@ def add_apis(request):
           "id": "%d_%d" % (new_api.id, 1)}])
     new_api.save()
     return get_apis(request)
+
+
+def remove_ac(request):
+    id = request.GET['id']
+    if '_' in id:
+        apis_id = id.split('_')[0]
+        api = DB_apis.objects.filter(id=apis_id)[0]
+        children = eval(api.children)
+        for i in children:
+            if i['id'] == id:
+                children.remove(i)
+                break
+        api.children = str(children)
+        api.save()  # 修改完数据库内容需要保存
+
+    else:
+        DB_apis.objects.filter(id=id).delete()
+    return get_apis(request)
+
+
+def add_configure(request):
+    id = request.GET['id']  # 一定是接口的id
+    api = DB_apis.objects.filter(id=id)[0]
+    children = eval(api.children)
+    cid = int(children[-1]['id'].split('_')[1]) + 1 if children else 1
+    children.append({"do_time": "after", "type": "configure", "label": "新配置", "method": "", "select": "", "value": "",
+                     "id": "%d_%d" % (int(id), cid)})
+    api.children = str(children)
+    api.save()
+    return get_apis(request)

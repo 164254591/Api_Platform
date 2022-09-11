@@ -32,7 +32,10 @@ urlpatterns = [
     path('get_apis/', get_apis),
     path('get_dck/', get_dck),
     path('set_dck/', set_dck),
-    path('add_apis/',add_apis),
+    path('add_apis/', add_apis),
+    path('remove_ac/', remove_ac),
+    path('add_configure/', add_configure),
+
 
     # -----------------------------------------权限系统可以管理的，但不一定监管（接口path只有一级，且path和函数名必须相同）---------
     re_path('(?P<path>.+)/', diy_power),

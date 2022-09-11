@@ -13494,3 +13494,257 @@ TypeError: Object of type 'QuerySet' is not JSON serializable
 [2022-09-09 22:34:54,589][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
 [2022-09-09 22:34:56,481][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
 [2022-09-09 22:34:57,013][INFO]Watching for file changes with StatReloader
+[2022-09-09 22:35:54,892][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-09 22:36:54,590][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:29:32,629][INFO]Watching for file changes with StatReloader
+[2022-09-11 19:29:47,099][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-11 19:29:47,101][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:29:48,231][INFO]"GET /get_project_list/ HTTP/1.1" 200 1212
+[2022-09-11 19:29:49,749][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-09-11 19:29:49,765][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-09-11 19:29:49,766][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 2977
+[2022-09-11 19:29:54,456][INFO]"GET /remove_ac?project_id=68&id=11 HTTP/1.1" 301 0
+[2022-09-11 19:29:54,532][ERROR]Internal Server Error: /remove_ac/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view Api_app.views_api.remove_ac didn't return an HttpResponse object. It returned None instead.
+[2022-09-11 19:29:54,533][ERROR]"GET /remove_ac/?project_id=68&id=11 HTTP/1.1" 500 64700
+[2022-09-11 19:29:56,798][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:29:56,807][ERROR]Internal Server Error: /remove_ac/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view Api_app.views_api.remove_ac didn't return an HttpResponse object. It returned None instead.
+[2022-09-11 19:29:56,808][ERROR]"GET /remove_ac/?project_id=68&id=11 HTTP/1.1" 500 64700
+[2022-09-11 19:29:59,330][ERROR]Internal Server Error: /remove_ac/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view Api_app.views_api.remove_ac didn't return an HttpResponse object. It returned None instead.
+[2022-09-11 19:29:59,331][ERROR]"GET /remove_ac/?project_id=68&id=11 HTTP/1.1" 500 64700
+[2022-09-11 19:30:06,792][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:30:09,348][ERROR]Internal Server Error: /remove_ac/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view Api_app.views_api.remove_ac didn't return an HttpResponse object. It returned None instead.
+[2022-09-11 19:30:09,349][ERROR]"GET /remove_ac/?project_id=68&id=11 HTTP/1.1" 500 64700
+[2022-09-11 19:30:16,782][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:30:19,523][ERROR]Internal Server Error: /remove_ac/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view Api_app.views_api.remove_ac didn't return an HttpResponse object. It returned None instead.
+[2022-09-11 19:30:19,524][ERROR]"GET /remove_ac/?project_id=68&id=11 HTTP/1.1" 500 64700
+[2022-09-11 19:30:26,786][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:30:36,795][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:30:46,790][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:30:52,909][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-11 19:30:53,336][INFO]Watching for file changes with StatReloader
+[2022-09-11 19:30:55,484][INFO]"GET /remove_ac/?project_id=68&id=11 HTTP/1.1" 200 2748
+[2022-09-11 19:30:56,800][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:30:58,272][INFO]"GET /remove_ac?project_id=68&id=12 HTTP/1.1" 301 0
+[2022-09-11 19:30:58,285][INFO]"GET /remove_ac/?project_id=68&id=12 HTTP/1.1" 200 2519
+[2022-09-11 19:31:02,094][INFO]"GET /remove_ac?project_id=68&id=13_1 HTTP/1.1" 301 0
+[2022-09-11 19:31:02,098][INFO]"GET /remove_ac/?project_id=68&id=13_1 HTTP/1.1" 200 2519
+[2022-09-11 19:31:06,786][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:31:12,548][INFO]"GET /remove_ac?project_id=68&id=13 HTTP/1.1" 301 0
+[2022-09-11 19:31:12,558][INFO]"GET /remove_ac/?project_id=68&id=13 HTTP/1.1" 200 2290
+[2022-09-11 19:31:18,267][INFO]"GET /remove_ac?project_id=68&id=14_1 HTTP/1.1" 301 0
+[2022-09-11 19:31:18,274][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:31:18,276][INFO]"GET /remove_ac/?project_id=68&id=14_1 HTTP/1.1" 200 2290
+[2022-09-11 19:31:22,605][INFO]"GET /remove_ac/?project_id=68&id=14_1 HTTP/1.1" 200 2290
+[2022-09-11 19:31:24,021][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 385, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 399, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'add_configure' is not defined
+[2022-09-11 19:31:24,022][ERROR]"GET /add_configure/?project=68&id=14 HTTP/1.1" 500 70262
+[2022-09-11 19:31:26,797][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:31:37,446][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:31:47,438][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:31:57,433][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:32:07,437][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:32:17,446][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:32:27,445][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:32:37,448][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:32:47,448][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:32:57,443][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-11 19:32:59,843][INFO]D:\Git\dlz\Api_Platform\Api_Platform\urls.py changed, reloading.
+[2022-09-11 19:33:00,363][INFO]Watching for file changes with StatReloader
+[2022-09-11 19:33:59,620][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-11 19:34:00,148][INFO]Watching for file changes with StatReloader
+[2022-09-11 19:34:55,857][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-11 19:34:56,357][INFO]Watching for file changes with StatReloader
+[2022-09-11 19:35:13,006][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-11 19:35:13,420][INFO]Watching for file changes with StatReloader
+[2022-09-11 19:35:14,718][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-09-11 19:35:14,719][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 2290
+[2022-09-11 19:35:14,720][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-09-11 19:35:19,976][INFO]"GET /remove_ac/?project_id=68&id=14_1 HTTP/1.1" 200 2153
+[2022-09-11 19:35:23,444][INFO]"GET /remove_ac?project_id=68&id=15_1 HTTP/1.1" 301 0
+[2022-09-11 19:35:23,452][INFO]"GET /remove_ac/?project_id=68&id=15_1 HTTP/1.1" 200 2016
+[2022-09-11 19:35:25,814][INFO]"GET /remove_ac?project_id=68&id=15 HTTP/1.1" 301 0
+[2022-09-11 19:35:25,826][INFO]"GET /remove_ac/?project_id=68&id=15 HTTP/1.1" 200 1924
+[2022-09-11 19:37:11,551][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-11 19:37:12,051][INFO]Watching for file changes with StatReloader
+[2022-09-11 19:40:50,038][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-11 19:40:50,512][INFO]Watching for file changes with StatReloader
+[2022-09-11 19:42:03,748][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-11 19:42:04,179][INFO]Watching for file changes with StatReloader
+[2022-09-11 19:43:29,463][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-11 19:43:29,880][INFO]Watching for file changes with StatReloader
+[2022-09-11 19:43:33,487][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 71, in add_configure
+    id = request.GEt['id']  # 一定是接口的id
+AttributeError: 'WSGIRequest' object has no attribute 'GEt'
+[2022-09-11 19:43:33,488][ERROR]"GET /add_configure/?project=68&id=14 HTTP/1.1" 500 63962
+[2022-09-11 19:43:33,819][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 71, in add_configure
+    id = request.GEt['id']  # 一定是接口的id
+AttributeError: 'WSGIRequest' object has no attribute 'GEt'
+[2022-09-11 19:43:33,819][ERROR]"GET /add_configure/?project=68&id=14 HTTP/1.1" 500 63962
+[2022-09-11 19:43:34,347][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 71, in add_configure
+    id = request.GEt['id']  # 一定是接口的id
+AttributeError: 'WSGIRequest' object has no attribute 'GEt'
+[2022-09-11 19:43:34,348][ERROR]"GET /add_configure/?project=68&id=14 HTTP/1.1" 500 63962
+[2022-09-11 19:43:53,599][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1924
+[2022-09-11 19:43:53,599][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-09-11 19:43:53,602][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-09-11 19:43:56,987][INFO]"GET /remove_ac?project_id=68&id=14 HTTP/1.1" 301 0
+[2022-09-11 19:43:56,996][INFO]"GET /remove_ac/?project_id=68&id=14 HTTP/1.1" 200 1832
+[2022-09-11 19:43:59,022][INFO]"GET /remove_ac?project_id=68&id=23 HTTP/1.1" 301 0
+[2022-09-11 19:43:59,035][INFO]"GET /remove_ac/?project_id=68&id=23 HTTP/1.1" 200 1603
+[2022-09-11 19:44:00,963][INFO]"GET /remove_ac?project_id=68&id=22 HTTP/1.1" 301 0
+[2022-09-11 19:44:00,977][INFO]"GET /remove_ac/?project_id=68&id=22 HTTP/1.1" 200 1374
+[2022-09-11 19:44:02,533][INFO]"GET /remove_ac?project_id=68&id=21 HTTP/1.1" 301 0
+[2022-09-11 19:44:02,548][INFO]"GET /remove_ac/?project_id=68&id=21 HTTP/1.1" 200 1145
+[2022-09-11 19:44:03,864][INFO]"GET /remove_ac?project_id=68&id=20 HTTP/1.1" 301 0
+[2022-09-11 19:44:03,881][INFO]"GET /remove_ac/?project_id=68&id=20 HTTP/1.1" 200 916
+[2022-09-11 19:44:05,241][INFO]"GET /remove_ac?project_id=68&id=19 HTTP/1.1" 301 0
+[2022-09-11 19:44:05,297][INFO]"GET /remove_ac/?project_id=68&id=19 HTTP/1.1" 200 687
+[2022-09-11 19:44:08,270][INFO]"GET /remove_ac?project_id=68&id=18 HTTP/1.1" 301 0
+[2022-09-11 19:44:08,285][INFO]"GET /remove_ac/?project_id=68&id=18 HTTP/1.1" 200 458
+[2022-09-11 19:44:10,701][INFO]"GET /remove_ac?project_id=68&id=17 HTTP/1.1" 301 0
+[2022-09-11 19:44:10,717][INFO]"GET /remove_ac/?project_id=68&id=17 HTTP/1.1" 200 229
+[2022-09-11 19:44:15,309][INFO]"GET /remove_ac?project_id=68&id=16_1 HTTP/1.1" 301 0
+[2022-09-11 19:44:15,324][INFO]"GET /remove_ac/?project_id=68&id=16_1 HTTP/1.1" 200 92
+[2022-09-11 19:44:16,408][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 71, in add_configure
+    id = request.GEt['id']  # 一定是接口的id
+AttributeError: 'WSGIRequest' object has no attribute 'GEt'
+[2022-09-11 19:44:16,409][ERROR]"GET /add_configure/?project=68&id=16 HTTP/1.1" 500 63962
+[2022-09-11 19:44:28,912][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-11 19:44:29,328][INFO]Watching for file changes with StatReloader
+[2022-09-11 19:44:30,329][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'project_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 79, in add_configure
+    return get_apis(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 19, in get_apis
+    project_id = request.GET['project_id']
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'project_id'
+[2022-09-11 19:44:30,329][ERROR]"GET /add_configure/?project=68&id=16 HTTP/1.1" 500 75849
+[2022-09-11 19:44:30,931][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'project_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 79, in add_configure
+    return get_apis(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 19, in get_apis
+    project_id = request.GET['project_id']
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'project_id'
+[2022-09-11 19:44:30,931][ERROR]"GET /add_configure/?project=68&id=16 HTTP/1.1" 500 76122
+[2022-09-11 19:44:34,520][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'project_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 79, in add_configure
+    return get_apis(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 19, in get_apis
+    project_id = request.GET['project_id']
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'project_id'
+[2022-09-11 19:44:34,521][ERROR]"GET /add_configure/?project=68&id=16 HTTP/1.1" 500 76395
