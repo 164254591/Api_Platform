@@ -129,16 +129,17 @@
         <el-button size="mini" type="primary" @click="save_configure">Save</el-button>
         &#12288 <span>ID: {{ setting_configure.id }}</span>
         &#12288 <span>运行方式：</span>
-        <el-select v-model="setting_configure.do_time" placeholder="请选择" style="width: 90px"></el-select>
-        <el-option label="before" value="before"></el-option>
-        <el-option label="after" value="after"></el-option>
+        <el-select v-model="setting_configure.do_time" placeholder="请选择" style="width: 90px">
+          <el-option label="before" value="before"></el-option>
+          <el-option label="after" value="after"></el-option>
+        </el-select>
         &#12288 <span>配置名称：</span>
         <el-input style="width:-webkit-calc(100% - 450px)" v-model="setting_configure.label"></el-input>
         <br><br>
         <el-tabs @tab-click="choose_configure_method" tab-position="left" style="height: 100%">
-          <el-tab-pane label="仅运行">
-            <span class="smallfont">帮助：选中此项后，其他配置不再运行！</span>
-          </el-tab-pane>
+<!--          <el-tab-pane label="仅运行">-->
+<!--            <span class="smallfont">帮助：选中此项后，其他配置不再运行！</span>-->
+<!--          </el-tab-pane>-->
           <el-tab-pane label="断言">
             <el-select v-model="setting_configure.select" style="width: 120px">
               <el-option label="全值检索" value="全值检索"></el-option>
@@ -244,11 +245,13 @@
         :data="apis"
         show-checkbox
         node-key="id"
+        :check-strictly="true"
         :default-checked-keys="dck"
         :default-expanded-keys="dek"
         @check-change="handleCheckChange">
       <span slot-scope="{data}">
-        <span size="mini">{{ data.label }} &#12288</span>
+<!--        <span size="mini">{{ data.label }} &#12288</span>-->
+        <span size="mini" v-text="get_label(data.label)"></span>&nbsp;
         <el-button
             type="text"
             size="mini"
@@ -337,6 +340,19 @@ export default {
 
   },
   methods: {
+    // get_label(label){
+    //   if (label.length>12){
+    //     var new_label = label.substring(0,12) + '...'
+    //   }
+    //   else{
+    //     var new_label = label
+    //   }
+    //   return new_label
+    //
+    // },
+    get_label(label){
+      return label.substring(0,12) + ( (label.length>12)?'...':'')
+    },
     handleCheckChange(data, checked) {
       console.log(data, checked);
       axios.get('http://localhost:8000/set_dck', {
