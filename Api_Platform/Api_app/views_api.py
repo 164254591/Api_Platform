@@ -43,7 +43,7 @@ def add_apis(request):
     project_id = request.GET['project_id']
     new_api = DB_apis.objects.create(project_id=project_id)
     new_api.children = str(
-        [{"do_time": "before", "type": "configure", "label": "仅运行", "method": "only_play", "select": "", "value": "",
+        [{"do_time": "before", "type": "configure", "label": "仅运行", "method": "仅运行", "select": "", "value": "",
           "id": "%d_%d" % (new_api.id, 1)}])
     new_api.save()
     return get_apis(request)

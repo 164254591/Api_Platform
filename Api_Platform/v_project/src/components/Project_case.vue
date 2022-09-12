@@ -126,17 +126,19 @@
       </div>
       <div v-if="right_configure">
 
-        <el-button size="mini" type="primary" @click="">Save</el-button>
+        <el-button size="mini" type="primary" @click="save_configure">Save</el-button>
         &#12288 <span>ID: {{ setting_configure.id }}</span>
         &#12288 <span>运行方式：</span>
         <el-select v-model="setting_configure.do_time" placeholder="请选择" style="width: 90px"></el-select>
-        <el-ption label="before" value="before"></el-ption>
-        <el-ption label="after" value="after"></el-ption>
+        <el-option label="before" value="before"></el-option>
+        <el-option label="after" value="after"></el-option>
         &#12288 <span>配置名称：</span>
-        <el-input style="width:-webkit-calc(100% - 500px)" v-model="setting_configure.label"></el-input>
+        <el-input style="width:-webkit-calc(100% - 450px)" v-model="setting_configure.label"></el-input>
         <br><br>
-        <el-tabs tab-position="left" style="height: 100%">
-          <el-tab-pane label="仅运行"><span class="smallfont">帮助：选中此项后，其他配置不再运行！</span></el-tab-pane>
+        <el-tabs @tab-click="choose_configure_method" tab-position="left" style="height: 100%">
+          <el-tab-pane label="仅运行">
+            <span class="smallfont">帮助：选中此项后，其他配置不再运行！</span>
+          </el-tab-pane>
           <el-tab-pane label="断言">
             <el-select v-model="setting_configure.select" style="width: 120px">
               <el-option label="全值检索" value="全值检索"></el-option>
@@ -144,13 +146,91 @@
               <el-option label="路径匹配" value="路径匹配"></el-option>
               <el-option label="SQL断言" value="SQL断言"></el-option>
             </el-select>
+            <el-input v-model="setting_configure.value" placeholder="请输入表达式、sql语句" style="width: -webkit-calc(100% - 175px )"></el-input>
+            <br>
+            <p>帮助</p>
+            <p>1.全值检索：在整个返回值当中，是否存在目标字符串。（.find()） * </p>
+            <p>2.正则匹配：需要用户写左边界右边界和匹配正则表达式。也是只检索字符串。**</p>
+            <p>3.路径匹配：用户写路径和目标的类型和值。* ** （只能是json返回值才可用）</p>
+            <p>4.sql断言：用户写sql原生语句和目标值。* * *</p>
+            <p>例子：{"errorCode":200,"data":[{"name":"lisi"},{"name":"zhangsan"},{"name":"wang"}]}
+            <p>&#12288;全值检索：zhangsan</p>
+            <p>&#12288;正则匹配：name":"(.*?)"}==zhangsan</p>
+            <p>&#12288;路径匹配：["data"][1]["name"]=="zhangsan"</p>
+            <p>&#12288;sql断言：select name from 表 where id=5; == "zhangsan"</p>
+            <p>&#12288;sql断言：select name from 表 where name='zhangsan'; (结果是否为0)</p>
+
           </el-tab-pane>
-          <el-tab-pane label="SQL增删改"></el-tab-pane>
-          <el-tab-pane label="随机变量"></el-tab-pane>
-          <el-tab-pane label="mock"></el-tab-pane>
-          <el-tab-pane label="插入参数"></el-tab-pane>
-          <el-tab-pane label="加密参数"></el-tab-pane>
-          <el-tab-pane label="草稿"></el-tab-pane>
+          <el-tab-pane label="提取">
+            <el-select v-model="setting_configure.select" style="width: 120px">
+              <el-option label="路径提取" value="路径提取"></el-option>
+              <el-option label="正则提取" value="正则提取"></el-option>
+              <el-option label="sql提取" value="sql提取"></el-option>
+            </el-select>
+            <el-input v-model="setting_configure.value" placeholder="请输入表达式、sql查询语句" style="width: -webkit-calc(100% - 175px )"></el-input>
+            <br>
+            <p>帮助：</p>
+            <p>1.路径提取：用户写变量名=路径。仅限json</p>
+            <p>2.正则提取：用户写变量名=左边界(.*?)右边界</p>
+            <p>3.sql提取：用户写变量名=sql select 查询语句 ，还要加下标。（默认0）</p>
+
+          </el-tab-pane>
+          <el-tab-pane label="SQL增删改">
+            <el-input type="textarea" :rows="5" v-model="setting_configure.value" placeholder="请输入需要执行的sql语句"></el-input>
+            <br>
+            <p>帮助：</p>
+            <p>一般用来执行某个特殊的需求，如修改、增加、删除等。用户手写sql语句即可，没有返回结果</p>
+          </el-tab-pane>
+          <el-tab-pane label="随机变量">
+            <el-input v-model="setting_configure.value" placeholder="请按照下面要求，输入表达式" ></el-input>
+            <br>
+            <p>帮助：</p>
+            <p>1.常数：a=5, a=8.55, a="呵呵", a=[1,2,3] </p>
+            <p>2.随机整数：a=randint(1,10)+2-3-12 #随机生成1-10之内的某个数.</p>
+            <p>3.时间戳：a=time.time()</p>
+            <p>4.身份证：a=IDcard()</p>
+            <p> 5.地址：a=random_adress()</p>
+            <p></p>
+            <p></p>
+
+          </el-tab-pane>
+          <el-tab-pane label="mock">
+            <el-select v-model="setting_configure.select" style="width: 120px">
+              <el-option label="写死返回值" value="写死返回值"></el-option>
+              <el-option label="第三方接口" value="第三方接口"></el-option>
+            </el-select>
+            <el-input type="textarea" :rows="8" v-model="setting_configure.value" placeholder="请输入返回值、接口请求等" ></el-input>
+            <br>
+            <p>帮助：</p>
+            <p>1.选择写死返回值，可直接粘贴返回值到上面的多行文本框，点击保存即可</p>
+            <p>2.第三方接口，请依次每行输入：url、header字典、请求体、</p>
+          </el-tab-pane>
+          <el-tab-pane label="插入参数">
+            <el-select v-model="setting_configure.select" style="width: 150px">
+              <el-option label="request_header" value="request_header"></el-option>
+              <el-option label="params" value="params"></el-option>
+              <el-option label="request_body" value="request_body"></el-option>
+            </el-select>
+            <el-input  v-model="setting_configure.value" placeholder="请输入表达式" style="width: -webkit-calc(100% - 205px )" ></el-input>
+            <br>
+            <p>帮助：</p>
+            <p>比如：a=55</p>
+          </el-tab-pane>
+          <el-tab-pane label="加密参数">
+             <el-select v-model="setting_configure.select" style="width: 150px" placeholder="插入位置">
+              <el-option label="request_header" value="request_header"></el-option>
+              <el-option label="params" value="params"></el-option>
+            </el-select>
+            <el-input  v-model="setting_configure.value" placeholder="请输入表达式" style="width: -webkit-calc(100% - 205px )" ></el-input>
+            <br>
+            <p>帮助：</p>
+            <p>例如：sign = python能执行的加密算法， 其中可以使用接口的全部位置的参数,函数(md5,shar1)</p>
+          </el-tab-pane>
+          <el-tab-pane label="草稿">
+            <el-input type="textarea" :rows="10" placeholder="请随意使用该文本框"></el-input>
+            <p>帮助：临时存放粘贴数据</p>
+          </el-tab-pane>
+
 
         </el-tabs>
       </div>
@@ -231,12 +311,6 @@ export default {
       activeName: "", //body中默认显示哪个tab页
       apis: [
         // {id:1,type:'api',label:'接口1号',children:[{id:'1_1',type:'configure',label:'设置1'},{id:'1_2',type:'configure',label:'设置2'},{id:'1_3',type:'configure',label:'设置3'}]},
-        // {id:2,type:'api',label:'接口2号',children:[]},
-        // {id:3,type:'api',label:'接口3号',children:[]},
-        // {id:4,type:'api',label:'接口2号',children:[]},
-        // {id:5,type:'api',label:'接口2号',children:[]},
-        // {id:6,type:'api',label:'接口3号',children:[]},
-        // {id:7,type:'api',label:'接口2号',children:[]},
       ],
     }
   },
@@ -337,6 +411,26 @@ export default {
       })
 
     },
+    save_configure(){
+
+    },
+    save_api(){
+
+    },
+    send_api(){
+
+    },
+    run(){
+
+    },
+    report(){
+
+    },
+    choose_configure_method(tab,event){
+      console.log(tab,event)
+      this.setting_configure.method=tab.label;
+
+    },
 
 
   }
@@ -345,6 +439,10 @@ export default {
 
 <style scoped>
 .smallfont {
+  font-size: xx-small;
+  color: gray;
+}
+P{
   font-size: xx-small;
   color: gray;
 }
