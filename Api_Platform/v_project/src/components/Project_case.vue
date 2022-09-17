@@ -127,14 +127,17 @@
       <div v-if="right_configure">
 
         <el-button size="mini" type="primary" @click="save_configure">Save</el-button>
-        &#12288 <span>ID: {{ setting_configure.id }}</span>
-        &#12288 <span>运行方式：</span>
+        <el-button size="mini" type="text" @click="up_configure">up</el-button>
+        <el-button size="mini" type="text" @click="down_configure">down</el-button>
+        &#12288 <span style="float:right;">配置ID: {{ setting_configure.id }}</span>
+        <br>
+        &#12288 <span>执行时机：</span>
         <el-select v-model="setting_configure.do_time" placeholder="请选择" style="width: 90px">
           <el-option label="before" value="before"></el-option>
           <el-option label="after" value="after"></el-option>
         </el-select>
         &#12288 <span>配置名称：</span>
-        <el-input style="width:-webkit-calc(100% - 450px)" v-model="setting_configure.label"></el-input>
+        <el-input style="width:-webkit-calc(100% - 299px)" v-model="setting_configure.label"></el-input>
         <br><br>
         <el-tabs v-model="setting_configure.method" @tab-click="choose_configure_method" tab-position="left" style="height: 100%">
 <!--          <el-tab-pane label="仅运行">-->
@@ -340,6 +343,22 @@ export default {
 
   },
   methods: {
+
+    up_configure(){
+      axios.get('http://localhost:8000/up_configure/',{
+        params:{
+          configure_id:this.setting_configure.id,
+          project_id:this.project_id,
+        }
+      }).then(res=>{
+        this.apis=res.data
+
+      })
+
+    },
+    down_configure(){
+
+    },
     // get_label(label){
     //   if (label.length>12){
     //     var new_label = label.substring(0,12) + '...'

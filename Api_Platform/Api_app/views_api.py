@@ -73,7 +73,8 @@ def add_configure(request):
     api = DB_apis.objects.filter(id=id)[0]
     children = eval(api.children)
     cid = int(children[-1]['id'].split('_')[1]) + 1 if children else 1
-    children.append({"do_time": "after", "type": "configure", "label": "新配置", "method": "", "select": "", "value": "", "id": "%d_%d" % (int(id), cid)})
+    children.append({"do_time": "after", "type": "configure", "label": "新配置", "method": "", "select": "", "value": "",
+                     "id": "%d_%d" % (int(id), cid)})
     api.children = str(children)
     api.save()
     return get_apis(request)
@@ -96,3 +97,9 @@ def save_configure(request):
     return HttpResponse('')
 
 
+def up_configure(request):
+    ...
+
+
+def down_configure(request):
+    ...

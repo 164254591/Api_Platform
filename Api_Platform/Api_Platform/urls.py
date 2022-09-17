@@ -36,6 +36,9 @@ urlpatterns = [
     path('remove_ac/', remove_ac),
     path('add_configure/', add_configure),
     path('save_configure/', save_configure),
+    path('up_configure/', up_configure),
+    path('down_configure/', down_configure),
+
 
 
 
