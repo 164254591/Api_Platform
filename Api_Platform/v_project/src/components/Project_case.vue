@@ -136,11 +136,11 @@
         &#12288 <span>配置名称：</span>
         <el-input style="width:-webkit-calc(100% - 450px)" v-model="setting_configure.label"></el-input>
         <br><br>
-        <el-tabs @tab-click="choose_configure_method" tab-position="left" style="height: 100%">
+        <el-tabs v-model="setting_configure.method" @tab-click="choose_configure_method" tab-position="left" style="height: 100%">
 <!--          <el-tab-pane label="仅运行">-->
 <!--            <span class="smallfont">帮助：选中此项后，其他配置不再运行！</span>-->
 <!--          </el-tab-pane>-->
-          <el-tab-pane label="断言">
+          <el-tab-pane name="断言" label="断言">
             <el-select v-model="setting_configure.select" style="width: 120px">
               <el-option label="全值检索" value="全值检索"></el-option>
               <el-option label="正则匹配" value="正则匹配"></el-option>
@@ -162,7 +162,7 @@
             <p>&#12288;sql断言：select name from 表 where name='zhangsan'; (结果是否为0)</p>
 
           </el-tab-pane>
-          <el-tab-pane label="提取">
+          <el-tab-pane name="提取" label="提取">
             <el-select v-model="setting_configure.select" style="width: 120px">
               <el-option label="路径提取" value="路径提取"></el-option>
               <el-option label="正则提取" value="正则提取"></el-option>
@@ -176,13 +176,13 @@
             <p>3.sql提取：用户写变量名=sql select 查询语句 ，还要加下标。（默认0）</p>
 
           </el-tab-pane>
-          <el-tab-pane label="SQL增删改">
+          <el-tab-pane name="SQL增删改" label="SQL增删改">
             <el-input type="textarea" :rows="5" v-model="setting_configure.value" placeholder="请输入需要执行的sql语句"></el-input>
             <br>
             <p>帮助：</p>
             <p>一般用来执行某个特殊的需求，如修改、增加、删除等。用户手写sql语句即可，没有返回结果</p>
           </el-tab-pane>
-          <el-tab-pane label="随机变量">
+          <el-tab-pane name="随机变量" label="随机变量">
             <el-input v-model="setting_configure.value" placeholder="请按照下面要求，输入表达式" ></el-input>
             <br>
             <p>帮助：</p>
@@ -195,7 +195,7 @@
             <p></p>
 
           </el-tab-pane>
-          <el-tab-pane label="mock">
+          <el-tab-pane name="mock" label="mock">
             <el-select v-model="setting_configure.select" style="width: 120px">
               <el-option label="写死返回值" value="写死返回值"></el-option>
               <el-option label="第三方接口" value="第三方接口"></el-option>
@@ -206,7 +206,7 @@
             <p>1.选择写死返回值，可直接粘贴返回值到上面的多行文本框，点击保存即可</p>
             <p>2.第三方接口，请依次每行输入：url、header字典、请求体、</p>
           </el-tab-pane>
-          <el-tab-pane label="插入参数">
+          <el-tab-pane name="插入参数" label="插入参数">
             <el-select v-model="setting_configure.select" style="width: 150px">
               <el-option label="request_header" value="request_header"></el-option>
               <el-option label="params" value="params"></el-option>
@@ -217,7 +217,7 @@
             <p>帮助：</p>
             <p>比如：a=55</p>
           </el-tab-pane>
-          <el-tab-pane label="加密参数">
+          <el-tab-pane name="加密参数" label="加密参数">
              <el-select v-model="setting_configure.select" style="width: 150px" placeholder="插入位置">
               <el-option label="request_header" value="request_header"></el-option>
               <el-option label="params" value="params"></el-option>
@@ -227,7 +227,7 @@
             <p>帮助：</p>
             <p>例如：sign = python能执行的加密算法， 其中可以使用接口的全部位置的参数,函数(md5,shar1)</p>
           </el-tab-pane>
-          <el-tab-pane label="草稿">
+          <el-tab-pane name="草稿" label="草稿">
             <el-input type="textarea" :rows="10" placeholder="请随意使用该文本框"></el-input>
             <p>帮助：临时存放粘贴数据</p>
           </el-tab-pane>
@@ -428,6 +428,13 @@ export default {
 
     },
     save_configure(){
+      axios.post('http://localhost:8000/save_configure/',this.setting_configure).then(res=>{
+        this.$message({
+          message:'保存成功！',
+          type:'success'
+        })
+
+      })
 
     },
     save_api(){
@@ -442,10 +449,13 @@ export default {
     report(){
 
     },
+
+    // 选择配置的方法，切换配置tab页时清空之前选择的方式、值
     choose_configure_method(tab,event){
       console.log(tab,event)
+      this.setting_configure.select=''
+      this.setting_configure.value=''
       this.setting_configure.method=tab.label;
-
     },
 
 

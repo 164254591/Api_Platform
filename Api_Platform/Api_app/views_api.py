@@ -67,13 +67,32 @@ def remove_ac(request):
     return get_apis(request)
 
 
+# 增加配置
 def add_configure(request):
     id = request.GET['id']  # 一定是接口的id
     api = DB_apis.objects.filter(id=id)[0]
     children = eval(api.children)
     cid = int(children[-1]['id'].split('_')[1]) + 1 if children else 1
-    children.append({"do_time": "after", "type": "configure", "label": "新配置", "method": "", "select": "", "value": "",
-                     "id": "%d_%d" % (int(id), cid)})
+    children.append({"do_time": "after", "type": "configure", "label": "新配置", "method": "", "select": "", "value": "", "id": "%d_%d" % (int(id), cid)})
     api.children = str(children)
     api.save()
     return get_apis(request)
+
+
+# 保存配置
+def save_configure(request):
+    configure = json.loads(request.body.decode('utf-8'))
+    api_id = configure['id'].split('_')[0]
+    api = DB_apis.objects.filter(id=api_id)[0]
+    children = eval(api.children)
+    for i in range(len(children)):
+        if children[i]['id'] == configure['id']:
+            children[i] = configure
+            break
+    else:
+        children.append(configure)
+    api.children = str(children)
+    api.save()
+    return HttpResponse('')
+
+
