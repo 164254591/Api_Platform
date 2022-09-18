@@ -352,12 +352,17 @@ export default {
         }
       }).then(res=>{
         this.apis=res.data
-
       })
-
     },
     down_configure(){
-
+      axios.get('http://localhost:8000/down_configure/',{
+        params:{
+          configure_id:this.setting_configure.id,
+          project_id:this.project_id,
+        }
+      }).then(res=>{
+        this.apis=res.data
+      })
     },
     // get_label(label){
     //   if (label.length>12){

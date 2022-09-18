@@ -15252,3 +15252,1129 @@ AttributeError: 'QuerySet' object has no attribute 'children'
 [2022-09-17 21:44:26,244][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
 [2022-09-17 21:50:38,406][INFO]D:\Git\dlz\Api_Platform\Api_Platform\urls.py changed, reloading.
 [2022-09-17 21:50:39,039][INFO]Watching for file changes with StatReloader
+[2022-09-18 09:51:26,538][INFO]Watching for file changes with StatReloader
+[2022-09-18 09:52:59,432][INFO]"GET / HTTP/1.1" 200 4830
+[2022-09-18 09:53:05,092][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-18 09:53:05,094][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:53:08,434][INFO]"GET /get_project_list/ HTTP/1.1" 200 1212
+[2022-09-18 09:53:09,915][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-09-18 09:53:09,932][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 525
+[2022-09-18 09:53:09,933][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-09-18 09:53:14,782][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:53:15,504][ERROR]Internal Server Error: /up_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view Api_app.views_api.up_configure didn't return an HttpResponse object. It returned None instead.
+[2022-09-18 09:53:15,504][ERROR]"GET /up_configure/?configure_id=44_1&project_id=68 HTTP/1.1" 500 64967
+[2022-09-18 09:53:18,818][INFO]"GET /add_configure/?project_id=68&id=44 HTTP/1.1" 200 654
+[2022-09-18 09:53:24,792][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:53:35,722][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:53:45,728][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:53:55,716][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:54:05,730][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:54:15,731][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:54:25,733][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:54:35,728][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:54:45,728][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:54:55,731][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:55:05,735][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:55:15,721][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:55:25,735][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:55:35,732][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:55:45,728][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:55:55,717][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:56:05,721][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:56:15,733][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:56:25,730][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:56:35,730][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:56:45,727][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:56:55,727][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:57:05,723][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:57:15,737][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:57:25,723][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:57:35,714][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:57:45,726][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:57:55,722][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:58:05,717][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:58:15,722][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:58:25,726][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:58:52,715][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 09:59:52,715][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:00:52,725][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:01:52,726][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:02:52,727][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:03:09,661][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:03:10,224][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:03:41,450][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:03:41,881][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:03:53,033][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:04:52,713][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:05:52,728][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:06:22,166][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:06:22,723][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:07:34,403][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:07:34,926][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:11:05,753][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:11:06,173][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:11:19,225][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:11:20,590][ERROR]Internal Server Error: /up_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 102, in up_configure
+    api = DB_apis.objects.filter(id=configure_id.split('_'[0]))[0]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1416, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1438, in _add_q
+    split_subq=split_subq, check_filterable=check_filterable,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1370, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1216, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1827, in get_prep_value
+    ) from e
+TypeError: Field 'id' expected a number but got ['44', '1'].
+[2022-09-18 10:11:20,593][ERROR]"GET /up_configure/?configure_id=44_1&project_id=68 HTTP/1.1" 500 121935
+[2022-09-18 10:11:21,230][ERROR]Internal Server Error: /up_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 102, in up_configure
+    api = DB_apis.objects.filter(id=configure_id.split('_'[0]))[0]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1416, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1438, in _add_q
+    split_subq=split_subq, check_filterable=check_filterable,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1370, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1216, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1827, in get_prep_value
+    ) from e
+TypeError: Field 'id' expected a number but got ['44', '1'].
+[2022-09-18 10:11:21,231][ERROR]"GET /up_configure/?configure_id=44_1&project_id=68 HTTP/1.1" 500 121935
+[2022-09-18 10:11:21,434][ERROR]Internal Server Error: /up_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 102, in up_configure
+    api = DB_apis.objects.filter(id=configure_id.split('_'[0]))[0]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1416, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1438, in _add_q
+    split_subq=split_subq, check_filterable=check_filterable,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1370, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1216, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1827, in get_prep_value
+    ) from e
+TypeError: Field 'id' expected a number but got ['44', '1'].
+[2022-09-18 10:11:21,435][ERROR]"GET /up_configure/?configure_id=44_1&project_id=68 HTTP/1.1" 500 121935
+[2022-09-18 10:11:24,629][ERROR]Internal Server Error: /up_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 102, in up_configure
+    api = DB_apis.objects.filter(id=configure_id.split('_'[0]))[0]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1416, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1438, in _add_q
+    split_subq=split_subq, check_filterable=check_filterable,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1370, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1216, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1827, in get_prep_value
+    ) from e
+TypeError: Field 'id' expected a number but got ['44', '2'].
+[2022-09-18 10:11:24,630][ERROR]"GET /up_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 500 121935
+[2022-09-18 10:11:24,781][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:11:25,264][ERROR]Internal Server Error: /up_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 102, in up_configure
+    api = DB_apis.objects.filter(id=configure_id.split('_'[0]))[0]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1416, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1438, in _add_q
+    split_subq=split_subq, check_filterable=check_filterable,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1370, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1216, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1827, in get_prep_value
+    ) from e
+TypeError: Field 'id' expected a number but got ['44', '2'].
+[2022-09-18 10:11:25,265][ERROR]"GET /up_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 500 121935
+[2022-09-18 10:11:25,470][ERROR]Internal Server Error: /up_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 102, in up_configure
+    api = DB_apis.objects.filter(id=configure_id.split('_'[0]))[0]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1416, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1438, in _add_q
+    split_subq=split_subq, check_filterable=check_filterable,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1370, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1216, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1827, in get_prep_value
+    ) from e
+TypeError: Field 'id' expected a number but got ['44', '2'].
+[2022-09-18 10:11:25,471][ERROR]"GET /up_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 500 121935
+[2022-09-18 10:11:25,838][ERROR]Internal Server Error: /up_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 102, in up_configure
+    api = DB_apis.objects.filter(id=configure_id.split('_'[0]))[0]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1416, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1438, in _add_q
+    split_subq=split_subq, check_filterable=check_filterable,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1370, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1216, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1827, in get_prep_value
+    ) from e
+TypeError: Field 'id' expected a number but got ['44', '2'].
+[2022-09-18 10:11:25,839][ERROR]"GET /up_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 500 121935
+[2022-09-18 10:11:26,015][ERROR]Internal Server Error: /up_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 102, in up_configure
+    api = DB_apis.objects.filter(id=configure_id.split('_'[0]))[0]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1416, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1438, in _add_q
+    split_subq=split_subq, check_filterable=check_filterable,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1370, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1216, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1827, in get_prep_value
+    ) from e
+TypeError: Field 'id' expected a number but got ['44', '2'].
+[2022-09-18 10:11:26,016][ERROR]"GET /up_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 500 121935
+[2022-09-18 10:11:35,717][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:11:45,730][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:11:55,713][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:12:05,727][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:12:15,734][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:12:25,727][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:12:35,730][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:12:45,718][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:12:52,199][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:12:52,767][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:12:53,737][ERROR]Internal Server Error: /up_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1823, in get_prep_value
+    return int(value)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 103, in up_configure
+    api = DB_apis.objects.filter(id=configure_id.split('_'[0]))[0]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1416, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1438, in _add_q
+    split_subq=split_subq, check_filterable=check_filterable,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1370, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\sql\query.py", line 1216, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\db\models\fields\__init__.py", line 1827, in get_prep_value
+    ) from e
+TypeError: Field 'id' expected a number but got ['44', '2'].
+[2022-09-18 10:12:53,739][ERROR]"GET /up_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 500 121923
+[2022-09-18 10:12:54,775][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:13:05,729][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:13:15,724][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:13:25,728][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:13:35,733][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:13:45,726][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:13:55,721][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:13:56,467][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:13:56,911][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:13:59,348][INFO]"GET /up_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 200 654
+[2022-09-18 10:14:03,688][INFO]"GET /up_configure/?configure_id=44_1&project_id=68 HTTP/1.1" 200 654
+[2022-09-18 10:14:04,360][INFO]"GET /up_configure/?configure_id=44_1&project_id=68 HTTP/1.1" 200 654
+[2022-09-18 10:14:04,680][INFO]"GET /up_configure/?configure_id=44_1&project_id=68 HTTP/1.1" 200 654
+[2022-09-18 10:14:04,776][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:14:04,872][INFO]"GET /up_configure/?configure_id=44_1&project_id=68 HTTP/1.1" 200 654
+[2022-09-18 10:14:05,033][INFO]"GET /up_configure/?configure_id=44_1&project_id=68 HTTP/1.1" 200 654
+[2022-09-18 10:14:14,782][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:14:19,510][INFO]"OPTIONS /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:14:19,517][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:14:22,607][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:14:24,779][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:14:27,718][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:14:34,789][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:14:44,795][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:14:54,788][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:15:04,790][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:15:14,797][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:15:24,552][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:15:24,555][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-09-18 10:15:24,779][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:15:28,005][INFO]"GET /down_configure/?configure_id=44_1&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:15:33,302][INFO]"GET /down_configure/?configure_id=44_4&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:15:34,781][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:15:36,457][INFO]"GET /up_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:15:44,784][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:15:52,609][INFO]"GET /up_configure/?configure_id=44_4&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:15:54,780][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:16:04,796][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:16:14,782][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:16:24,782][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:16:34,788][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:16:44,781][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:16:54,795][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:17:04,797][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:17:14,797][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:17:24,788][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:17:34,792][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:17:44,784][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:17:54,793][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:18:04,783][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:18:14,789][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:18:24,786][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:18:34,791][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:18:44,775][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:18:48,189][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:18:48,191][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-09-18 10:18:51,648][INFO]"GET /up_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:18:51,870][INFO]"GET /up_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:18:52,544][INFO]"GET /down_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:18:52,975][INFO]"GET /down_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:18:54,782][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:18:56,308][INFO]"GET /down_configure/?configure_id=44_3&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:18:59,576][INFO]"GET /down_configure/?configure_id=44_3&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:19:02,012][INFO]"GET /up_configure/?configure_id=44_3&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:19:02,765][INFO]"GET /up_configure/?configure_id=44_3&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:19:03,397][INFO]"GET /up_configure/?configure_id=44_3&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:19:04,015][INFO]"GET /up_configure/?configure_id=44_3&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:19:04,640][INFO]"GET /up_configure/?configure_id=44_3&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:19:04,775][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:19:05,866][INFO]"GET /down_configure/?configure_id=44_3&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:19:14,100][INFO]"GET /down_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:19:14,783][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:19:18,298][INFO]"GET /down_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:19:24,793][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:19:34,794][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:19:44,790][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:19:47,881][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:19:48,316][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:19:49,761][INFO]"GET /down_configure/?configure_id=44_3&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:19:50,418][INFO]"GET /down_configure/?configure_id=44_3&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:19:50,923][INFO]"GET /down_configure/?configure_id=44_3&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:19:51,452][INFO]"GET /down_configure/?configure_id=44_3&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:19:51,876][INFO]"GET /down_configure/?configure_id=44_3&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:19:54,214][INFO]"GET /up_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:19:54,776][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:19:55,528][INFO]"GET /down_configure/?configure_id=44_2&project_id=68 HTTP/1.1" 200 609
+[2022-09-18 10:20:01,036][INFO]"GET /add_apis/?project_id=68 HTTP/1.1" 200 701
+[2022-09-18 10:20:03,506][INFO]"GET /add_configure/?project_id=68&id=45 HTTP/1.1" 200 828
+[2022-09-18 10:20:04,800][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:20:04,980][INFO]"GET /add_configure/?project_id=68&id=45 HTTP/1.1" 200 957
+[2022-09-18 10:20:08,143][INFO]"GET /down_configure/?configure_id=45_1&project_id=68 HTTP/1.1" 200 957
+[2022-09-18 10:20:09,178][INFO]"GET /up_configure/?configure_id=45_1&project_id=68 HTTP/1.1" 200 957
+[2022-09-18 10:20:14,111][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:20:14,780][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:20:17,925][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:20:20,360][INFO]"GET /down_configure/?configure_id=45_2&project_id=68 HTTP/1.1" 200 963
+[2022-09-18 10:20:21,353][INFO]"GET /down_configure/?configure_id=45_2&project_id=68 HTTP/1.1" 200 963
+[2022-09-18 10:20:22,121][INFO]"GET /up_configure/?configure_id=45_2&project_id=68 HTTP/1.1" 200 963
+[2022-09-18 10:20:24,358][INFO]"GET /up_configure/?configure_id=45_2&project_id=68 HTTP/1.1" 200 963
+[2022-09-18 10:20:24,781][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:20:25,174][INFO]"GET /down_configure/?configure_id=45_2&project_id=68 HTTP/1.1" 200 963
+[2022-09-18 10:20:26,304][INFO]"GET /down_configure/?configure_id=45_2&project_id=68 HTTP/1.1" 200 963
+[2022-09-18 10:20:33,297][INFO]"GET /add_configure/?project_id=68&id=45 HTTP/1.1" 200 1092
+[2022-09-18 10:20:33,994][INFO]"GET /add_configure/?project_id=68&id=45 HTTP/1.1" 200 1221
+[2022-09-18 10:20:34,774][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:20:41,619][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:20:44,463][INFO]"GET /down_configure/?configure_id=45_3&project_id=68 HTTP/1.1" 200 1224
+[2022-09-18 10:20:44,777][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:20:45,688][INFO]"GET /up_configure/?configure_id=45_3&project_id=68 HTTP/1.1" 200 1224
+[2022-09-18 10:20:47,234][INFO]"GET /up_configure/?configure_id=45_3&project_id=68 HTTP/1.1" 200 1224
+[2022-09-18 10:20:54,784][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:20:58,610][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1224
+[2022-09-18 10:20:58,612][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-09-18 10:21:00,756][INFO]"GET /add_configure/?project_id=68&id=45 HTTP/1.1" 200 1353
+[2022-09-18 10:21:04,789][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:21:08,711][INFO]"GET /add_configure/?project_id=68&id=45 HTTP/1.1" 200 1482
+[2022-09-18 10:21:14,778][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:21:15,108][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:21:18,867][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:21:23,006][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:21:24,795][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:21:24,947][INFO]"GET /down_configure/?configure_id=45_3&project_id=68 HTTP/1.1" 200 1436
+[2022-09-18 10:21:25,708][INFO]"GET /down_configure/?configure_id=45_3&project_id=68 HTTP/1.1" 200 1436
+[2022-09-18 10:21:26,420][INFO]"GET /down_configure/?configure_id=45_3&project_id=68 HTTP/1.1" 200 1436
+[2022-09-18 10:21:26,974][INFO]"GET /down_configure/?configure_id=45_3&project_id=68 HTTP/1.1" 200 1436
+[2022-09-18 10:21:27,526][INFO]"GET /down_configure/?configure_id=45_3&project_id=68 HTTP/1.1" 200 1436
+[2022-09-18 10:21:28,775][INFO]"GET /up_configure/?configure_id=45_3&project_id=68 HTTP/1.1" 200 1436
+[2022-09-18 10:21:29,304][INFO]"GET /up_configure/?configure_id=45_3&project_id=68 HTTP/1.1" 200 1436
+[2022-09-18 10:21:29,544][INFO]"GET /up_configure/?configure_id=45_3&project_id=68 HTTP/1.1" 200 1436
+[2022-09-18 10:21:29,704][INFO]"GET /up_configure/?configure_id=45_3&project_id=68 HTTP/1.1" 200 1436
+[2022-09-18 10:21:29,865][INFO]"GET /up_configure/?configure_id=45_3&project_id=68 HTTP/1.1" 200 1436
+[2022-09-18 10:21:30,041][INFO]"GET /up_configure/?configure_id=45_3&project_id=68 HTTP/1.1" 200 1436
+[2022-09-18 10:21:30,394][INFO]"GET /up_configure/?configure_id=45_3&project_id=68 HTTP/1.1" 200 1436
+[2022-09-18 10:21:34,584][INFO]"GET /down_configure/?configure_id=44_1&project_id=68 HTTP/1.1" 200 1436
+[2022-09-18 10:21:34,783][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:21:37,092][INFO]"GET /add_apis/?project_id=68 HTTP/1.1" 200 1528
+[2022-09-18 10:21:39,814][INFO]"GET /add_configure/?project_id=68&id=46 HTTP/1.1" 200 1655
+[2022-09-18 10:21:41,233][INFO]"GET /add_configure/?project_id=68&id=46 HTTP/1.1" 200 1784
+[2022-09-18 10:21:44,777][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:21:45,243][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:21:46,374][INFO]"GET /up_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1788
+[2022-09-18 10:21:54,779][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:21:56,821][INFO]"GET /add_configure/?project_id=68&id=46 HTTP/1.1" 200 1917
+[2022-09-18 10:22:01,465][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:22:04,778][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:22:05,421][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:22:08,033][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:08,945][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:09,756][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:12,102][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:13,095][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:13,656][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:13,834][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:13,977][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:14,266][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:14,570][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:14,781][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:22:15,003][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:17,241][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:17,858][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:18,452][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:19,059][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:19,484][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:22,575][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:23,186][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:23,809][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:24,258][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:24,529][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:24,707][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:24,775][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:22:24,884][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:25,060][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:22:34,794][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:22:44,788][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:22:54,785][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:23:04,793][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:23:14,780][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:23:24,794][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:23:34,785][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:23:42,619][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:43,420][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:43,875][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:44,084][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:44,259][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:44,782][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:23:46,607][INFO]"GET /down_configure/?configure_id=46_1&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:47,105][INFO]"GET /down_configure/?configure_id=46_1&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:47,535][INFO]"GET /down_configure/?configure_id=46_1&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:47,906][INFO]"GET /down_configure/?configure_id=46_1&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:48,113][INFO]"GET /down_configure/?configure_id=46_1&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:48,306][INFO]"GET /down_configure/?configure_id=46_1&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:48,497][INFO]"GET /down_configure/?configure_id=46_1&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:48,665][INFO]"GET /down_configure/?configure_id=46_1&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:48,842][INFO]"GET /down_configure/?configure_id=46_1&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:49,001][INFO]"GET /down_configure/?configure_id=46_1&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:49,162][INFO]"GET /down_configure/?configure_id=46_1&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:51,229][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:51,885][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:52,608][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:53,087][INFO]"GET /down_configure/?configure_id=46_2&project_id=68 HTTP/1.1" 200 1917
+[2022-09-18 10:23:54,786][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:24:04,789][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:24:09,078][INFO]"GET /remove_ac?project_id=68&id=46_2 HTTP/1.1" 301 0
+[2022-09-18 10:24:09,086][INFO]"GET /remove_ac/?project_id=68&id=46_2 HTTP/1.1" 200 1786
+[2022-09-18 10:24:12,721][INFO]"GET /add_configure/?project_id=68&id=46 HTTP/1.1" 200 1915
+[2022-09-18 10:24:14,785][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:24:24,791][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:24:32,684][INFO]"GET /remove_ac?project_id=68&id=46 HTTP/1.1" 301 0
+[2022-09-18 10:24:32,694][INFO]"GET /remove_ac/?project_id=68&id=46 HTTP/1.1" 200 1436
+[2022-09-18 10:24:34,788][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:24:34,914][INFO]"GET /add_apis/?project_id=68 HTTP/1.1" 200 1528
+[2022-09-18 10:24:37,882][INFO]"GET /add_configure/?project_id=68&id=47 HTTP/1.1" 200 1655
+[2022-09-18 10:24:39,949][INFO]"GET /add_configure/?project_id=68&id=47 HTTP/1.1" 200 1784
+[2022-09-18 10:24:42,079][INFO]"GET /add_configure/?project_id=68&id=47 HTTP/1.1" 200 1913
+[2022-09-18 10:24:44,780][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:24:45,465][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:24:49,911][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:24:53,693][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:24:54,780][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:24:57,184][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:25:00,550][INFO]"GET /down_configure/?configure_id=47_1&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:01,320][INFO]"GET /down_configure/?configure_id=47_1&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:01,887][INFO]"GET /down_configure/?configure_id=47_1&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:02,408][INFO]"GET /down_configure/?configure_id=47_1&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:02,815][INFO]"GET /down_configure/?configure_id=47_1&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:04,785][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:25:05,371][INFO]"GET /up_configure/?configure_id=47_3&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:05,804][INFO]"GET /up_configure/?configure_id=47_3&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:06,277][INFO]"GET /up_configure/?configure_id=47_3&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:06,598][INFO]"GET /up_configure/?configure_id=47_3&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:07,181][INFO]"GET /up_configure/?configure_id=47_3&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:07,438][INFO]"GET /up_configure/?configure_id=47_3&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:09,474][INFO]"GET /up_configure/?configure_id=47_2&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:10,169][INFO]"GET /up_configure/?configure_id=47_2&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:10,988][INFO]"GET /down_configure/?configure_id=47_2&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:11,700][INFO]"GET /down_configure/?configure_id=47_2&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:12,324][INFO]"GET /down_configure/?configure_id=47_2&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:12,726][INFO]"GET /down_configure/?configure_id=47_2&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:12,981][INFO]"GET /down_configure/?configure_id=47_2&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:13,190][INFO]"GET /down_configure/?configure_id=47_2&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:13,936][INFO]"GET /up_configure/?configure_id=47_2&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:14,143][INFO]"GET /up_configure/?configure_id=47_2&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:14,306][INFO]"GET /up_configure/?configure_id=47_2&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:14,496][INFO]"GET /up_configure/?configure_id=47_2&project_id=68 HTTP/1.1" 200 1916
+[2022-09-18 10:25:14,778][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:25:18,605][INFO]"GET /add_configure/?project_id=68&id=47 HTTP/1.1" 200 2045
+[2022-09-18 10:25:24,797][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:25:34,789][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:25:44,789][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:25:54,792][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:26:04,789][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:26:14,789][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:26:24,798][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:26:34,789][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:26:44,785][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:26:54,789][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:27:04,781][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:27:14,783][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:27:24,779][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:27:34,790][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:27:44,796][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:27:54,781][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:28:04,782][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:28:14,784][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:28:24,798][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:28:34,798][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:28:44,795][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:28:54,797][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:29:04,792][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:29:14,794][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:29:20,031][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:29:20,461][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:29:21,780][INFO]"GET /add_configure/?project_id=68&id=47 HTTP/1.1" 200 2174
+[2022-09-18 10:29:24,778][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:29:34,795][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:29:44,791][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:29:54,792][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:30:04,776][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:30:14,788][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:30:24,787][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:30:34,776][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:30:44,792][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:30:54,786][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:31:04,782][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:31:14,785][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:31:24,784][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:31:34,782][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:31:44,454][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:31:45,031][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:31:45,349][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:31:55,719][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:32:05,724][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:32:15,726][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:32:25,726][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:32:35,724][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:32:45,727][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:32:55,726][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:33:05,731][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:33:15,728][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:33:25,714][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:33:35,729][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:33:43,504][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:33:44,012][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:33:45,176][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:33:46,664][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 77, in add_configure
+    for i in range(children):
+TypeError: 'list' object cannot be interpreted as an integer
+[2022-09-18 10:33:46,664][ERROR]"GET /add_configure/?project_id=68&id=47 HTTP/1.1" 500 65961
+[2022-09-18 10:33:54,785][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:34:04,790][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:34:14,785][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:34:20,043][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:34:20,469][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:34:24,635][INFO]"GET /remove_ac?project_id=68&id=47_3 HTTP/1.1" 301 0
+[2022-09-18 10:34:24,644][INFO]"GET /remove_ac/?project_id=68&id=47_3 HTTP/1.1" 200 2044
+[2022-09-18 10:34:24,774][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:34:32,058][INFO]"GET /remove_ac/?project_id=68&id=47_3 HTTP/1.1" 200 1915
+[2022-09-18 10:34:34,794][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:34:41,312][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 79, in add_configure
+    max = seq.sort()[-1]
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:34:41,313][ERROR]"GET /add_configure/?project_id=68&id=47 HTTP/1.1" 500 65636
+[2022-09-18 10:34:44,788][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:34:54,786][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:34:59,579][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:35:00,021][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:35:00,672][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 79, in add_configure
+    max = (seq.sort())[-1]
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:35:00,673][ERROR]"GET /add_configure/?project_id=68&id=47 HTTP/1.1" 500 65640
+[2022-09-18 10:35:02,038][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 79, in add_configure
+    max = (seq.sort())[-1]
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:35:02,039][ERROR]"GET /add_configure/?project_id=68&id=47 HTTP/1.1" 500 65640
+[2022-09-18 10:35:04,788][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:35:14,787][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:35:21,667][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:35:22,132][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:35:26,021][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:35:35,732][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:35:45,726][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:35:55,722][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:36:05,715][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:36:13,431][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:36:13,888][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:36:15,087][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:36:15,524][INFO]"GET /add_configure/?project_id=68&id=47 HTTP/1.1" 200 2044
+[2022-09-18 10:36:18,409][INFO]"GET /add_configure/?project_id=68&id=47 HTTP/1.1" 200 2173
+[2022-09-18 10:36:24,776][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:36:31,665][INFO]"GET /remove_ac?project_id=68&id=47 HTTP/1.1" 301 0
+[2022-09-18 10:36:31,675][INFO]"GET /remove_ac/?project_id=68&id=47 HTTP/1.1" 200 1436
+[2022-09-18 10:36:32,573][INFO]"GET /add_apis/?project_id=68 HTTP/1.1" 200 1528
+[2022-09-18 10:36:33,364][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 79, in add_configure
+    max = sorted(seq)[-1]
+IndexError: list index out of range
+[2022-09-18 10:36:33,364][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 64524
+[2022-09-18 10:36:34,791][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:36:34,868][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 79, in add_configure
+    max = sorted(seq)[-1]
+IndexError: list index out of range
+[2022-09-18 10:36:34,869][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 64524
+[2022-09-18 10:36:35,614][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 79, in add_configure
+    max = sorted(seq)[-1]
+IndexError: list index out of range
+[2022-09-18 10:36:35,614][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 64524
+[2022-09-18 10:36:44,793][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:36:54,792][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:37:04,792][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:37:14,786][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:37:24,776][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:37:34,785][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:37:44,789][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:37:54,795][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:38:04,794][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:38:14,786][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:38:24,781][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:38:34,786][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:38:44,791][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:38:54,793][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:39:04,776][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:39:07,830][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:39:08,271][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:39:08,924][INFO]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 200 1655
+[2022-09-18 10:39:14,655][INFO]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 200 1784
+[2022-09-18 10:39:14,780][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:39:20,230][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:39:24,782][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:39:25,685][INFO]"GET /down_configure/?configure_id=48_2&project_id=68 HTTP/1.1" 200 1785
+[2022-09-18 10:39:26,774][INFO]"GET /up_configure/?configure_id=48_2&project_id=68 HTTP/1.1" 200 1785
+[2022-09-18 10:39:32,261][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-18 10:39:33,576][INFO]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 200 1915
+[2022-09-18 10:39:34,775][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:39:37,902][INFO]"GET /up_configure/?configure_id=48_3&project_id=68 HTTP/1.1" 200 1915
+[2022-09-18 10:39:42,053][INFO]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 200 2044
+[2022-09-18 10:39:44,782][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:39:48,828][INFO]"GET /remove_ac?project_id=68&id=48_4 HTTP/1.1" 301 0
+[2022-09-18 10:39:48,836][INFO]"GET /remove_ac/?project_id=68&id=48_4 HTTP/1.1" 200 1915
+[2022-09-18 10:39:50,053][INFO]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 200 2044
+[2022-09-18 10:39:54,790][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:39:59,923][INFO]"GET /remove_ac?project_id=68&id=48_3 HTTP/1.1" 301 0
+[2022-09-18 10:39:59,931][INFO]"GET /remove_ac/?project_id=68&id=48_3 HTTP/1.1" 200 1915
+[2022-09-18 10:40:02,517][INFO]"GET /up_configure/?configure_id=48_4&project_id=68 HTTP/1.1" 200 1915
+[2022-09-18 10:40:04,774][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:40:05,898][INFO]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 200 2044
+[2022-09-18 10:40:14,788][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:40:24,787][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:40:34,793][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:40:44,787][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:40:54,785][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:41:04,785][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:41:14,793][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:41:24,780][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:41:26,434][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:41:26,938][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:41:27,605][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int(seq.sort()[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:27,605][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65919
+[2022-09-18 10:41:28,357][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int(seq.sort()[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:28,358][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65919
+[2022-09-18 10:41:29,275][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int(seq.sort()[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:29,276][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65919
+[2022-09-18 10:41:29,871][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int(seq.sort()[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:29,871][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65919
+[2022-09-18 10:41:31,583][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int(seq.sort()[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:31,584][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65919
+[2022-09-18 10:41:32,072][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int(seq.sort()[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:32,072][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65919
+[2022-09-18 10:41:32,559][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int(seq.sort()[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:32,559][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65919
+[2022-09-18 10:41:32,753][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int(seq.sort()[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:32,754][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65919
+[2022-09-18 10:41:32,930][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int(seq.sort()[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:32,931][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65919
+[2022-09-18 10:41:33,073][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int(seq.sort()[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:33,074][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65919
+[2022-09-18 10:41:33,202][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int(seq.sort()[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:33,203][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65919
+[2022-09-18 10:41:33,377][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int(seq.sort()[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:33,378][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65919
+[2022-09-18 10:41:33,569][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int(seq.sort()[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:33,570][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65919
+[2022-09-18 10:41:33,763][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int(seq.sort()[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:33,764][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65919
+[2022-09-18 10:41:34,178][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int(seq.sort()[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:34,179][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65919
+[2022-09-18 10:41:34,794][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:41:44,788][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:41:54,783][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:41:59,287][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:41:59,705][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:41:59,884][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int((seq.sort())[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:41:59,885][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65923
+[2022-09-18 10:42:01,015][ERROR]Internal Server Error: /add_configure/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 81, in add_configure
+    cid = int((seq.sort())[-1].split('_')[1]) + 1
+TypeError: 'NoneType' object is not subscriptable
+[2022-09-18 10:42:01,016][ERROR]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 500 65923
+[2022-09-18 10:42:04,792][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:42:14,781][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:42:17,241][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:42:17,687][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:42:18,008][INFO]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 200 2173
+[2022-09-18 10:42:18,716][INFO]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 200 2302
+[2022-09-18 10:42:20,270][INFO]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 200 2431
+[2022-09-18 10:42:21,014][INFO]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 200 2560
+[2022-09-18 10:42:21,759][INFO]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 200 2690
+[2022-09-18 10:42:24,798][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:42:26,767][INFO]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 200 2820
+[2022-09-18 10:42:28,024][INFO]"GET /add_configure/?project_id=68&id=44 HTTP/1.1" 200 2949
+[2022-09-18 10:42:29,618][INFO]"GET /add_configure/?project_id=68&id=44 HTTP/1.1" 200 3078
+[2022-09-18 10:42:30,570][INFO]"GET /add_configure/?project_id=68&id=44 HTTP/1.1" 200 3207
+[2022-09-18 10:42:32,060][INFO]"GET /add_configure/?project_id=68&id=45 HTTP/1.1" 200 3336
+[2022-09-18 10:42:33,832][INFO]"GET /add_configure/?project_id=68&id=45 HTTP/1.1" 200 3465
+[2022-09-18 10:42:34,585][INFO]"GET /add_configure/?project_id=68&id=45 HTTP/1.1" 200 3594
+[2022-09-18 10:42:34,777][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:42:35,641][INFO]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 200 3724
+[2022-09-18 10:42:37,108][INFO]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 200 3854
+[2022-09-18 10:42:39,439][INFO]"GET /add_configure/?project_id=68&id=48 HTTP/1.1" 200 3984
+[2022-09-18 10:42:44,645][INFO]"GET /remove_ac?project_id=68&id=48 HTTP/1.1" 301 0
+[2022-09-18 10:42:44,656][INFO]"GET /remove_ac/?project_id=68&id=48 HTTP/1.1" 200 2210
+[2022-09-18 10:42:44,782][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:42:46,193][INFO]"GET /add_apis/?project_id=68 HTTP/1.1" 200 2302
+[2022-09-18 10:42:47,173][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 2429
+[2022-09-18 10:42:47,937][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 2558
+[2022-09-18 10:42:48,714][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 2687
+[2022-09-18 10:42:49,602][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 2816
+[2022-09-18 10:42:50,414][INFO]"GET /add_configure/?project_id=68&id=45 HTTP/1.1" 200 2946
+[2022-09-18 10:42:51,247][INFO]"GET /add_configure/?project_id=68&id=45 HTTP/1.1" 200 3076
+[2022-09-18 10:42:54,774][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-18 10:42:57,606][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 3076
+[2022-09-18 10:42:57,606][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-09-18 10:42:57,609][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-09-18 10:42:59,784][INFO]"GET /add_configure/?project_id=68&id=44 HTTP/1.1" 200 3205
+[2022-09-18 10:43:01,106][INFO]"GET /add_configure/?project_id=68&id=44 HTTP/1.1" 200 3334
+[2022-09-18 10:43:01,907][INFO]"GET /add_configure/?project_id=68&id=44 HTTP/1.1" 200 3464
+[2022-09-18 10:43:03,783][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 3593
+[2022-09-18 10:43:05,352][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 3722
+[2022-09-18 10:43:06,080][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 3851
+[2022-09-18 10:43:06,608][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 3980
+[2022-09-18 10:43:07,153][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 4109
+[2022-09-18 10:43:56,115][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:43:56,534][INFO]Watching for file changes with StatReloader
+[2022-09-18 10:43:57,731][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 4239
+[2022-09-18 10:43:58,009][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 4369
+[2022-09-18 10:43:58,691][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 4499
+[2022-09-18 10:43:59,325][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 4629
+[2022-09-18 10:43:59,676][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 4759
+[2022-09-18 10:44:00,270][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 4889
+[2022-09-18 10:44:00,591][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 5019
+[2022-09-18 10:44:00,989][INFO]"GET /add_configure/?project_id=68&id=49 HTTP/1.1" 200 5149
+[2022-09-18 10:44:05,422][INFO]"GET /remove_ac?project_id=68&id=49 HTTP/1.1" 301 0
+[2022-09-18 10:44:05,434][INFO]"GET /remove_ac/?project_id=68&id=49 HTTP/1.1" 200 2858
+[2022-09-18 10:44:07,102][INFO]"GET /add_configure/?project_id=68&id=45 HTTP/1.1" 200 2988
+[2022-09-18 10:44:10,635][INFO]"GET /remove_ac?project_id=68&id=45_8 HTTP/1.1" 301 0
+[2022-09-18 10:44:10,644][INFO]"GET /remove_ac/?project_id=68&id=45_8 HTTP/1.1" 200 2859
+[2022-09-18 10:44:12,487][INFO]"GET /remove_ac?project_id=68&id=45_7 HTTP/1.1" 301 0
+[2022-09-18 10:44:12,496][INFO]"GET /remove_ac/?project_id=68&id=45_7 HTTP/1.1" 200 2730
+[2022-09-18 10:44:13,278][INFO]"GET /add_configure/?project_id=68&id=45 HTTP/1.1" 200 2860
+[2022-09-18 10:47:02,077][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-18 10:47:02,516][INFO]Watching for file changes with StatReloader

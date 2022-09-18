@@ -72,7 +72,16 @@ def add_configure(request):
     id = request.GET['id']  # 一定是接口的id
     api = DB_apis.objects.filter(id=id)[0]
     children = eval(api.children)
-    cid = int(children[-1]['id'].split('_')[1]) + 1 if children else 1
+    # 因为排序后会将顺序打乱，新增时需要判断当前接口中最大配置id
+    if children:
+        seq = []
+        for i in range(len(children)):
+            seq.append(children[i]['id'])
+        max = sorted(seq)[-1]
+        cid = int(max.split('_')[1]) + 1
+    else:
+        cid = 1
+    # cid = int(children[-1]['id'].split('_')[1]) + 1 if children else 1
     children.append({"do_time": "after", "type": "configure", "label": "新配置", "method": "", "select": "", "value": "",
                      "id": "%d_%d" % (int(id), cid)})
     api.children = str(children)
@@ -97,9 +106,31 @@ def save_configure(request):
     return HttpResponse('')
 
 
+# 向上移动配置
 def up_configure(request):
-    ...
+    configure_id = request.GET['configure_id']
+    api = DB_apis.objects.filter(id=configure_id.split('_')[0])[0]
+    children = eval(api.children)
+    for i in range(len(children)):
+        if children[i]['id'] == configure_id:
+            if i > 0:
+                children[i], children[i - 1] = children[i - 1], children[i]
+                break
+    api.children = str(children)
+    api.save()
+    return get_apis(request)
 
 
+# 向下移动配置
 def down_configure(request):
-    ...
+    configure_id = request.GET['configure_id']
+    api = DB_apis.objects.filter(id=configure_id.split('_')[0])[0]
+    children = eval(api.children)
+    for i in range(len(children)):
+        if children[i]['id'] == configure_id:
+            if i < len(children) - 1:
+                children[i], children[i + 1] = children[i + 1], children[i]
+                break
+    api.children = str(children)
+    api.save()
+    return get_apis(request)
