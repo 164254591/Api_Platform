@@ -22,7 +22,7 @@
             </el-select>
             <el-input style="width: -webkit-calc(100% - 112px)" v-model="setting_api.path"></el-input>
           </el-form-item>
-          <el-tabs type="border-card">
+          <el-tabs type="border-card" v-model="choose_tab_pane">
             <el-tab-pane label="Params">
               <el-table
                   :data="setting_api.params"
@@ -179,11 +179,11 @@
                 </el-tab-pane>
               </el-tabs>
             </el-tab-pane>
-            <el-tab-pane label="Response">
+            <el-tab-pane name="Response" label="Response">
               <el-input v-model="response_data.R" type="textarea" style="height: 100%" :rows="6"></el-input>
             </el-tab-pane>
-            <el-tab-pane label="ResquestCode">
-              <el-input v-model="response_data.RC" type="textarea" style="height: 100%" :rows="6"></el-input>
+            <el-tab-pane label="ResponseData">
+              <el-input v-model="response_data.RD" type="textarea" style="height: 100%" :rows="6"></el-input>
             </el-tab-pane>
             <el-tab-pane label="ConfigureResult">
               <el-input v-model="response_data.CR" type="textarea" style="height: 100%" :rows="6"></el-input>
@@ -371,6 +371,7 @@ export default {
   name: "Project_case",
   data() {
     return {
+      choose_tab_pane:'',
       right_api: false,
       right_configure: false,
       doing_api: '添加好友',
@@ -387,7 +388,7 @@ export default {
       ],
       response_data:{
         R:'',  // Response
-        RC:'', // RequestCode
+        RD:'', // ResponseData
         CR:'', // ConfigureResult
       },
     }
@@ -578,7 +579,8 @@ export default {
           project_id:this.project_id,
         }
       }).then(res=>{
-        this.response_data=res.data
+        this.response_data=res.data;
+        this.choose_tab_pane='Response';
       })
 
     },

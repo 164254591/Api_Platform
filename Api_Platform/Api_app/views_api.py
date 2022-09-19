@@ -205,8 +205,9 @@ def save_api(request):
     return get_apis(request)
 
 
+# 发送接口请求
 def send_api(request):
     api = json.loads(request.body.decode('utf-8'))
     project_id = request.GET['project_id']
-    response_data = {}
+    response_data = {"R": "123", "RD": "456", "CR": "789"}
     return HttpResponse(json.dumps(response_data), content_type='application/json')
