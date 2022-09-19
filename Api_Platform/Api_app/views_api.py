@@ -20,6 +20,10 @@ def get_apis(request):
     apis = list(DB_apis.objects.filter(project_id=project_id).values())
     for i in apis:
         i['children'] = eval(i['children'])
+        i['params'] = eval(i['params'])
+        i['headers'] = eval(i['headers'])
+        i['payload_fd'] = eval(i['payload_fd'])
+        i['payload_xwfu'] = eval(i['payload_xwfu'])
     return HttpResponse(json.dumps(apis), content_type='application/json')
 
 
@@ -134,3 +138,75 @@ def down_configure(request):
     api.children = str(children)
     api.save()
     return get_apis(request)
+
+
+# 接口上移
+def up_api(request):
+    print('---' * 8)
+    api_id = int(request.GET['api_id'])
+    project_id = request.GET['project_id']
+    all_api = DB_apis.objects.filter(project_id=project_id)
+    print(all_api)
+    for i in range(len(all_api)):
+        print(all_api[i].id, api_id)
+        if all_api[i].id == api_id:
+            print('1111')
+            if i > 0:
+                all_api[i].id, all_api[i - 1].id = all_api[i - 1].id, all_api[i].id
+                children = eval(all_api[i].children)
+                for j in range(len(children)):
+                    old_cid = children[j]['id'].split('_')[1]
+                    children[j]['id'] = "%d_%s" % (all_api[i].id, old_cid)
+                all_api[i].children = str(children)
+
+                children = eval(all_api[i - 1].children)
+                for j in range(len(children)):
+                    old_cid = children[j]['id'].split('_')[1]
+                    children[j]['id'] = "%d_%s" % (all_api[i - 1].id, old_cid)
+                all_api[i - 1].children = str(children)
+
+                all_api[i].save()
+                all_api[i - 1].save()
+                break
+    return get_apis(request)
+
+
+# 接口下移
+def down_api(request):
+    api_id = int(request.GET['api_id'])
+    project_id = request.GET['project_id']
+    all_api = DB_apis.objects.filter(project_id=project_id)
+    for i in range(len(all_api)):
+        if all_api[i].id == api_id:
+            if i < len(all_api) - 1:
+                all_api[i].id, all_api[i + 1].id = all_api[i + 1].id, all_api[i].id
+                children = eval(all_api[i].children)
+                for j in range(len(children)):
+                    old_cid = children[j]['id'].split('_')[1]
+                    children[j]['id'] = "%d_%s" % (all_api[i].id, old_cid)
+                all_api[i].children = str(children)
+
+                children = eval(all_api[i + 1].children)
+                for j in range(len(children)):
+                    old_cid = children[j]['id'].split('_')[1]
+                    children[j]['id'] = "%d_%s" % (all_api[i + 1].id, old_cid)
+                all_api[i + 1].children = str(children)
+
+                all_api[i].save()
+                all_api[i + 1].save()
+                break
+    return get_apis(request)
+
+
+# 保存接口
+def save_api(request):
+    api = json.loads(request.body.decode('utf-8'))
+    DB_apis.objects.filter(id=api['id']).update(**api)
+    return get_apis(request)
+
+
+def send_api(request):
+    api = json.loads(request.body.decode('utf-8'))
+    project_id = request.GET['project_id']
+    response_data = {}
+    return HttpResponse(json.dumps(response_data), content_type='application/json')

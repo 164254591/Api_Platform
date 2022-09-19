@@ -38,6 +38,11 @@ urlpatterns = [
     path('save_configure/', save_configure),
     path('up_configure/', up_configure),
     path('down_configure/', down_configure),
+    path('up_api/', up_api),
+    path('down_api/', down_api),
+    path('save_api/', save_api),
+    path('send_api/', send_api),
+
 
 
 

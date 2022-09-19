@@ -85,5 +85,19 @@ class DB_apis(models.Model):
     type = models.CharField(max_length=10, null=True, blank=True, default='api')
     children = models.CharField(max_length=5000, null=True, blank=True, default='[]')
 
+    des = models.CharField(max_length=300, null=True, blank=True, default='')
+    host = models.CharField(max_length=300, null=True, blank=True, default='')
+    path = models.CharField(max_length=300, null=True, blank=True, default='')
+    method = models.CharField(max_length=30, null=True, blank=True, default='')
+    params = models.CharField(max_length=3000, null=True, blank=True, default='[]')
+    headers = models.CharField(max_length=3000, null=True, blank=True, default='[]')
+    payload_method = models.CharField(max_length=30, null=True, blank=True, default='')
+    payload_fd = models.CharField(max_length=3000, null=True, blank=True, default='[]')
+    payload_xwfu = models.CharField(max_length=3000, null=True, blank=True, default='[]')
+    payload_raw_method = models.CharField(max_length=300, null=True, blank=True, default='')
+    payload_raw = models.CharField(max_length=3000, null=True, blank=True, default='')
+    payload_GQL_q = models.CharField(max_length=3000, null=True, blank=True, default='')
+    payload_GQL_g = models.CharField(max_length=3000, null=True, blank=True, default='')
+
     def __str__(self):
         return self.label
