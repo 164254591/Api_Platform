@@ -17035,3 +17035,50 @@ AttributeError: 'int' object has no attribute 'update'
 [2022-09-19 21:03:30,944][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
 [2022-09-19 21:03:40,959][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
 [2022-09-19 21:03:51,950][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:04:51,949][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:05:51,944][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:06:51,958][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:07:51,951][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:08:51,944][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:09:51,943][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:10:51,952][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:11:51,957][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:12:51,950][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:13:51,948][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:14:51,951][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:15:51,943][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:16:51,949][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:17:51,959][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:18:51,956][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:19:51,944][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:20:51,960][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:21:51,948][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:22:51,947][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:23:51,954][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:23:54,065][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-19 21:23:54,532][INFO]Watching for file changes with StatReloader
+[2022-09-19 21:24:08,935][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-19 21:24:09,348][INFO]Watching for file changes with StatReloader
+[2022-09-19 21:26:38,884][INFO]Watching for file changes with StatReloader
+[2022-09-19 21:28:37,611][INFO]Watching for file changes with StatReloader
+[2022-09-19 21:33:47,200][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-19 21:33:47,599][INFO]Watching for file changes with StatReloader
+[2022-09-19 21:34:12,237][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-19 21:34:12,768][INFO]Watching for file changes with StatReloader
+[2022-09-19 21:36:03,222][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-19 21:36:03,798][INFO]Watching for file changes with StatReloader
+[2022-09-19 21:36:07,151][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:36:16,850][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:36:26,849][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:36:33,177][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-19 21:36:33,685][INFO]Watching for file changes with StatReloader
+[2022-09-19 21:36:37,155][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-19 21:36:42,672][INFO]"GET /get_api_shop_list/ HTTP/1.1" 200 552
+[2022-09-19 21:36:44,099][INFO]"GET /get_project_list/ HTTP/1.1" 200 1212
+[2022-09-19 21:36:45,134][INFO]"GET /get_env_list/ HTTP/1.1" 200 549
+[2022-09-19 21:36:48,407][INFO]"GET /get_api_shop_list/ HTTP/1.1" 200 552
+[2022-09-19 21:36:49,964][INFO]"GET /get_env_list/ HTTP/1.1" 200 549
+[2022-09-19 21:36:50,831][INFO]"GET /get_project_list/ HTTP/1.1" 200 1212
+[2022-09-19 21:36:51,964][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-09-19 21:36:51,969][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 3599
+[2022-09-19 21:36:51,969][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4

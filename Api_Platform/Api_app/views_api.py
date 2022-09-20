@@ -7,7 +7,10 @@ from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404
 import json
+# import sys
+# sys.path.append("..")
 import logging
+from .view_api_send import SENDAPI
 
 logger = logging.getLogger('django')
 
@@ -209,5 +212,6 @@ def save_api(request):
 def send_api(request):
     api = json.loads(request.body.decode('utf-8'))
     project_id = request.GET['project_id']
-    response_data = {"R": "123", "RD": "456", "CR": "789"}
+    s = SENDAPI(api)
+    response_data = s.index()
     return HttpResponse(json.dumps(response_data), content_type='application/json')
