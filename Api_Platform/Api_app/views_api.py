@@ -10,7 +10,7 @@ import json
 # import sys
 # sys.path.append("..")
 import logging
-from .view_api_send import SENDAPI
+from Api_app.view_api_send import SENDAPI
 
 logger = logging.getLogger('django')
 

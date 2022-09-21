@@ -17082,3 +17082,44 @@ AttributeError: 'int' object has no attribute 'update'
 [2022-09-19 21:36:51,964][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
 [2022-09-19 21:36:51,969][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 3599
 [2022-09-19 21:36:51,969][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-09-20 21:01:07,951][INFO]Watching for file changes with StatReloader
+[2022-09-20 21:01:20,153][INFO]Watching for file changes with StatReloader
+[2022-09-20 21:02:51,362][INFO]Watching for file changes with StatReloader
+[2022-09-20 21:04:18,249][INFO]Watching for file changes with StatReloader
+[2022-09-20 21:46:25,122][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-09-20 21:46:25,571][INFO]Watching for file changes with StatReloader
+[2022-09-20 21:47:02,630][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-09-20 21:47:03,111][INFO]Watching for file changes with StatReloader
+[2022-09-20 21:49:56,238][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-09-20 21:49:56,759][INFO]Watching for file changes with StatReloader
+[2022-09-20 21:50:13,636][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-09-20 21:50:14,129][INFO]Watching for file changes with StatReloader
+[2022-09-20 21:50:14,370][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-20 21:50:14,373][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-20 21:50:15,348][INFO]"GET /get_project_list/ HTTP/1.1" 200 1212
+[2022-09-20 21:50:16,442][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-09-20 21:50:16,447][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 3599
+[2022-09-20 21:50:16,447][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-09-20 21:50:23,808][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-20 21:50:29,194][INFO]"OPTIONS /save_configure/ HTTP/1.1" 200 0
+[2022-09-20 21:50:29,200][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-20 21:50:32,258][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-20 21:50:33,789][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-20 21:50:35,303][INFO]"POST /save_configure/ HTTP/1.1" 200 0
+[2022-09-20 21:50:40,120][INFO]"OPTIONS /send_api/?project_id=68 HTTP/1.1" 200 0
+[2022-09-20 21:50:40,121][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 4
+[2022-09-20 21:50:43,803][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-20 21:50:54,527][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-20 21:51:04,525][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-20 21:51:14,528][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-20 21:51:24,105][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-09-20 21:51:24,627][INFO]Watching for file changes with StatReloader
+[2022-09-20 21:55:00,610][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-09-20 21:55:01,021][INFO]Watching for file changes with StatReloader
+[2022-09-20 21:55:04,852][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-20 21:55:14,518][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-20 21:55:24,521][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-20 21:55:34,523][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-20 21:55:44,514][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-20 21:56:06,931][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-09-20 21:56:07,447][INFO]Watching for file changes with StatReloader
