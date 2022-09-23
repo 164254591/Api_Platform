@@ -215,3 +215,8 @@ def send_api(request):
     s = SENDAPI(api)
     response_data = s.index()
     return HttpResponse(json.dumps(response_data), content_type='application/json')
+
+
+def test(request):
+    print(request.headers)
+    return HttpResponse('abcd')

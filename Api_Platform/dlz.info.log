@@ -17559,3 +17559,524 @@ UnboundLocalError: local variable 'file' referenced before assignment
 [2022-09-21 21:52:31,308][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
 [2022-09-21 21:52:31,773][INFO]Watching for file changes with StatReloader
 [2022-09-21 21:52:39,493][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-21 21:52:49,189][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-21 21:52:59,189][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-21 21:53:09,176][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-21 21:53:19,177][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-21 21:53:29,188][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-21 21:53:39,178][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-21 21:53:49,184][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-21 21:53:59,176][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-21 21:54:09,184][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-21 21:54:19,181][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-21 21:54:29,183][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-21 21:54:39,185][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-21 21:54:49,196][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-21 21:54:59,193][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-21 21:55:09,179][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:12:12,276][INFO]Watching for file changes with StatReloader
+[2022-09-23 22:12:33,965][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-23 22:12:33,967][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:12:35,237][INFO]"GET /get_project_list/ HTTP/1.1" 200 1212
+[2022-09-23 22:12:37,086][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-09-23 22:12:37,092][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-09-23 22:12:37,092][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1373
+[2022-09-23 22:12:41,647][INFO]"OPTIONS /send_api/?project_id=68 HTTP/1.1" 200 0
+[2022-09-23 22:12:41,678][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 283
+[2022-09-23 22:12:43,663][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:12:53,660][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:12:57,010][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 283
+[2022-09-23 22:12:59,333][INFO]"OPTIONS /save_api/?project_id=68 HTTP/1.1" 200 0
+[2022-09-23 22:12:59,340][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 1369
+[2022-09-23 22:13:01,027][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 283
+[2022-09-23 22:13:03,659][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:13:13,662][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:13:23,653][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:13:33,664][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:13:44,205][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:13:54,205][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:14:03,665][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:14:08,693][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 1321
+[2022-09-23 22:14:11,336][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 428
+[2022-09-23 22:14:13,655][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:14:23,657][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:14:33,659][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:14:43,659][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:14:44,416][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 1304
+[2022-09-23 22:14:46,834][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 428
+[2022-09-23 22:14:53,659][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:15:03,674][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:15:13,657][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:15:15,929][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 1305
+[2022-09-23 22:15:16,027][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 1305
+[2022-09-23 22:15:21,969][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 1305
+[2022-09-23 22:15:23,666][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:15:33,661][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:15:38,767][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 1198
+[2022-09-23 22:15:43,671][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:15:52,513][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 1198
+[2022-09-23 22:15:53,665][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:15:55,246][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 428
+[2022-09-23 22:16:01,211][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 1197
+[2022-09-23 22:16:03,667][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:16:03,683][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 428
+[2022-09-23 22:16:13,666][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:16:23,670][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:16:33,675][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:16:43,666][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:16:53,652][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:17:03,660][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:17:13,654][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:17:23,661][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:17:33,656][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:17:37,190][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 1197
+[2022-09-23 22:17:39,857][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 428
+[2022-09-23 22:17:40,767][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-23 22:17:40,810][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:17:44,203][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:17:53,673][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:18:04,210][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:18:14,210][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:18:24,220][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:18:34,205][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:18:44,215][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:18:54,206][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:19:03,655][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:19:13,667][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:19:18,423][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 1064
+[2022-09-23 22:19:19,240][ERROR]Internal Server Error: /send_api/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 216, in send_api
+    response_data = s.index()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 108, in index
+    self.send()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 91, in send
+    payload = json.dumps({"query": self.api['payload_GQL_q'], "variables": eval(self.api['payload_GQL_q'])})
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-09-23 22:19:19,241][ERROR]"POST /send_api/?project_id=68 HTTP/1.1" 500 74000
+[2022-09-23 22:19:23,659][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:19:27,981][INFO]"GET /add_configure/?project_id=68&id=51 HTTP/1.1" 200 1193
+[2022-09-23 22:19:33,659][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:19:35,368][INFO]"GET /remove_ac/?project_id=68&id=51_4 HTTP/1.1" 200 1064
+[2022-09-23 22:19:37,114][INFO]"GET /remove_ac?project_id=68&id=51_2 HTTP/1.1" 301 0
+[2022-09-23 22:19:37,123][INFO]"GET /remove_ac/?project_id=68&id=51_2 HTTP/1.1" 200 932
+[2022-09-23 22:19:38,747][INFO]"GET /remove_ac?project_id=68&id=51_1 HTTP/1.1" 301 0
+[2022-09-23 22:19:38,756][INFO]"GET /remove_ac/?project_id=68&id=51_1 HTTP/1.1" 200 802
+[2022-09-23 22:19:40,204][INFO]"GET /remove_ac?project_id=68&id=51_3 HTTP/1.1" 301 0
+[2022-09-23 22:19:40,213][INFO]"GET /remove_ac/?project_id=68&id=51_3 HTTP/1.1" 200 674
+[2022-09-23 22:19:42,295][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 674
+[2022-09-23 22:19:43,152][ERROR]Internal Server Error: /send_api/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 216, in send_api
+    response_data = s.index()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 108, in index
+    self.send()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 91, in send
+    payload = json.dumps({"query": self.api['payload_GQL_q'], "variables": eval(self.api['payload_GQL_q'])})
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-09-23 22:19:43,153][ERROR]"POST /send_api/?project_id=68 HTTP/1.1" 500 72327
+[2022-09-23 22:19:43,656][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:19:53,659][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:19:54,300][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 674
+[2022-09-23 22:19:54,919][ERROR]Internal Server Error: /send_api/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 216, in send_api
+    response_data = s.index()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 108, in index
+    self.send()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 91, in send
+    payload = json.dumps({"query": self.api['payload_GQL_q'], "variables": eval(self.api['payload_GQL_q'])})
+  File "<string>", line 0
+    
+    ^
+SyntaxError: unexpected EOF while parsing
+[2022-09-23 22:19:54,920][ERROR]"POST /send_api/?project_id=68 HTTP/1.1" 500 72327
+[2022-09-23 22:20:03,653][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:20:13,661][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:20:23,655][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:20:33,664][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:20:43,662][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:20:53,666][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:21:03,673][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:21:13,675][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:21:23,674][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:21:33,676][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:21:43,657][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:21:53,669][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:21:57,010][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 670
+[2022-09-23 22:22:00,097][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 343
+[2022-09-23 22:22:03,662][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:22:13,673][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:22:23,285][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-23 22:22:23,326][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:22:24,215][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:22:27,423][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-23 22:22:27,465][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:22:34,222][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:22:37,434][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:22:44,216][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:22:48,215][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:22:54,212][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:22:58,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:23:04,222][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:23:08,216][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:23:10,108][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-23 22:23:10,571][INFO]Watching for file changes with StatReloader
+[2022-09-23 22:23:14,534][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:23:18,212][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:23:24,210][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:23:28,209][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:23:28,306][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-23 22:23:28,718][INFO]Watching for file changes with StatReloader
+[2022-09-23 22:23:34,520][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:23:38,221][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:23:44,214][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:23:46,450][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-09-23 22:23:46,870][INFO]Watching for file changes with StatReloader
+[2022-09-23 22:23:48,524][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:23:53,671][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:23:58,214][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:23:58,260][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 698
+[2022-09-23 22:24:00,776][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 343
+[2022-09-23 22:24:03,669][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:24:08,216][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:24:13,662][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:24:18,219][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:24:23,675][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:24:28,220][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:24:33,664][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:24:38,217][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:24:43,668][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:24:48,219][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:24:53,665][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:24:58,208][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:25:03,656][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:25:08,216][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:25:13,668][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:25:18,201][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:25:23,675][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:25:28,209][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:25:34,211][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:25:38,216][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:25:44,211][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:25:48,214][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:25:54,201][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:25:58,206][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:26:04,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:26:08,214][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:26:14,211][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:26:18,214][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:26:24,213][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:26:28,210][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:26:34,200][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:26:38,213][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:26:44,219][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:26:48,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:26:54,209][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:26:58,214][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:27:04,214][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:27:08,212][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:27:14,209][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:27:18,215][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:27:24,215][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:27:28,217][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:27:34,213][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:27:38,216][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:27:44,208][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:27:54,215][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:28:04,220][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:28:14,211][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:28:24,214][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:28:34,209][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:28:39,201][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:28:44,210][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:28:54,221][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:29:03,642][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:29:04,211][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:29:07,424][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:29:14,217][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:29:17,447][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:29:23,686][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-23 22:29:23,701][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:29:24,219][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:29:31,053][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-23 22:29:31,094][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:29:34,205][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:29:39,709][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-23 22:29:39,724][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:29:44,220][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:29:49,730][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:29:51,129][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-23 22:29:51,144][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:29:54,221][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:30:01,137][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:30:04,208][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:30:10,332][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-23 22:30:10,369][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:30:14,218][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:30:20,355][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:30:24,221][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:30:30,342][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:30:40,343][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:30:41,213][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:30:50,348][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:31:00,345][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:31:10,351][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:31:20,345][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:31:30,345][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:31:40,335][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:31:41,214][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:31:51,218][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:32:01,206][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:32:07,065][INFO]"GET / HTTP/1.1" 200 4830
+[2022-09-23 22:32:07,089][INFO]"GET /static/dlz_download_login/assets/css/demo.css HTTP/1.1" 304 0
+[2022-09-23 22:32:07,090][INFO]"GET /static/dlz_download_login/assets/js/jquery-1.11.0.min.js HTTP/1.1" 304 0
+[2022-09-23 22:32:07,091][INFO]"GET /static/dlz_download_login/assets/js/TweenMax.min.js HTTP/1.1" 304 0
+[2022-09-23 22:32:07,091][INFO]"GET /static/dlz_download_login/assets/js/demo.js HTTP/1.1" 304 0
+[2022-09-23 22:32:08,319][INFO]"GET /static/dlz_download_login/assets/img/close.svg HTTP/1.1" 200 794
+[2022-09-23 22:32:08,320][INFO]"GET /static/dlz_download_login/assets/img/icon-correct.png HTTP/1.1" 200 944
+[2022-09-23 22:32:08,321][INFO]"GET /static/dlz_download_login/assets/img/m-open-close.png HTTP/1.1" 200 37755
+[2022-09-23 22:32:08,322][INFO]"GET /static/dlz_download_login/assets/img/m-close.png HTTP/1.1" 200 52947
+[2022-09-23 22:32:08,323][INFO]"GET /static/dlz_download_login/assets/img/landscape.png HTTP/1.1" 200 71492
+[2022-09-23 22:32:08,323][INFO]"GET /static/dlz_download_login/assets/img/m-signup.png HTTP/1.1" 200 37187
+[2022-09-23 22:32:10,144][INFO]"POST /login_action/ HTTP/1.1" 302 0
+[2022-09-23 22:32:10,150][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-09-23 22:32:10,156][INFO]"GET /static/css/app.4a65e1ad.css HTTP/1.1" 200 3511
+[2022-09-23 22:32:10,158][INFO]"GET /static/js/app.5212ee98.js HTTP/1.1" 200 40277
+[2022-09-23 22:32:10,160][INFO]"GET /static/css/chunk-vendors.dd50ba92.css HTTP/1.1" 200 240819
+[2022-09-23 22:32:10,163][INFO]"GET /static/js/chunk-vendors.978f4292.js HTTP/1.1" 200 897591
+[2022-09-23 22:32:10,221][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-23 22:32:10,234][INFO]"GET /static/fonts/element-icons.535877f5.woff HTTP/1.1" 200 28200
+[2022-09-23 22:32:10,247][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:32:10,252][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-23 22:32:10,988][INFO]"GET /get_project_list/ HTTP/1.1" 200 1212
+[2022-09-23 22:32:11,002][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-23 22:32:11,219][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:32:13,139][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-09-23 22:32:13,155][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-23 22:32:16,479][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-09-23 22:32:16,532][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-09-23 22:32:16,547][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-23 22:32:18,835][INFO]"GET /get_project_list/ HTTP/1.1" 200 1212
+[2022-09-23 22:32:18,839][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-23 22:32:21,210][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:32:31,202][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:32:41,208][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:32:41,211][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:32:51,220][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:32:54,261][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-09-23 22:32:54,269][INFO]"GET /static/css/app.6b4a8f2a.css HTTP/1.1" 200 3588
+[2022-09-23 22:32:54,270][INFO]"GET /static/js/app.490d3c87.js HTTP/1.1" 200 64117
+[2022-09-23 22:32:54,274][INFO]"GET /static/js/chunk-vendors.340c1126.js HTTP/1.1" 200 898075
+[2022-09-23 22:32:54,337][INFO]"GET /get_project_list/ HTTP/1.1" 200 1212
+[2022-09-23 22:32:54,349][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-23 22:32:55,708][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-09-23 22:32:55,711][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 698
+[2022-09-23 22:32:55,713][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-09-23 22:32:55,727][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-09-23 22:32:59,353][INFO]"OPTIONS /send_api/?project_id=68 HTTP/1.1" 200 0
+[2022-09-23 22:33:01,206][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:33:03,513][ERROR]Internal Server Error: /send_api/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 964, in send
+    self.connect()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001589C0B1080>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /test/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001589C0B1080>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 216, in send_api
+    response_data = s.index()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 108, in index
+    self.send()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 86, in send
+    self.response = requests.request(self.method, self.url, headers=self.headers, data=self.api['payload_raw'])
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /test/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001589C0B1080>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+[2022-09-23 22:33:03,529][ERROR]"POST /send_api/?project_id=68 HTTP/1.1" 500 183585
+[2022-09-23 22:33:11,156][ERROR]Internal Server Error: /send_api/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 175, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 964, in send
+    self.connect()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 187, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001589C154F28>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /test/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001589C154F28>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 216, in send_api
+    response_data = s.index()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 108, in index
+    self.send()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 86, in send
+    self.response = requests.request(self.method, self.url, headers=self.headers, data=self.api['payload_raw'])
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=8080): Max retries exceeded with url: /test/ (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001589C154F28>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。',))
+[2022-09-23 22:33:11,167][ERROR]"POST /send_api/?project_id=68 HTTP/1.1" 500 183585
+[2022-09-23 22:33:11,202][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:33:21,223][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:33:31,221][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:33:41,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:33:41,209][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:33:51,202][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:33:53,085][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-09-23 22:33:53,125][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:34:01,216][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:34:03,093][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:34:11,219][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:34:13,092][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:34:21,214][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:34:23,094][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:34:31,215][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:34:33,106][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:34:41,208][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:34:41,210][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:34:43,092][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:34:51,217][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:34:53,108][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:35:01,206][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:35:03,099][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:35:11,223][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:35:13,102][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:35:21,210][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:35:23,105][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:35:27,577][INFO]"GET /get_project_list/ HTTP/1.1" 200 1212
+[2022-09-23 22:35:29,637][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-09-23 22:35:29,642][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 698
+[2022-09-23 22:35:29,642][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-09-23 22:35:31,220][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:35:33,087][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:35:40,087][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 330
+[2022-09-23 22:35:41,211][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:35:41,213][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:35:43,091][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:35:51,218][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:35:53,086][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:35:55,664][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 330
+[2022-09-23 22:36:00,038][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 669
+[2022-09-23 22:36:01,205][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:36:02,505][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 330
+[2022-09-23 22:36:03,093][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:36:11,216][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:36:13,087][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:36:21,212][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-09-23 22:36:23,100][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86

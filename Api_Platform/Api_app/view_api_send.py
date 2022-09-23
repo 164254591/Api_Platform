@@ -7,6 +7,7 @@
 # from django.contrib.auth.decorators import login_required
 # from django.shortcuts import get_object_or_404
 # import json
+import json
 import logging
 import requests
 
@@ -43,8 +44,10 @@ class SENDAPI():
         self.method = self.api['method']
 
     def make_RD(self):
-        """生成返回头等数据"""
+        """生成返回头、返回码等数据"""
         self.RD = ''
+        self.RD += '\n[%s]:%s\n' % ('status_code', self.response.status_code)
+        self.RD += '\n[%s]:%s\n' % ('header', self.response.headers)
 
     def do_configure(self, configure):
         """执行配置函数"""
@@ -68,6 +71,30 @@ class SENDAPI():
             payload = '&'.join([('%s=%s' % (i['key'], i['value'])) for i in self.api['payload_xwfu']])
             self.headers['Content-type'] = 'application/x-www-form-urlencode'
             self.response = requests.request(self.method, self.url, headers=self.headers, data=payload)
+
+        elif self.api['payload_method'] == 'raw':
+            if self.api['payload_raw_method'] == 'Text':
+                self.headers['Content-Type'] = 'text/plain'
+            elif self.api['payload_raw_method'] == 'JavaScript':
+                self.headers['Content-Type'] = 'application/javascript'
+            elif self.api['payload_raw_method'] == 'JSON':
+                self.headers['Content-Type'] = 'application/json'
+            elif self.api['payload_raw_method'] == 'XML':
+                self.headers['Content-Type'] = 'application/xml'
+            elif self.api['payload_raw_method'] == 'HTML':
+                self.headers['Content-Type'] = 'text/html'
+            self.response = requests.request(self.method, self.url, headers=self.headers, data=self.api['payload_raw'])
+        elif self.api['payload_method'] == 'binary':
+            ...
+        elif self.api['payload_method'] == 'GraphQL':
+            self.headers['Content-Type'] = 'application/json'
+            payload = json.dumps({"query": self.api['payload_GQL_q'], "variables": eval(self.api['payload_GQL_q'])})
+            self.response = requests.request(self.method, self.url, headers=self.headers, data=payload)
+        try:
+            self.R = json.dumps(self.response.json(), ensure_ascii=False)  # 防止中文乱码
+        except:
+            # 如果返回是字典，用text接受就会乱码
+            self.R = self.response.text
 
     def index(self):
         """入口函数"""
