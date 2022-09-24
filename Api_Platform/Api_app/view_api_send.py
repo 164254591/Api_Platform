@@ -14,14 +14,19 @@ import requests
 logger = logging.getLogger('django')
 
 
+# 调用多个接口
+# 第一个接口调用SENDAPI，传进来一个空字典TQ {}，提取的变量全部塞进这个字典TQ，返回这个有内容的字典TQ
+# 第二个接口调用SENDAPI，传进来刚刚已经有内容的字典TQ {}，并把自己提取的变量也塞进这个字典TQ，然后再返回TQ
+# 第三个接口调用SENDAPI，传进来刚刚已经有内容的字典TQ {}，并把自己提取的变量也塞进这个字典TQ，然后再返回TQ
 # --------------------------------------文件作用：发送接口请求
 class SENDAPI():
-    def __init__(self, api):
+    def __init__(self, api, TQ):
         self.api = api
         print(api)
         self.make_url()
         self.make_header()
         self.make_method()
+        self.TQ = TQ  # 设置传入的提取TQ作为类变量
 
     def make_url(self):
         """拼接url"""
@@ -30,14 +35,14 @@ class SENDAPI():
         params = self.api['params']
         # 列表推导式------高级用法
         self.url = host + path + '?' + '&'.join(["%s=%s" % (i['key'], i['value']) for i in params])
-        print(self.url)
+        # print(self.url)
 
     def make_header(self):
         """请求头"""
         self.headers = {}
         for i in self.api['headers']:
             self.headers[i['key']] = i['value']
-        print(self.headers)
+        # print(self.headers)
 
     def make_method(self):
         """整理成标准的请求头格式"""
@@ -91,6 +96,7 @@ class SENDAPI():
             payload = json.dumps({"query": self.api['payload_GQL_q'], "variables": eval(self.api['payload_GQL_q'])})
             self.response = requests.request(self.method, self.url, headers=self.headers, data=payload)
         try:
+            # 优先用字典接收，如果不是则用text接收
             self.R = json.dumps(self.response.json(), ensure_ascii=False)  # 防止中文乱码
         except:
             # 如果返回是字典，用text接受就会乱码
@@ -114,5 +120,5 @@ class SENDAPI():
 
     def response_data(self):
         """获取返回结果"""""
-        r = {"R": "", "RD": self.RD, "CR": self.CR}
+        r = {"R": self.R, "RD": self.RD, "CR": self.CR, 'TQ': self.TQ}
         return r

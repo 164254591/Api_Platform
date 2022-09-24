@@ -212,11 +212,15 @@ def save_api(request):
 def send_api(request):
     api = json.loads(request.body.decode('utf-8'))
     project_id = request.GET['project_id']
-    s = SENDAPI(api)
+    s = SENDAPI(api, {})
     response_data = s.index()
     return HttpResponse(json.dumps(response_data), content_type='application/json')
 
 
 def test(request):
-    print(request.headers)
-    return HttpResponse('abcd')
+    print(request.GET['p1'])
+    print(json.loads(request.body))
+    print(request.body)
+    print(request.POST)
+    print(request.GET)
+    return HttpResponse('abcd123456')
