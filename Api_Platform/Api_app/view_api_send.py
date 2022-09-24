@@ -9,6 +9,8 @@
 # import json
 import json
 import logging
+import re
+
 import requests
 
 logger = logging.getLogger('django')
@@ -27,6 +29,7 @@ class SENDAPI():
         self.make_header()
         self.make_method()
         self.TQ = TQ  # 设置传入的提取TQ作为类变量
+        self.CR = []
 
     def make_url(self):
         """拼接url"""
@@ -56,8 +59,43 @@ class SENDAPI():
 
     def do_configure(self, configure):
         """执行配置函数"""
-        print(configure['label'])
-        self.CR.append('[%s]=%s' % (configure['label'], False))
+        if configure['method'] == "断言":
+            if configure['select'] == "全值检索":
+                if configure['value'] in self.R:
+                    return True
+            elif configure['select'] == "正则匹配":
+                left = configure['value'].split('==')[0].strip()
+                right = configure['value'].split('==')[1].strip()
+                print(left, right)
+                if re.findall(left, self.R) == [right]:
+                    return True
+            elif configure['select'] == "路径匹配":
+                left = configure['value'].split('==')[0].strip()
+                right = configure['value'].split('==')[1].strip()
+                try:
+                    if eval(self.R + left) == eval(right):
+                        return True
+                except:
+                    return False
+            elif configure['select'] == "SQL断言":
+                return True
+        if configure['method'] == "提取":
+            if configure['select'] == "路径提取":
+                left = configure['value'].split('=')[0].strip()
+                right = configure['value'].split('=')[1].strip()
+                try:
+                    S = locals()
+                    exec('s=json.loads(self.R)' + right)
+                    self.TQ[left] = S['s']
+                    return True
+                except:
+                    return False
+
+            elif configure['select'] == "正则提取":
+                return True
+            elif configure['select'] == "sql提取":
+                return True
+        return False
 
     def send(self):
         """执行接口"""
@@ -109,11 +147,11 @@ class SENDAPI():
         print(children)
         for i in children:
             if i['do_time'] == 'before':
-                self.do_configure(i)
+                self.CR.append('【%s】 = %s' % (i['label'], self.do_configure(i)))
                 children.remove(i)
         self.send()
         for i in children:
-            self.do_configure(i)
+            self.CR.append('【%s】 = %s' % (i['label'], self.do_configure(i)))
         self.make_RD()
         self.CR = '\n'.join(self.CR)
         return self.response_data()

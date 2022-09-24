@@ -218,9 +218,4 @@ def send_api(request):
 
 
 def test(request):
-    print(request.GET['p1'])
-    print(json.loads(request.body))
-    print(request.body)
-    print(request.POST)
-    print(request.GET)
-    return HttpResponse('abcd123456')
+    return HttpResponse('{"a": "22", "b": {"c": [22,33], "d": "02"}}', content_type='application/json')
