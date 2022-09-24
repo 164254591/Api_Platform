@@ -79,7 +79,7 @@ class SENDAPI():
                     return False
             elif configure['select'] == "SQL断言":
                 return True
-        if configure['method'] == "提取":
+        elif configure['method'] == "提取":
             if configure['select'] == "路径提取":
                 left = configure['value'].split('=')[0].strip()
                 right = configure['value'].split('=')[1].strip()
@@ -90,11 +90,22 @@ class SENDAPI():
                     return True
                 except:
                     return False
-
             elif configure['select'] == "正则提取":
-                return True
+                left = configure['value'].split('=')[0].strip()
+                right = configure['value'].split('=')[1].strip()
+                try:
+                    self.TQ[left] = re.findall(right, self.R)[0]
+                    return True
+                except:
+                    return False
             elif configure['select'] == "sql提取":
                 return True
+        elif configure['method'] == "随机变量":
+            left = configure['value'].split('=')[0].strip()
+            right = configure['value'].split('=')[1].strip()
+            self.TQ[left] = eval(right)
+            print(self.TQ)
+            return True
         return False
 
     def send(self):
