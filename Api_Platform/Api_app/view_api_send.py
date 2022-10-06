@@ -31,6 +31,8 @@ class SENDAPI():
         self.TQ = TQ  # 设置传入的提取TQ作为类变量
         self.CR = []
         self.send_real = True
+        self.api['payload_method'] = self.api['payload_method'].lower()
+
 
     def make_url(self):
         """拼接url"""
@@ -146,7 +148,7 @@ class SENDAPI():
             left = configure['value'].split('=')[0].strip()
             right = eval('='.join(configure['value'].split('=')[1:]).strip())  # 对字符串中有多个=的处理
             if configure['select'] == 'request_header':
-                self.headers[left]=right
+                self.headers[left] = right
             elif configure['select'] == 'params':
                 self.url += '&' + left + '=' + str(right)
             return True
@@ -184,7 +186,10 @@ class SENDAPI():
                 self.headers['Content-Type'] = 'text/html'
             self.response = requests.request(self.method, self.url, headers=self.headers, data=self.api['payload_raw'])
         elif self.api['payload_method'] == 'binary':
-            ...
+            file_name = self.api['payload_binary']
+            payload = open('Api_app/static/tmp/' + file_name, 'rb')
+            self.headers['Content-Type'] = 'image/png'  # MIME文件
+            self.response = requests.request(self.method, self.url, headers=self.headers, data=payload)
         elif self.api['payload_method'] == 'GraphQL':
             self.headers['Content-Type'] = 'application/json'
             payload = json.dumps({"query": self.api['payload_GQL_q'], "variables": eval(self.api['payload_GQL_q'])})

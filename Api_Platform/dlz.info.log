@@ -21725,3 +21725,456 @@ KeyError: 'usr'
 [2022-10-06 20:57:23,215][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
 [2022-10-06 20:58:23,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
 [2022-10-06 20:59:23,217][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:00:23,204][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:01:23,206][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:02:23,199][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:03:23,213][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:04:23,215][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:05:23,216][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:06:23,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:07:23,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:08:23,205][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:09:23,214][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:10:23,203][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:11:23,208][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:12:23,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:13:23,209][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:14:23,210][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:15:23,204][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:16:09,552][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1186
+[2022-10-06 21:16:09,554][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-10-06 21:16:23,221][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:16:53,593][INFO]D:\Git\dlz\Api_Platform\Api_app\models.py changed, reloading.
+[2022-10-06 21:16:54,124][INFO]Watching for file changes with StatReloader
+[2022-10-06 21:17:23,514][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:18:23,202][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:19:23,212][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:20:23,211][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:21:23,204][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:22:23,217][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:23:23,222][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:24:23,212][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:25:23,214][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:26:23,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:27:23,214][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:28:23,213][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:29:23,210][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:30:23,213][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:30:51,690][INFO]D:\Git\dlz\Api_Platform\Api_Platform\urls.py changed, reloading.
+[2022-10-06 21:30:52,121][INFO]Watching for file changes with StatReloader
+[2022-10-06 21:31:23,912][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-10-06 21:31:24,389][INFO]Watching for file changes with StatReloader
+[2022-10-06 21:32:26,608][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-10-06 21:32:27,052][INFO]Watching for file changes with StatReloader
+[2022-10-06 21:33:23,516][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:34:16,410][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-10-06 21:34:16,826][INFO]Watching for file changes with StatReloader
+[2022-10-06 21:34:23,515][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:35:13,636][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-10-06 21:35:14,156][INFO]Watching for file changes with StatReloader
+[2022-10-06 21:35:54,700][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-10-06 21:35:55,142][INFO]Watching for file changes with StatReloader
+[2022-10-06 21:36:17,903][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-10-06 21:36:18,338][INFO]Watching for file changes with StatReloader
+[2022-10-06 21:36:23,521][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:36:29,952][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-10-06 21:36:30,380][INFO]Watching for file changes with StatReloader
+[2022-10-06 21:37:23,522][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:38:12,303][INFO]"GET / HTTP/1.1" 200 4830
+[2022-10-06 21:38:12,338][INFO]"GET /static/dlz_download_login/assets/css/demo.css HTTP/1.1" 200 13815
+[2022-10-06 21:38:12,339][INFO]"GET /static/dlz_download_login/assets/js/demo.js HTTP/1.1" 200 4682
+[2022-10-06 21:38:12,340][INFO]"GET /static/dlz_download_login/assets/js/jquery-1.11.0.min.js HTTP/1.1" 200 96383
+[2022-10-06 21:38:12,341][INFO]"GET /static/dlz_download_login/assets/js/TweenMax.min.js HTTP/1.1" 200 115913
+[2022-10-06 21:38:13,028][INFO]"GET /static/favicon.ico HTTP/1.1" 200 1150
+[2022-10-06 21:38:14,336][INFO]"GET /static/dlz_download_login/assets/img/close.svg HTTP/1.1" 200 794
+[2022-10-06 21:38:14,337][INFO]"GET /static/dlz_download_login/assets/img/icon-correct.png HTTP/1.1" 200 944
+[2022-10-06 21:38:14,338][INFO]"GET /static/dlz_download_login/assets/img/m-close.png HTTP/1.1" 200 52947
+[2022-10-06 21:38:14,338][INFO]"GET /static/dlz_download_login/assets/img/landscape.png HTTP/1.1" 200 71492
+[2022-10-06 21:38:14,338][INFO]"GET /static/dlz_download_login/assets/img/m-open-close.png HTTP/1.1" 200 37755
+[2022-10-06 21:38:14,339][INFO]"GET /static/dlz_download_login/assets/img/m-signup.png HTTP/1.1" 200 37187
+[2022-10-06 21:38:16,334][INFO]"POST /login_action/ HTTP/1.1" 302 0
+[2022-10-06 21:38:16,339][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-10-06 21:38:16,345][INFO]"GET /static/css/app.3a9de615.css HTTP/1.1" 200 3588
+[2022-10-06 21:38:16,347][INFO]"GET /static/js/app.3512cdca.js HTTP/1.1" 200 64661
+[2022-10-06 21:38:16,349][INFO]"GET /static/css/chunk-vendors.dd50ba92.css HTTP/1.1" 200 240819
+[2022-10-06 21:38:16,352][INFO]"GET /static/js/chunk-vendors.340c1126.js HTTP/1.1" 200 898075
+[2022-10-06 21:38:16,410][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-10-06 21:38:16,427][INFO]"GET /static/fonts/element-icons.535877f5.woff HTTP/1.1" 200 28200
+[2022-10-06 21:38:16,441][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-10-06 21:38:16,441][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:38:18,161][INFO]"GET /get_project_list/ HTTP/1.1" 200 1212
+[2022-10-06 21:38:18,175][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-10-06 21:38:19,435][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-10-06 21:38:19,440][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1208
+[2022-10-06 21:38:19,440][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-10-06 21:38:19,455][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-10-06 21:38:23,212][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:38:23,463][INFO]"GET /remove_ac?project_id=68&id=51 HTTP/1.1" 301 0
+[2022-10-06 21:38:23,477][INFO]"GET /remove_ac/?project_id=68&id=51 HTTP/1.1" 200 2
+[2022-10-06 21:38:24,194][INFO]"GET /add_apis/?project_id=68 HTTP/1.1" 200 339
+[2022-10-06 21:38:26,418][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:38:36,430][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:38:46,435][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:38:56,430][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:39:06,423][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:39:16,420][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:39:20,282][INFO]"OPTIONS /upload_binary_file/?ApiID=72 HTTP/1.1" 200 0
+[2022-10-06 21:39:20,351][ERROR]Internal Server Error: /upload_binary_file/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 222, in upload_binary_file
+    ApiID = request.GET('ApiID')
+TypeError: 'QueryDict' object is not callable
+[2022-10-06 21:39:20,352][ERROR]"POST /upload_binary_file/?ApiID=72 HTTP/1.1" 500 63830
+[2022-10-06 21:39:23,213][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:39:26,425][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:39:36,431][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:39:46,424][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:39:56,428][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:40:06,434][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:40:17,219][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:40:23,203][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:40:27,217][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:40:37,208][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:40:47,201][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:40:57,203][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:41:07,202][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:41:17,201][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:41:23,200][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:41:27,090][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-10-06 21:41:27,637][INFO]Watching for file changes with StatReloader
+[2022-10-06 21:41:27,778][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:41:34,145][ERROR]Internal Server Error: /upload_binary_file/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 225, in upload_binary_file
+    fp = open('Api_app/static/tmp/' + file_name, 'wb+')
+FileNotFoundError: [Errno 2] No such file or directory: 'Api_app/static/tmp/72_Snipaste_2022-10-06_21-39-11.png'
+[2022-10-06 21:41:34,145][ERROR]"POST /upload_binary_file/?ApiID=72 HTTP/1.1" 500 64633
+[2022-10-06 21:41:36,435][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:41:47,200][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:41:57,199][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:42:07,198][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:42:17,197][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:42:23,202][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:42:26,416][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:42:43,155][INFO]"GET /index/ HTTP/1.1" 302 0
+[2022-10-06 21:42:43,159][INFO]"GET /accounts/login/?next=/index/ HTTP/1.1" 200 4830
+[2022-10-06 21:42:43,168][INFO]"GET /static/dlz_download_login/assets/css/demo.css HTTP/1.1" 200 13815
+[2022-10-06 21:42:43,169][INFO]"GET /static/dlz_download_login/assets/js/jquery-1.11.0.min.js HTTP/1.1" 200 96383
+[2022-10-06 21:42:43,172][INFO]"GET /static/dlz_download_login/assets/js/demo.js HTTP/1.1" 200 4682
+[2022-10-06 21:42:43,173][INFO]"GET /static/dlz_download_login/assets/js/TweenMax.min.js HTTP/1.1" 200 115913
+[2022-10-06 21:42:43,535][INFO]"GET /static/favicon.ico HTTP/1.1" 200 1150
+[2022-10-06 21:42:44,582][INFO]"GET /static/dlz_download_login/assets/img/close.svg HTTP/1.1" 200 794
+[2022-10-06 21:42:44,583][INFO]"GET /static/dlz_download_login/assets/img/m-open-close.png HTTP/1.1" 200 37755
+[2022-10-06 21:42:44,585][INFO]"GET /static/dlz_download_login/assets/img/landscape.png HTTP/1.1" 200 71492
+[2022-10-06 21:42:44,585][INFO]"GET /static/dlz_download_login/assets/img/m-close.png HTTP/1.1" 200 52947
+[2022-10-06 21:42:44,586][INFO]"GET /static/dlz_download_login/assets/img/icon-correct.png HTTP/1.1" 200 944
+[2022-10-06 21:42:44,587][INFO]"GET /static/dlz_download_login/assets/img/m-signup.png HTTP/1.1" 200 37187
+[2022-10-06 21:42:46,219][INFO]"POST /login_action/ HTTP/1.1" 302 0
+[2022-10-06 21:42:46,224][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-10-06 21:42:46,231][INFO]"GET /static/css/app.3a9de615.css HTTP/1.1" 200 3588
+[2022-10-06 21:42:46,232][INFO]"GET /static/js/app.3512cdca.js HTTP/1.1" 200 64661
+[2022-10-06 21:42:46,234][INFO]"GET /static/css/chunk-vendors.dd50ba92.css HTTP/1.1" 200 240819
+[2022-10-06 21:42:46,238][INFO]"GET /static/js/chunk-vendors.340c1126.js HTTP/1.1" 200 898075
+[2022-10-06 21:42:46,293][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:42:46,298][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 1272
+[2022-10-06 21:42:46,310][INFO]"GET /static/fonts/element-icons.535877f5.woff HTTP/1.1" 200 28200
+[2022-10-06 21:42:46,326][INFO]"GET /favicon.ico HTTP/1.1" 301 0
+[2022-10-06 21:42:46,326][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:42:46,329][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-10-06 21:42:47,578][INFO]"GET /get_project_list/ HTTP/1.1" 200 1212
+[2022-10-06 21:42:47,587][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-10-06 21:42:48,993][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-10-06 21:42:48,997][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 339
+[2022-10-06 21:42:48,997][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-10-06 21:42:49,013][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-10-06 21:42:56,313][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:43:06,304][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:43:16,318][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:43:23,214][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:43:23,216][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:43:26,306][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:43:26,310][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:43:36,303][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:43:46,313][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:43:56,313][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:44:06,300][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:44:16,298][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:44:23,201][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:44:23,205][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:44:26,309][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:44:26,313][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:44:36,303][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:44:47,215][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:44:57,204][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:45:07,218][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:45:17,201][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:45:23,215][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:45:23,218][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:45:27,215][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:45:27,221][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:45:37,202][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:45:47,211][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:45:57,218][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:46:07,213][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:46:14,890][ERROR]Internal Server Error: /upload_binary_file/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 226, in upload_binary_file
+    for i in file.chuks():
+AttributeError: 'InMemoryUploadedFile' object has no attribute 'chuks'
+[2022-10-06 21:46:14,891][ERROR]"POST /upload_binary_file/?ApiID=72 HTTP/1.1" 500 65684
+[2022-10-06 21:46:16,297][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:46:23,209][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:46:23,214][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:46:26,302][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:46:26,306][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:46:28,728][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-10-06 21:46:29,238][INFO]Watching for file changes with StatReloader
+[2022-10-06 21:46:37,517][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:46:47,218][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:46:57,205][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:47:07,210][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:47:16,297][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:47:19,600][INFO]"POST /upload_binary_file/?ApiID=72 HTTP/1.1" 200 0
+[2022-10-06 21:47:23,509][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:47:23,509][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:47:26,311][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:47:26,314][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:47:37,210][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:47:47,208][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:47:57,206][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:48:07,215][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:48:17,211][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:48:23,198][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:48:23,201][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:48:27,214][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:48:27,219][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:48:37,208][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:48:47,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:48:57,222][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:49:07,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:49:17,216][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:49:23,205][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:49:23,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:49:27,208][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:49:27,213][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:49:37,209][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:49:47,216][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:49:57,212][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:50:07,209][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:50:17,218][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:50:23,206][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:50:23,211][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:50:27,206][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:50:27,211][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:50:37,208][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:50:47,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:50:57,219][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:51:07,211][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:51:17,209][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:51:23,204][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:51:23,209][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:51:27,206][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:51:27,210][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:51:37,211][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:51:47,208][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:51:57,208][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:52:07,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:52:17,202][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:52:23,202][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:52:23,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:52:27,204][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:52:27,210][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:53:23,218][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:53:23,220][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:53:23,221][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:53:23,224][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:54:23,198][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:54:23,200][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:54:23,201][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:54:23,203][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:55:23,209][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:55:23,212][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:55:23,212][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:55:23,214][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:56:23,205][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:56:23,207][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:56:23,208][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:56:23,210][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:57:23,205][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:57:23,207][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:57:23,209][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:57:23,211][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:57:39,242][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:57:42,774][INFO]"GET /static/css/chunk-vendors.dd50ba92.css HTTP/1.1" 304 0
+[2022-10-06 21:57:42,775][INFO]"GET /static/css/app.3a9de615.css HTTP/1.1" 304 0
+[2022-10-06 21:57:42,850][INFO]"GET /static/js/chunk-vendors.340c1126.js.map HTTP/1.1" 200 3717959
+[2022-10-06 21:57:42,852][INFO]"GET /static/js/app.3512cdca.js.map HTTP/1.1" 200 228861
+[2022-10-06 21:57:46,296][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:57:56,315][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:58:06,313][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:58:16,296][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:58:23,214][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:58:23,217][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:58:26,317][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:58:26,320][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:58:36,299][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:58:46,308][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:58:56,310][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:59:06,301][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:59:14,156][INFO]"GET /remove_ac?project_id=68&id=72 HTTP/1.1" 301 0
+[2022-10-06 21:59:14,165][INFO]"GET /remove_ac/?project_id=68&id=72 HTTP/1.1" 200 2
+[2022-10-06 21:59:14,920][INFO]"GET /add_apis/?project_id=68 HTTP/1.1" 200 339
+[2022-10-06 21:59:16,299][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:59:23,209][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:59:23,212][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:59:26,308][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 21:59:26,312][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:59:36,308][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:59:46,315][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:59:56,312][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 21:59:59,119][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-10-06 21:59:59,127][INFO]"GET /static/css/app.3a9de615.css HTTP/1.1" 304 0
+[2022-10-06 21:59:59,128][INFO]"GET /static/css/chunk-vendors.dd50ba92.css HTTP/1.1" 304 0
+[2022-10-06 21:59:59,129][INFO]"GET /static/js/app.3512cdca.js HTTP/1.1" 304 0
+[2022-10-06 21:59:59,131][INFO]"GET /static/js/chunk-vendors.340c1126.js HTTP/1.1" 304 0
+[2022-10-06 21:59:59,179][INFO]"GET /static/js/chunk-vendors.340c1126.js.map HTTP/1.1" 200 3717959
+[2022-10-06 21:59:59,181][INFO]"GET /static/js/app.3512cdca.js.map HTTP/1.1" 200 228861
+[2022-10-06 21:59:59,219][INFO]"GET /static/fonts/element-icons.535877f5.woff HTTP/1.1" 304 0
+[2022-10-06 21:59:59,227][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-10-06 21:59:59,232][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 339
+[2022-10-06 21:59:59,234][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-10-06 21:59:59,254][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-10-06 22:00:23,205][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-10-06 22:00:23,207][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 22:00:28,379][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-06 22:01:23,266][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-10-06 22:01:23,272][INFO]"GET /static/css/app.19bf1249.css HTTP/1.1" 200 3588
+[2022-10-06 22:01:23,274][INFO]"GET /static/js/app.6e6ec962.js HTTP/1.1" 200 64806
+[2022-10-06 22:01:23,279][INFO]"GET /static/js/chunk-vendors.fd8d22e8.js HTTP/1.1" 200 898284
+[2022-10-06 22:01:23,320][INFO]"GET /static/js/chunk-vendors.fd8d22e8.js.map HTTP/1.1" 200 3718679
+[2022-10-06 22:01:23,322][INFO]"GET /static/js/app.6e6ec962.js.map HTTP/1.1" 200 229501
+[2022-10-06 22:01:23,366][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-10-06 22:01:23,369][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 339
+[2022-10-06 22:01:23,373][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-10-06 22:01:23,398][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-10-06 22:01:31,725][INFO]"GET /remove_ac?project_id=68&id=73 HTTP/1.1" 301 0
+[2022-10-06 22:01:31,733][INFO]"GET /remove_ac/?project_id=68&id=73 HTTP/1.1" 200 2
+[2022-10-06 22:01:32,421][INFO]"GET /add_apis/?project_id=68 HTTP/1.1" 200 339
+[2022-10-06 22:01:41,060][INFO]"POST /upload_binary_file/?ApiID=74 HTTP/1.1" 200 0
+[2022-10-06 22:08:06,465][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-06 22:08:06,902][INFO]Watching for file changes with StatReloader
+[2022-10-06 22:08:15,333][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-06 22:08:15,768][INFO]Watching for file changes with StatReloader
+[2022-10-06 22:08:58,148][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-06 22:08:58,628][INFO]Watching for file changes with StatReloader
+[2022-10-06 22:49:42,432][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-06 22:49:42,961][INFO]Watching for file changes with StatReloader
+[2022-10-06 22:51:58,912][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-06 22:51:59,441][INFO]Watching for file changes with StatReloader
+[2022-10-06 22:53:13,793][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-06 22:53:14,309][INFO]Watching for file changes with StatReloader
+[2022-10-06 22:54:02,434][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-06 22:54:02,861][INFO]Watching for file changes with StatReloader
+[2022-10-06 22:54:27,462][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 367
+[2022-10-06 22:54:31,025][ERROR]Internal Server Error: /send_api/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 216, in send_api
+    response_data = s.index()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 214, in index
+    self.send()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 190, in send
+    payload = open('Api_app/static/tmp' + file_name, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'Api_app/static/tmp74_2.png'
+[2022-10-06 22:54:31,026][ERROR]"POST /send_api/?project_id=68 HTTP/1.1" 500 73859
+[2022-10-06 22:55:57,389][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-06 22:55:57,903][INFO]Watching for file changes with StatReloader
+[2022-10-06 22:55:58,806][ERROR]Internal Server Error: /send_api/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 216, in send_api
+    response_data = s.index()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 214, in index
+    self.send()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 192, in send
+    self.response = requests.request(self.method, self.url, headers=self.headers, data=payload)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 515, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 453, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\models.py", line 318, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\models.py", line 392, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '/test/post?': No scheme supplied. Perhaps you meant http:///test/post??
+[2022-10-06 22:55:58,806][ERROR]"POST /send_api/?project_id=68 HTTP/1.1" 500 100832
+[2022-10-06 22:56:00,455][ERROR]Internal Server Error: /send_api/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 216, in send_api
+    response_data = s.index()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 214, in index
+    self.send()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 192, in send
+    self.response = requests.request(self.method, self.url, headers=self.headers, data=payload)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 515, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 453, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\models.py", line 318, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\models.py", line 392, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '/test/post?': No scheme supplied. Perhaps you meant http:///test/post??
+[2022-10-06 22:56:00,456][ERROR]"POST /send_api/?project_id=68 HTTP/1.1" 500 100832
+[2022-10-06 22:56:58,687][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 385
+[2022-10-06 22:57:01,468][ERROR]Internal Server Error: //test/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 385, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 399, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1
+    r=/test(request)
+      ^
+SyntaxError: invalid syntax
+[2022-10-06 22:57:01,468][ERROR]"POST //test/ HTTP/1.1" 500 65178
+[2022-10-06 22:57:01,468][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 69248
+[2022-10-06 22:57:34,425][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 384
+[2022-10-06 22:57:35,722][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-06 22:57:35,722][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-06 22:57:36,763][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-06 22:57:36,763][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-06 22:57:48,089][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-06 22:57:48,089][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-06 22:58:16,049][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-06 22:58:16,053][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361

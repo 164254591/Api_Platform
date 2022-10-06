@@ -43,6 +43,9 @@ urlpatterns = [
     path('save_api/', save_api),
     path('send_api/', send_api),
     path('test/', test),
+    path('upload_binary_file/', upload_binary_file),
+
+
 
     # -----------------------------------------权限系统可以管理的，但不一定监管（接口path只有一级，且path和函数名必须相同）---------
     re_path('(?P<path>.+)/', diy_power),

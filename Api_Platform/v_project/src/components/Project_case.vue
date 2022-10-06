@@ -29,29 +29,29 @@
                   stripe
                   size="mini"
                   style="width: 100%;overflow-y: auto;min-height: 100%">
-                  <el-table-column label="参数名" width="180">
-                    <template slot-scope="scope">
-                      <el-input v-model="scope.row.key"></el-input>
-                    </template>
-                  </el-table-column>
-                  <el-table-column label="参数值" width="180">
-                    <template slot-scope="scope">
-                      <el-input v-model="scope.row.value"></el-input>
-                    </template>
-                  </el-table-column>
-                  <el-table-column label="参数描述" width="180">
-                    <template slot-scope="scope">
-                      <el-input v-model="scope.row.des"></el-input>
-                    </template>
-                  </el-table-column>
-                  <el-table-column>
-                    <template slot="header">
-                      <el-button size="mini" type="primary" @click="add_params">新增</el-button>
-                    </template>
-                     <template slot-scope="scope">
-                      <el-button size="mini" type="danger" @click="del_params(scope.$index)">删除</el-button>
-                    </template>
-                  </el-table-column>
+                <el-table-column label="参数名" width="180">
+                  <template slot-scope="scope">
+                    <el-input v-model="scope.row.key"></el-input>
+                  </template>
+                </el-table-column>
+                <el-table-column label="参数值" width="180">
+                  <template slot-scope="scope">
+                    <el-input v-model="scope.row.value"></el-input>
+                  </template>
+                </el-table-column>
+                <el-table-column label="参数描述" width="180">
+                  <template slot-scope="scope">
+                    <el-input v-model="scope.row.des"></el-input>
+                  </template>
+                </el-table-column>
+                <el-table-column>
+                  <template slot="header">
+                    <el-button size="mini" type="primary" @click="add_params">新增</el-button>
+                  </template>
+                  <template slot-scope="scope">
+                    <el-button size="mini" type="danger" @click="del_params(scope.$index)">删除</el-button>
+                  </template>
+                </el-table-column>
               </el-table>
             </el-tab-pane>
             <el-tab-pane label="Headers">
@@ -60,29 +60,29 @@
                   stripe
                   size="mini"
                   style="width: 100%;overflow-y: auto;min-height: 100%">
-                  <el-table-column label="参数名" width="180">
-                    <template slot-scope="scope">
-                      <el-input v-model="scope.row.key"></el-input>
-                    </template>
-                  </el-table-column>
-                  <el-table-column label="参数值" width="180">
-                    <template slot-scope="scope">
-                      <el-input v-model="scope.row.value"></el-input>
-                    </template>
-                  </el-table-column>
-                  <el-table-column label="参数描述" width="180">
-                    <template slot-scope="scope">
-                      <el-input v-model="scope.row.des"></el-input>
-                    </template>
-                  </el-table-column>
-                  <el-table-column>
-                    <template slot="header">
-                      <el-button size="mini" type="primary" @click="add_headers">新增</el-button>
-                    </template>
-                     <template slot-scope="scope">
-                      <el-button size="mini" type="danger" @click="del_headers(scope.$index)">删除</el-button>
-                    </template>
-                  </el-table-column>
+                <el-table-column label="参数名" width="180">
+                  <template slot-scope="scope">
+                    <el-input v-model="scope.row.key"></el-input>
+                  </template>
+                </el-table-column>
+                <el-table-column label="参数值" width="180">
+                  <template slot-scope="scope">
+                    <el-input v-model="scope.row.value"></el-input>
+                  </template>
+                </el-table-column>
+                <el-table-column label="参数描述" width="180">
+                  <template slot-scope="scope">
+                    <el-input v-model="scope.row.des"></el-input>
+                  </template>
+                </el-table-column>
+                <el-table-column>
+                  <template slot="header">
+                    <el-button size="mini" type="primary" @click="add_headers">新增</el-button>
+                  </template>
+                  <template slot-scope="scope">
+                    <el-button size="mini" type="danger" @click="del_headers(scope.$index)">删除</el-button>
+                  </template>
+                </el-table-column>
               </el-table>
             </el-tab-pane>
             <el-tab-pane label="Body">
@@ -95,29 +95,29 @@
                       stripe
                       size="mini"
                       style="width: 100%;overflow-y: auto;min-height: 100%">
-                      <el-table-column label="参数名" width="180">
-                    <template slot-scope="scope">
-                      <el-input v-model="scope.row.key"></el-input>
-                    </template>
-                  </el-table-column>
-                      <el-table-column label="参数值" width="180">
-                    <template slot-scope="scope">
-                      <el-input v-model="scope.row.value"></el-input>
-                    </template>
-                  </el-table-column>
-                      <el-table-column label="参数描述" width="180">
-                    <template slot-scope="scope">
-                      <el-input v-model="scope.row.des"></el-input>
-                    </template>
-                  </el-table-column>
-                      <el-table-column>
-                          <template slot="header">
-                            <el-button size="mini" type="primary" @click="add_payload_fd">新增</el-button>
-                          </template>
-                           <template slot-scope="scope">
-                            <el-button size="mini" type="danger" @click="del_payload_fd(scope.$index)">删除</el-button>
-                          </template>
-                      </el-table-column>
+                    <el-table-column label="参数名" width="180">
+                      <template slot-scope="scope">
+                        <el-input v-model="scope.row.key"></el-input>
+                      </template>
+                    </el-table-column>
+                    <el-table-column label="参数值" width="180">
+                      <template slot-scope="scope">
+                        <el-input v-model="scope.row.value"></el-input>
+                      </template>
+                    </el-table-column>
+                    <el-table-column label="参数描述" width="180">
+                      <template slot-scope="scope">
+                        <el-input v-model="scope.row.des"></el-input>
+                      </template>
+                    </el-table-column>
+                    <el-table-column>
+                      <template slot="header">
+                        <el-button size="mini" type="primary" @click="add_payload_fd">新增</el-button>
+                      </template>
+                      <template slot-scope="scope">
+                        <el-button size="mini" type="danger" @click="del_payload_fd(scope.$index)">删除</el-button>
+                      </template>
+                    </el-table-column>
                   </el-table>
                 </el-tab-pane>
                 <el-tab-pane label="x-www-form-urlencode" name="x-www-form-urlencode">
@@ -126,33 +126,34 @@
                       stripe
                       size="mini"
                       style="width: 100%;overflow-y: auto;min-height: 100%">
-                      <el-table-column label="参数名" width="180">
-                  <template slot-scope="scope">
-                    <el-input v-model="scope.row.key"></el-input>
-                  </template>
-                </el-table-column>
-                      <el-table-column label="参数值" width="180">
-                  <template slot-scope="scope">
-                    <el-input v-model="scope.row.value"></el-input>
-                  </template>
-                </el-table-column>
-                      <el-table-column label="参数描述" width="180">
-                  <template slot-scope="scope">
-                    <el-input v-model="scope.row.des"></el-input>
-                  </template>
-                </el-table-column>
-                      <el-table-column>
-                  <template slot="header">
-                    <el-button size="mini" type="primary" @click="add_payload_xwfu">新增</el-button>
-                  </template>
-                   <template slot-scope="scope">
-                    <el-button size="mini" type="danger" @click="del_payload_xwfu(scope.$index)">删除</el-button>
-                  </template>
-                </el-table-column>
+                    <el-table-column label="参数名" width="180">
+                      <template slot-scope="scope">
+                        <el-input v-model="scope.row.key"></el-input>
+                      </template>
+                    </el-table-column>
+                    <el-table-column label="参数值" width="180">
+                      <template slot-scope="scope">
+                        <el-input v-model="scope.row.value"></el-input>
+                      </template>
+                    </el-table-column>
+                    <el-table-column label="参数描述" width="180">
+                      <template slot-scope="scope">
+                        <el-input v-model="scope.row.des"></el-input>
+                      </template>
+                    </el-table-column>
+                    <el-table-column>
+                      <template slot="header">
+                        <el-button size="mini" type="primary" @click="add_payload_xwfu">新增</el-button>
+                      </template>
+                      <template slot-scope="scope">
+                        <el-button size="mini" type="danger" @click="del_payload_xwfu(scope.$index)">删除</el-button>
+                      </template>
+                    </el-table-column>
                   </el-table>
                 </el-tab-pane>
                 <el-tab-pane label="raw" name="raw">
-                  <el-select v-model="setting_api.payload_raw_method" style="z-index:999;position:fixed;right:42px;width: 130px"
+                  <el-select v-model="setting_api.payload_raw_method"
+                             style="z-index:999;position:fixed;right:42px;width: 130px"
                              placeholder="Text">
                     <el-option label="Text" value="Text"></el-option>
                     <el-option label="JavaScript" value="JavaScript"></el-option>
@@ -166,16 +167,20 @@
                   <el-upload
                       class="upload-demo"
                       drag
-                      action="https://jsonplaceholder.typicode.com/posts/"
-                      multiple>
+                      :action=" 'http://localhost:8000/upload_binary_file/?ApiID='+setting_api.id "
+                      :limit="1"
+                      name='binary_file'
+                      :on-success="upload_binary_file">
                     <i class="el-icon-upload"></i>
                     <div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
                     <div class="el-upload__tip" slot="tip">只能上传jpg/png文</div>
                   </el-upload>
                 </el-tab-pane>
                 <el-tab-pane label="GraphQL" name="GraphQL">
-                  <el-input v-model="setting_api.payload_GQL_q" type="textarea" :rows="6" style="width: 65%" placeholder="QUERY"></el-input>
-                  <el-input v-model="setting_api.payload_GQL_g" type="textarea" :rows="6" style="width: 35%" placeholder="GRAPHQL VARIABLES"></el-input>
+                  <el-input v-model="setting_api.payload_GQL_q" type="textarea" :rows="6" style="width: 65%"
+                            placeholder="QUERY"></el-input>
+                  <el-input v-model="setting_api.payload_GQL_g" type="textarea" :rows="6" style="width: 35%"
+                            placeholder="GRAPHQL VARIABLES"></el-input>
                 </el-tab-pane>
               </el-tabs>
             </el-tab-pane>
@@ -205,10 +210,11 @@
         &#12288 <span>配置名称：</span>
         <el-input style="width:-webkit-calc(100% - 299px)" v-model="setting_configure.label"></el-input>
         <br><br>
-        <el-tabs v-model="setting_configure.method" @tab-click="choose_configure_method" tab-position="left" style="height: 100%">
-<!--          <el-tab-pane label="仅运行">-->
-<!--            <span class="smallfont">帮助：选中此项后，其他配置不再运行！</span>-->
-<!--          </el-tab-pane>-->
+        <el-tabs v-model="setting_configure.method" @tab-click="choose_configure_method" tab-position="left"
+                 style="height: 100%">
+          <!--          <el-tab-pane label="仅运行">-->
+          <!--            <span class="smallfont">帮助：选中此项后，其他配置不再运行！</span>-->
+          <!--          </el-tab-pane>-->
           <el-tab-pane name="断言" label="断言">
             <el-select v-model="setting_configure.select" style="width: 120px">
               <el-option label="全值检索" value="全值检索"></el-option>
@@ -216,7 +222,8 @@
               <el-option label="路径匹配" value="路径匹配"></el-option>
               <el-option label="SQL断言" value="SQL断言"></el-option>
             </el-select>
-            <el-input v-model="setting_configure.value" placeholder="请输入表达式、sql语句" style="width: -webkit-calc(100% - 175px )"></el-input>
+            <el-input v-model="setting_configure.value" placeholder="请输入表达式、sql语句"
+                      style="width: -webkit-calc(100% - 175px )"></el-input>
             <br>
             <p>帮助</p>
             <p>1.全值检索：在整个返回值当中，是否存在目标字符串。（.find()） * </p>
@@ -237,7 +244,8 @@
               <el-option label="正则提取" value="正则提取"></el-option>
               <el-option label="sql提取" value="sql提取"></el-option>
             </el-select>
-            <el-input v-model="setting_configure.value" placeholder="请输入表达式、sql查询语句" style="width: -webkit-calc(100% - 175px )"></el-input>
+            <el-input v-model="setting_configure.value" placeholder="请输入表达式、sql查询语句"
+                      style="width: -webkit-calc(100% - 175px )"></el-input>
             <br>
             <p>帮助：</p>
             <p>1.路径提取：用户写变量名=路径。仅限json</p>
@@ -246,13 +254,14 @@
 
           </el-tab-pane>
           <el-tab-pane name="SQL增删改" label="SQL增删改">
-            <el-input type="textarea" :rows="5" v-model="setting_configure.value" placeholder="请输入需要执行的sql语句"></el-input>
+            <el-input type="textarea" :rows="5" v-model="setting_configure.value"
+                      placeholder="请输入需要执行的sql语句"></el-input>
             <br>
             <p>帮助：</p>
             <p>一般用来执行某个特殊的需求，如修改、增加、删除等。用户手写sql语句即可，没有返回结果</p>
           </el-tab-pane>
           <el-tab-pane name="随机变量" label="随机变量">
-            <el-input v-model="setting_configure.value" placeholder="请按照下面要求，输入表达式" ></el-input>
+            <el-input v-model="setting_configure.value" placeholder="请按照下面要求，输入表达式"></el-input>
             <br>
             <p>帮助：</p>
             <p>1.常数：a=5, a=8.55, a="呵呵", a=[1,2,3] </p>
@@ -269,7 +278,7 @@
               <el-option label="写死返回值" value="写死返回值"></el-option>
               <el-option label="第三方接口" value="第三方接口"></el-option>
             </el-select>
-            <el-input type="textarea" :rows="8" v-model="setting_configure.value" placeholder="请输入返回值、接口请求等" ></el-input>
+            <el-input type="textarea" :rows="8" v-model="setting_configure.value" placeholder="请输入返回值、接口请求等"></el-input>
             <br>
             <p>帮助：</p>
             <p>1.选择写死返回值，可直接粘贴返回值到上面的多行文本框，点击保存即可</p>
@@ -290,17 +299,19 @@
               <el-option label="params" value="params"></el-option>
               <el-option label="request_body" value="request_body"></el-option>
             </el-select>
-            <el-input  v-model="setting_configure.value" placeholder="请输入表达式" style="width: -webkit-calc(100% - 205px )" ></el-input>
+            <el-input v-model="setting_configure.value" placeholder="请输入表达式"
+                      style="width: -webkit-calc(100% - 205px )"></el-input>
             <br>
             <p>帮助：</p>
             <p>比如：a=55</p>
           </el-tab-pane>
           <el-tab-pane name="加密参数" label="加密参数">
-             <el-select v-model="setting_configure.select" style="width: 150px" placeholder="插入位置">
+            <el-select v-model="setting_configure.select" style="width: 150px" placeholder="插入位置">
               <el-option label="request_header" value="request_header"></el-option>
               <el-option label="params" value="params"></el-option>
             </el-select>
-            <el-input  v-model="setting_configure.value" placeholder="请输入表达式" style="width: -webkit-calc(100% - 205px )" ></el-input>
+            <el-input v-model="setting_configure.value" placeholder="请输入表达式"
+                      style="width: -webkit-calc(100% - 205px )"></el-input>
             <br>
             <p>帮助：</p>
             <p>例如：sign = python能执行的加密算法， 其中可以使用接口的全部位置的参数,函数(hashlib.md5(),hashlib.shar1())</p>
@@ -381,7 +392,7 @@ export default {
   name: "Project_case",
   data() {
     return {
-      choose_tab_pane:'',
+      choose_tab_pane: '',
       right_api: false,
       right_configure: false,
       doing_api: '添加好友',
@@ -396,10 +407,10 @@ export default {
       apis: [
         // {id:1,type:'api',label:'接口1号',children:[{id:'1_1',type:'configure',label:'设置1'},{id:'1_2',type:'configure',label:'设置2'},{id:'1_3',type:'configure',label:'设置3'}]},
       ],
-      response_data:{
-        R:'',  // Response
-        RD:'', // ResponseData
-        CR:'', // ConfigureResult
+      response_data: {
+        R: '',  // Response
+        RD: '', // ResponseData
+        CR: '', // ConfigureResult
       },
     }
   },
@@ -426,51 +437,54 @@ export default {
 
   },
   methods: {
-    up_api(){
-      axios.get('http://localhost:8000/up_api/',{
-        params:{
-          api_id:this.setting_api.id,
-          project_id:this.project_id,
+    upload_binary_file(res,file){
+      this.setting_api.payload_binary = this.setting_api.id + '_'+file.raw.name;
+    },
+    up_api() {
+      axios.get('http://localhost:8000/up_api/', {
+        params: {
+          api_id: this.setting_api.id,
+          project_id: this.project_id,
         }
-      }).then(res=>{
-        this.apis=res.data;
-        this.right_api=false;
-        this.dek=[this.setting_api.id]
+      }).then(res => {
+        this.apis = res.data;
+        this.right_api = false;
+        this.dek = [this.setting_api.id]
       })
     },
-    down_api(){
-      axios.get('http://localhost:8000/down_api/',{
-        params:{
-          api_id:this.setting_api.id,
-          project_id:this.project_id,
+    down_api() {
+      axios.get('http://localhost:8000/down_api/', {
+        params: {
+          api_id: this.setting_api.id,
+          project_id: this.project_id,
         }
-      }).then(res=>{
-        this.apis=res.data;
-        this.right_api=false;
+      }).then(res => {
+        this.apis = res.data;
+        this.right_api = false;
       })
     },
-    up_configure(){
-      axios.get('http://localhost:8000/up_configure/',{
-        params:{
-          configure_id:this.setting_configure.id,
-          project_id:this.project_id,
+    up_configure() {
+      axios.get('http://localhost:8000/up_configure/', {
+        params: {
+          configure_id: this.setting_configure.id,
+          project_id: this.project_id,
         }
-      }).then(res=>{
-        this.apis=res.data;
-        this.right_configure=false;
-        this.dek=[parseInt(this.setting_configure.id.split('_')[0])] // 将字符串转换成整形
+      }).then(res => {
+        this.apis = res.data;
+        this.right_configure = false;
+        this.dek = [parseInt(this.setting_configure.id.split('_')[0])] // 将字符串转换成整形
       })
     },
-    down_configure(){
-      axios.get('http://localhost:8000/down_configure/',{
-        params:{
-          configure_id:this.setting_configure.id,
-          project_id:this.project_id,
+    down_configure() {
+      axios.get('http://localhost:8000/down_configure/', {
+        params: {
+          configure_id: this.setting_configure.id,
+          project_id: this.project_id,
         }
-      }).then(res=>{
-        this.apis=res.data;
-        this.right_configure=false;
-        this.dek=[parseInt(this.setting_configure.id.split('_')[0])] // 将字符串转换成整形
+      }).then(res => {
+        this.apis = res.data;
+        this.right_configure = false;
+        this.dek = [parseInt(this.setting_configure.id.split('_')[0])] // 将字符串转换成整形
       })
     },
     // get_label(label){
@@ -483,8 +497,8 @@ export default {
     //   return new_label
     //
     // },
-    get_label(label){
-      return label.substring(0,12) + ( (label.length>12)?'...':'')
+    get_label(label) {
+      return label.substring(0, 12) + ((label.length > 12) ? '...' : '')
     },
     handleCheckChange(data, checked) {
       console.log(data, checked);
@@ -561,84 +575,85 @@ export default {
       })
 
     },
-    save_configure(){
-      axios.post('http://localhost:8000/save_configure/',this.setting_configure).then(res=>{
+    save_configure() {
+      axios.post('http://localhost:8000/save_configure/', this.setting_configure).then(res => {
         this.$message({
-          message:'保存成功！',
-          type:'success'
+          message: '保存成功！',
+          type: 'success'
         })
 
       })
 
     },
-    save_api(){
-      axios.post('http://localhost:8000/save_api/',this.setting_api,{
-        params:{
-          project_id:this.project_id
-        }}).then(res=>{
-          this.apis=res.data;
-          this.$message({
-            message:'保存成功',
-            type:'success'
-          })
-      })
-    },
-    send_api(){
-      axios.post('http://localhost:8000/send_api/',this.setting_api,{
-        params:{
-          project_id:this.project_id,
+    save_api() {
+      axios.post('http://localhost:8000/save_api/', this.setting_api, {
+        params: {
+          project_id: this.project_id
         }
-      }).then(res=>{
-        this.response_data=res.data;
-        this.choose_tab_pane='Response';
+      }).then(res => {
+        this.apis = res.data;
+        this.$message({
+          message: '保存成功',
+          type: 'success'
+        })
+      })
+    },
+    send_api() {
+      axios.post('http://localhost:8000/send_api/', this.setting_api, {
+        params: {
+          project_id: this.project_id,
+        }
+      }).then(res => {
+        this.response_data = res.data;
+        this.choose_tab_pane = 'Response';
       })
 
     },
-    run(){
+    run() {
 
     },
-    report(){
+    report() {
 
     },
 
     // 选择配置的方法，切换配置tab页时清空之前选择的方式、值
-    choose_configure_method(tab,event){
-      console.log(tab,event)
-      this.setting_configure.select=''
-      this.setting_configure.value=''
-      this.setting_configure.method=tab.label;
+    choose_configure_method(tab, event) {
+      console.log(tab, event)
+      this.setting_configure.select = ''
+      this.setting_configure.value = ''
+      this.setting_configure.method = tab.label;
     },
     // 新增参数
-    add_params(){
-      this.setting_api.params.push( {} )
+    add_params() {
+      this.setting_api.params.push({})
     },
     // 删除参数
-    del_params(index){
-      this.setting_api.params.splice(index,1)
+    del_params(index) {
+      this.setting_api.params.splice(index, 1)
     },
     // 新增参数
-    add_headers(){
-      this.setting_api.headers.push( {} )
+    add_headers() {
+      this.setting_api.headers.push({})
     },
     // 删除参数
-    del_headers(index){
-      this.setting_api.headers.splice(index,1)
+    del_headers(index) {
+      this.setting_api.headers.splice(index, 1)
     },
     // 新增参数
-    add_payload_fd(){
-      this.setting_api.payload_fd.push( {} )
+    add_payload_fd() {
+      this.setting_api.payload_fd.push({})
     },
     // 删除参数
-    del_payload_fd(index){
-      this.setting_api.payload_fd.splice(index,1)
+    del_payload_fd(index) {
+      this.setting_api.payload_fd.splice(index, 1)
     },
     // 新增参数
-    add_payload_xwfu(){
-      this.setting_api.payload_xwfu.push( {} )
+    add_payload_xwfu() {
+      this.setting_api.payload_xwfu.push({})
     },
     // 删除参数
-    del_payload_xwfu(index){
-      this.setting_api.payload_xwfu.splice(index,1)
+    del_payload_xwfu(index) {
+      this.setting_api.payload_xwfu.splice(index, 1)
     },
 
 
@@ -651,7 +666,8 @@ export default {
   font-size: xx-small;
   color: gray;
 }
-P{
+
+P {
   font-size: xx-small;
   color: gray;
 }

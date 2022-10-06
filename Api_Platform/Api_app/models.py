@@ -98,6 +98,7 @@ class DB_apis(models.Model):
     payload_raw = models.CharField(max_length=3000, null=True, blank=True, default='')
     payload_GQL_q = models.CharField(max_length=3000, null=True, blank=True, default='')
     payload_GQL_g = models.CharField(max_length=3000, null=True, blank=True, default='')
+    payload_binary = models.CharField(max_length=100, null=True, blank=True, default='')
 
     def __str__(self):
         return self.label
