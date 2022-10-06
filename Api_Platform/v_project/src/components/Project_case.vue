@@ -303,7 +303,8 @@
             <el-input  v-model="setting_configure.value" placeholder="请输入表达式" style="width: -webkit-calc(100% - 205px )" ></el-input>
             <br>
             <p>帮助：</p>
-            <p>例如：sign = python能执行的加密算法， 其中可以使用接口的全部位置的参数,函数(md5,shar1)</p>
+            <p>例如：sign = python能执行的加密算法， 其中可以使用接口的全部位置的参数,函数(hashlib.md5(),hashlib.shar1())</p>
+            <p>定制算法：sign = make_sign()</p>
           </el-tab-pane>
           <el-tab-pane name="草稿" label="草稿">
             <el-input type="textarea" :rows="10" placeholder="请随意使用该文本框"></el-input>

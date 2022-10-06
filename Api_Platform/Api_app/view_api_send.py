@@ -123,9 +123,33 @@ class SENDAPI():
                 self.api['payload_fd'] = configure['value'].split['\n'][4]
                 self.api['payload_xwfu'] = configure['value'].split['\n'][4]
                 self.api['payload_raw'] = configure['value'].split['\n'][4]
+            return True
         elif configure['method'] == "插入参数":
-            ...
-
+            left = configure['value'].split('=')[0].strip()
+            right = eval('='.join(configure['value'].split('=')[1:]).strip())  # 对字符串中有多个=的处理
+            if configure['select'] == 'request_header':
+                self.headers[left] = right
+            elif configure['select'] == 'params':
+                self.url += '&' + left + '=' + str(right)
+            elif configure['select'] == 'request_body':
+                if self.api['payload_method'] == 'form-data'.lower():
+                    self.api['payload_fd'].append({"key": left, "value": right})
+                elif self.api['payload_method'] == 'x-www-form-urlencoded':
+                    self.api['payload_xwfu'].append({"key": left, "value": right})
+                elif self.api['payload_method'] == 'raw' and self.api['payload_method'].lower() == 'json'.lower():
+                    s = self.api['payload_raw']
+                    s.json.loads(s)
+                    s[left] = right
+                    self.api['payload_raw'] = json.dumps(s)
+            return True
+        elif configure['method'] == "加密算法":
+            left = configure['value'].split('=')[0].strip()
+            right = eval('='.join(configure['value'].split('=')[1:]).strip())  # 对字符串中有多个=的处理
+            if configure['select'] == 'request_header':
+                self.headers[left]=right
+            elif configure['select'] == 'params':
+                self.url += '&' + left + '=' + str(right)
+            return True
 
         return False
 
