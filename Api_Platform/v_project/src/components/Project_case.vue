@@ -273,7 +273,16 @@
             <br>
             <p>帮助：</p>
             <p>1.选择写死返回值，可直接粘贴返回值到上面的多行文本框，点击保存即可</p>
-            <p>2.第三方接口，请依次每行输入：url、header字典、请求体、</p>
+            <p>2.第三方接口，请依次每行输入：url、请求方式、header字典、请求体类型、请求体</p>
+            <p>
+              如：<br>
+              &nbsp; http://www.xxx.com/aaa/bbb?a=1<br>
+              &nbsp; post <br>
+              &nbsp; {"a":1,"b"：1} <br>
+              &nbsp; form-data / x-www-form-urlencode / raw-json / raw-text / raw-html / ram-xml / raw-javascript <br>
+              &nbsp; {"username":"zhangsan","userid":45} <br>
+
+            </p>
           </el-tab-pane>
           <el-tab-pane name="插入参数" label="插入参数">
             <el-select v-model="setting_configure.select" style="width: 150px">

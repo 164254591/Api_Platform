@@ -30,6 +30,7 @@ class SENDAPI():
         self.make_method()
         self.TQ = TQ  # 设置传入的提取TQ作为类变量
         self.CR = []
+        self.send_real = True
 
     def make_url(self):
         """拼接url"""
@@ -106,6 +107,26 @@ class SENDAPI():
             self.TQ[left] = eval(right)
             print(self.TQ)
             return True
+        elif configure['method'] == "mock":
+            if configure['select'] == "写死返回值":
+                self.R = configure['value']
+                self.send_real = False  # 设置开关，不执行发送mock接口
+            elif configure['select'] == "第三方接口":  # 不运行接口，只修改请求数据
+                self.url = configure['value'].split('\n')[0]
+                self.method = configure['value'].split('\n')[1]
+                self.headers = json.loads(configure['value'].split('\n')[2])
+                if 'raw' in configure['value'].split['\n'][3]:
+                    self.api['payload_method'] = 'raw'
+                    self.api['payload_raw_method'] = configure['value'].split['\n'][3].split('-')[1]
+                else:
+                    self.api['payload_method'] = configure['value'].split['\n'][3]
+                self.api['payload_fd'] = configure['value'].split['\n'][4]
+                self.api['payload_xwfu'] = configure['value'].split['\n'][4]
+                self.api['payload_raw'] = configure['value'].split['\n'][4]
+        elif configure['method'] == "插入参数":
+            ...
+
+
         return False
 
     def send(self):
@@ -160,7 +181,8 @@ class SENDAPI():
             if i['do_time'] == 'before':
                 self.CR.append('【%s】 = %s' % (i['label'], self.do_configure(i)))
                 children.remove(i)
-        self.send()
+        if self.send_real == True:
+            self.send()
         for i in children:
             self.CR.append('【%s】 = %s' % (i['label'], self.do_configure(i)))
         self.make_RD()
