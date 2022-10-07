@@ -102,7 +102,20 @@
                     </el-table-column>
                     <el-table-column label="参数值" width="180">
                       <template slot-scope="scope">
-                        <el-input v-model="scope.row.value"></el-input>
+                        <el-input :id="'fd_value_input_'+scope.$index" v-model="scope.row.value"></el-input>
+                      </template>
+                    </el-table-column>
+                    <el-table-column label="文件(上传后参数值不可修改)" width="180">
+                      <template slot-scope="scope">
+                        <el-upload
+                            class="upload-demo"
+                            :action="'http://localhost:8000/upload_fd_file/?ApiID='+setting_api.id"
+                            :limit="1"
+                            name="fd_file"
+                            :on-success="upload_fd_file">
+                          <el-button @click="set_fd_index(scope.$index)" size="small" type="primary">FILE</el-button>
+                        </el-upload>
+
                       </template>
                     </el-table-column>
                     <el-table-column label="参数描述" width="180">
@@ -392,6 +405,7 @@ export default {
   name: "Project_case",
   data() {
     return {
+      fd_index: '',  //fd参数对应行的下标
       choose_tab_pane: '',
       right_api: false,
       right_configure: false,
@@ -437,8 +451,19 @@ export default {
 
   },
   methods: {
-    upload_binary_file(res,file){
-      this.setting_api.payload_binary = this.setting_api.id + '_'+file.raw.name;
+    // 获取index
+    set_fd_index(index) {
+      this.fd_index = index;
+    },
+    upload_fd_file(res, file) {
+      var file_name = '*FILE*' + this.setting_api.id + '_' + file.raw.name;
+      this.setting_api.payload_fd[this.fd_index].value = file_name;
+      document.getElementById('fd_value_input_' + this.fd_index).value = file_name;
+      document.getElementById('fd_value_input_' + this.fd_index).disabled = true;
+
+    },
+    upload_binary_file(res, file) {
+      this.setting_api.payload_binary = this.setting_api.id + '_' + file.raw.name;
     },
     up_api() {
       axios.get('http://localhost:8000/up_api/', {

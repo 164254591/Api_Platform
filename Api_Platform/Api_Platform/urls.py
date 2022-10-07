@@ -44,6 +44,7 @@ urlpatterns = [
     path('send_api/', send_api),
     path('test/', test),
     path('upload_binary_file/', upload_binary_file),
+    path('upload_fd_file/',upload_fd_file),
 
 
 

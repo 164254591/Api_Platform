@@ -230,6 +230,18 @@ def upload_binary_file(request):
     return HttpResponse('')
 
 
+# 上传fd文件
+def upload_fd_file(request):
+    ApiID = request.GET['ApiID']
+    file = request.FILES.get('fd_file', None)
+    file_name = '%s_%s' % (ApiID, file)
+    fp = open('Api_app/static/tmp/' + file_name, 'wb+')
+    for i in file.chunks():
+        fp.write(i)
+    fp.close()
+    return HttpResponse('')
+
+
 def test(request):
     print(request.body)
     return HttpResponse('{"a": "22", "b": {"c": [22,33], "d": "02"}}', content_type='application/json')
