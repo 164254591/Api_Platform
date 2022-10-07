@@ -22178,3 +22178,63 @@ SyntaxError: invalid syntax
 [2022-10-06 22:57:48,089][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
 [2022-10-06 22:58:16,049][INFO]"POST /test/ HTTP/1.1" 200 43
 [2022-10-06 22:58:16,053][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-07 16:11:03,573][INFO]Watching for file changes with StatReloader
+[2022-10-07 16:12:13,666][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-07 16:12:14,213][INFO]Watching for file changes with StatReloader
+[2022-10-07 16:29:23,318][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-07 16:29:23,880][INFO]Watching for file changes with StatReloader
+[2022-10-07 16:30:30,197][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-07 16:30:30,706][INFO]Watching for file changes with StatReloader
+[2022-10-07 16:31:37,846][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-07 16:31:38,381][INFO]Watching for file changes with StatReloader
+[2022-10-07 16:33:05,366][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-07 16:33:05,912][INFO]Watching for file changes with StatReloader
+[2022-10-07 16:38:39,742][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-07 16:38:40,301][INFO]Watching for file changes with StatReloader
+[2022-10-07 16:39:02,726][INFO]"GET / HTTP/1.1" 200 4830
+[2022-10-07 16:39:03,576][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-07 16:39:04,129][INFO]Watching for file changes with StatReloader
+[2022-10-07 16:39:05,644][INFO]"POST /login_action/ HTTP/1.1" 302 0
+[2022-10-07 16:39:05,650][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-10-07 16:39:05,658][INFO]"GET /static/css/app.19bf1249.css HTTP/1.1" 200 3588
+[2022-10-07 16:39:05,659][INFO]"GET /static/js/app.6e6ec962.js HTTP/1.1" 200 64806
+[2022-10-07 16:39:05,661][INFO]"GET /static/css/chunk-vendors.dd50ba92.css HTTP/1.1" 200 240819
+[2022-10-07 16:39:05,673][INFO]"GET /static/js/chunk-vendors.fd8d22e8.js HTTP/1.1" 200 898284
+[2022-10-07 16:39:05,735][INFO]"GET /static/fonts/element-icons.535877f5.woff HTTP/1.1" 200 28200
+[2022-10-07 16:39:05,745][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-10-07 16:39:06,037][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-10-07 16:39:06,041][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:39:08,066][INFO]"GET /get_project_list/ HTTP/1.1" 200 1212
+[2022-10-07 16:39:08,078][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-10-07 16:39:09,033][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 260
+[2022-10-07 16:39:09,043][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 384
+[2022-10-07 16:39:09,043][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-10-07 16:39:09,056][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-10-07 16:39:15,737][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:39:22,279][INFO]"OPTIONS /upload_binary_file/?ApiID=74 HTTP/1.1" 200 0
+[2022-10-07 16:39:22,292][INFO]"POST /upload_binary_file/?ApiID=74 HTTP/1.1" 200 0
+[2022-10-07 16:39:25,645][INFO]"OPTIONS /send_api/?project_id=68 HTTP/1.1" 200 0
+[2022-10-07 16:39:25,727][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:39:27,720][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-07 16:39:27,721][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-07 16:39:35,730][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:39:46,498][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:39:56,506][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:40:06,505][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:40:16,502][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:40:26,505][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:40:36,507][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:40:46,495][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:40:56,494][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:41:06,497][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:41:16,489][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:41:26,501][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:41:36,497][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:41:46,509][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:41:56,495][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:42:06,493][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:42:16,508][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:42:26,505][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:42:36,501][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-07 16:42:37,225][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-07 16:42:37,743][INFO]Watching for file changes with StatReloader

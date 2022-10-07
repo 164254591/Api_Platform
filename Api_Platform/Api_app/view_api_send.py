@@ -16,6 +16,47 @@ import requests
 logger = logging.getLogger('django')
 
 
+# 生成身份证号码
+def generate_ID():
+    ...
+
+
+# 多用途互联网邮件扩展类型
+def get_MIME(filename):
+    d = {
+        'image/png': ['png'],
+        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet': ['xlsx'],
+        'application/vnd.openxmlformats-officedocument.presentationml.presentation': ['pptx'],
+        'application/pdf': ['pdf'],
+        'image/jpeg': ['jpg', 'jpeg'],
+        'application/zip': ['zip'],
+        'text/plain': ['txt'],
+        'video/mp4': ['mp4'],
+        'application/msword': ['doc', 'dot'],
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.document': ['docx'],
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.template': ['dotx'],
+        'application/vnd.ms-word.document.macroEnabled.12': ['docm'],
+        'application/vnd.ms-word.template.macroEnabled.12': ['dotm'],
+        'application/vnd.ms-excel': ['xls', 'xlt', 'xla'],
+        'application/vnd.openxmlformats-officedocument.spreadsheetml.template': ['xltx'],
+        'application/vnd.ms-excel.sheet.macroEnabled.12': ['xlsm'],
+        'application/vnd.ms-excel.template.macroEnabled.12': ['xltm'],
+        'application/vnd.ms-excel.addin.macroEnabled.12': ['xlam'],
+        'application/vnd.ms-excel.sheet.binary.macroEnabled.12': ['xlsb'],
+        'application/vnd.ms-powerpoint': ['ppt', 'pot', 'pps', 'ppa'],
+        'application/vnd.openxmlformats-officedocument.presentationml.slideshow': ['ppsx'],
+        'application/vnd.ms-powerpoint.addin.macroEnabled.12': ['ppam'],
+        'application/vnd.ms-powerpoint.presentation.macroEnabled.12': ['pptm', 'potm'],
+        'application/vnd.ms-powerpoint.slideshow.macroEnabled.12': ['ppsm'],
+        'application/x-tar': ['tar'],
+    }
+    hz = filename.split('.')[-1]  # 后缀
+    for key, value in d.items():
+        if hz in value:
+            return key
+    return 'application/octet-stream'  # 一切未知类型
+
+
 # 调用多个接口
 # 第一个接口调用SENDAPI，传进来一个空字典TQ {}，提取的变量全部塞进这个字典TQ，返回这个有内容的字典TQ
 # 第二个接口调用SENDAPI，传进来刚刚已经有内容的字典TQ {}，并把自己提取的变量也塞进这个字典TQ，然后再返回TQ
@@ -32,7 +73,6 @@ class SENDAPI():
         self.CR = []
         self.send_real = True
         self.api['payload_method'] = self.api['payload_method'].lower()
-
 
     def make_url(self):
         """拼接url"""
@@ -188,7 +228,7 @@ class SENDAPI():
         elif self.api['payload_method'] == 'binary':
             file_name = self.api['payload_binary']
             payload = open('Api_app/static/tmp/' + file_name, 'rb')
-            self.headers['Content-Type'] = 'image/png'  # MIME文件
+            self.headers['Content-Type'] = get_MIME(file_name)  # MIME文件格式
             self.response = requests.request(self.method, self.url, headers=self.headers, data=payload)
         elif self.api['payload_method'] == 'GraphQL':
             self.headers['Content-Type'] = 'application/json'
