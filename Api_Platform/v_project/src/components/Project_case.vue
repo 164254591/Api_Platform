@@ -198,7 +198,8 @@
               </el-tabs>
             </el-tab-pane>
             <el-tab-pane name="Response" label="Response">
-              <el-input v-model="response_data.R" type="textarea" style="height: 100%" :rows="6"></el-input>
+<!--              <el-input v-model="response_data.R" type="textarea" style="height: 100%" :rows="6"></el-input>-->
+              <json-viewer :value="get_json()"></json-viewer>
             </el-tab-pane>
             <el-tab-pane label="ResponseData">
               <el-input v-model="response_data.RD" type="textarea" style="height: 100%" :rows="6"></el-input>
@@ -247,7 +248,8 @@
             <p>&#12288;全值检索：zhangsan</p>
             <p>&#12288;正则匹配：name":"(.*?)"}==zhangsan</p>
             <p>&#12288;路径匹配：["data"][1]["name"]=="zhangsan"</p>
-            <p>&#12288;sql断言：select name from 表 where id=5; == "zhangsan"</p>
+            <p>sql断言：用户必须在语句后写英文分号;</p>
+            <p>&#12288;sql断言：select name from 表 where id=5; == "zhangsan(只取第一行第一个单元格数据做验证)"</p>
             <p>&#12288;sql断言：select name from 表 where name='zhangsan'; (结果是否为0)</p>
 
           </el-tab-pane>
@@ -263,7 +265,7 @@
             <p>帮助：</p>
             <p>1.路径提取：用户写变量名=路径。仅限json</p>
             <p>2.正则提取：用户写变量名=左边界(.*?)右边界</p>
-            <p>3.sql提取：用户写变量名=sql select 查询语句 ，还要加下标。（默认0）</p>
+            <p>3.sql提取：用户写变量名=sql select 查询语句(只取第一行第一个单元格数据进行赋值)</p>
 
           </el-tab-pane>
           <el-tab-pane name="SQL增删改" label="SQL增删改">
@@ -375,7 +377,7 @@
             type="text"
             size="mini"
             @click="() => remove(data)">
-              删除
+            删除
         </el-button>
 
       </span>
@@ -451,6 +453,13 @@ export default {
 
   },
   methods: {
+    get_json(){
+      try {
+        return JSON.parse(this.response_data.R)
+      }catch (e){
+        return this.response_data.R
+      }
+    },
     // 获取index
     set_fd_index(index) {
       this.fd_index = index;
@@ -555,13 +564,16 @@ export default {
       if (confirm("确定删除吗？") == false) {
         return
       }
+
       axios.get('http://localhost:8000/remove_ac', {
         params: {
           project_id: this.project_id,
           id: data.id,
         }
       }).then(res => {
-        this.apis = res.data
+        this.apis = res.data;
+        this.right_api = false;  // 删除后设置右侧不显示
+        this.right_configure = false;
       })
     },
 

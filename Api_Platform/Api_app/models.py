@@ -38,6 +38,7 @@ class DB_project_list(models.Model):
     sql_port = models.IntegerField(default=0)  # 数据库设置
     sql_user = models.CharField(max_length=50, null=True, blank=True, default='')  # 数据库设置
     sql_pwd = models.CharField(max_length=50, null=True, blank=True, default='')  # 数据库设置
+    sql_db = models.CharField(max_length=50, null=True, blank=True, default='')  # 库名
     doing_api = models.CharField(max_length=50, null=True, blank=True, default='')  # 执行中的接口
     end_result = models.TextField(default='')  # 结果
     dck = models.CharField(max_length=500, null=True, blank=True, default='')  # 选中的
@@ -57,14 +58,23 @@ class DB_env_list(models.Model):
 
 
 class DB_api_shop_list(models.Model):
-    name = models.CharField(max_length=20, null=True, blank=True, default="")  # 接口名称
-    host = models.CharField(max_length=20, null=True, blank=True, default="")  # 域名
-    path = models.CharField(max_length=20, null=True, blank=True, default="")  # 路径
-    method = models.CharField(max_length=20, null=True, blank=True, default="")  # 请求方法
-    params = models.CharField(max_length=20, null=True, blank=True, default="")  # url的参数
-    paylod = models.CharField(max_length=20, null=True, blank=True, default="")  # 请求体的参数
-    headers = models.CharField(max_length=20, null=True, blank=True, default="")  # 请求头
-    des = models.CharField(max_length=20, null=True, blank=True, default="")  # 接口描述
+    label = models.CharField(max_length=100, null=True, blank=True, default='新接口')
+    type = models.CharField(max_length=10, null=True, blank=True, default='api')
+    children = models.CharField(max_length=5000, null=True, blank=True, default='[]')
+    des = models.CharField(max_length=300, null=True, blank=True, default='')
+    host = models.CharField(max_length=300, null=True, blank=True, default='')
+    path = models.CharField(max_length=300, null=True, blank=True, default='')
+    method = models.CharField(max_length=30, null=True, blank=True, default='')
+    params = models.CharField(max_length=3000, null=True, blank=True, default='[]')
+    headers = models.CharField(max_length=3000, null=True, blank=True, default='[]')
+    payload_method = models.CharField(max_length=30, null=True, blank=True, default='')
+    payload_fd = models.CharField(max_length=3000, null=True, blank=True, default='[]')
+    payload_xwfu = models.CharField(max_length=3000, null=True, blank=True, default='[]')
+    payload_raw_method = models.CharField(max_length=300, null=True, blank=True, default='')
+    payload_raw = models.CharField(max_length=3000, null=True, blank=True, default='')
+    payload_GQL_q = models.CharField(max_length=3000, null=True, blank=True, default='')
+    payload_GQL_g = models.CharField(max_length=3000, null=True, blank=True, default='')
+    payload_binary = models.CharField(max_length=100, null=True, blank=True, default='')
 
     def __str__(self):
         return self.name

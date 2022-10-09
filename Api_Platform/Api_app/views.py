@@ -398,3 +398,13 @@ def default_power(request, path):
     r = locals()
     exec('r=%s(request)' % path)
     return r['r']
+
+
+def download_api(request):
+    project_id = request.GET['project_id']
+    api_id = request.GET['api_id']
+    api = list(DB_api_shop_list.objects.filter(id=int(api_id)).values())[0]
+    print(api)
+    api['project_id'] = project_id
+    DB_apis.objects.create(**api)
+    return HttpResponse('')

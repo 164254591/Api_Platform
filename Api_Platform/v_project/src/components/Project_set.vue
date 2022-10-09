@@ -52,6 +52,9 @@
       <el-form-item label="数据库密码">
         <el-input v-model="form_data.sql_pwd" style="width: 300px"></el-input>
       </el-form-item>
+      <el-form-item label="具体库名">
+        <el-input v-model="form_data.sql_db" style="width: 300px"></el-input>
+      </el-form-item>
       <!--      <el-form-item label="公共变量">-->
       <!--        <el-input type="textarea" :rows="3" v-model="form_data.P_data" ></el-input>-->
       <!--      </el-form-item>-->
@@ -91,6 +94,7 @@ export default {
         sql_port: '',
         sql_user: '',
         sql_pwd: '',
+        sql_db:'',
       },
 
     }

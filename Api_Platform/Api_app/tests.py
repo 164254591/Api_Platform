@@ -34,21 +34,31 @@ print(C)
 # print(d['b']['c'])
 
 
-import numpy as np
-
+# import numpy as np
+list1=[]
 list2 = [5, 5, 5, 8, 8, 9, 1]
+for i in list2:
+    if i == 8:
+        list1.append(i)
+        list2.remove(i)
+        print(list2)
+
+# def num(lis):
+#     lis = np.array(lis)
+#     key = np.unique(lis)
+#     result = {}
+#     for k in key:
+#         mask = (lis == k)
+#         list_new = lis[mask]
+#         v = list_new.size
+#         result[k] = v
+#     return result
 
 
-def num(lis):
-    lis = np.array(lis)
-    key = np.unique(lis)
-    result = {}
-    for k in key:
-        mask = (lis == k)
-        list_new = lis[mask]
-        v = list_new.size
-        result[k] = v
-    return result
+# print(num(list2))
 
-
-print(num(list2))
+v = 'aaa= select name from table where name ="dlz"'
+d = v.split('=',1)
+right = '='.join(v.split('=')[1:]).strip()
+print(d)
+print(right)

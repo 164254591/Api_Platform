@@ -1,17 +1,19 @@
-# from django.shortcuts import render
-# from Api_app.models import *
-# import time
-# from django.contrib import auth
-# from django.http import HttpResponseRedirect, HttpResponse
-# from django.contrib.auth.models import User
-# from django.contrib.auth.decorators import login_required
-# from django.shortcuts import get_object_or_404
-# import json
+import pymysql
+from django.shortcuts import render
+from Api_app.models import *
+import time
+from django.contrib import auth
+from django.http import HttpResponseRedirect, HttpResponse
+from django.contrib.auth.models import User
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import get_object_or_404
+import json
 import json
 import logging
 import re
 
 import requests
+import pymysql
 
 logger = logging.getLogger('django')
 
@@ -65,7 +67,7 @@ def get_MIME(filename):
 class SENDAPI():
     def __init__(self, api, TQ):
         self.api = api
-        print(api)
+        # print(api)
         self.make_url()
         self.make_header()
         self.make_method()
@@ -73,6 +75,30 @@ class SENDAPI():
         self.CR = []
         self.send_real = True
         self.api['payload_method'] = self.api['payload_method'].lower()
+
+    def get_sql(self, sql):
+        project_id = self.api['project_id']
+        project = DB_project_list.objects.filter(id=int(project_id))[0]
+        sql_host = project.sql_host
+        sql_port = project.sql_port
+        sql_user = project.sql_user
+        sql_pwd = project.sql_pwd
+        sql_db = project.sql_db
+        try:
+            connect = pymysql.Connect(host=sql_host, port=int(sql_port), user=sql_user, password=sql_pwd,
+                                      database=sql_db, charset='utf-8')
+            cursor = connect.cursor()
+            cursor.execute(sql)
+            cursor.commit()
+            res = cursor.fetchall()
+        except:
+            res = ()
+        finally:
+            try:
+                cursor.close()
+            except:
+                pass
+        return res
 
     def make_url(self):
         """拼接url"""
@@ -109,7 +135,7 @@ class SENDAPI():
             elif configure['select'] == "正则匹配":
                 left = configure['value'].split('==')[0].strip()
                 right = configure['value'].split('==')[1].strip()
-                print(left, right)
+                # print(left, right)
                 if re.findall(left, self.R) == [right]:
                     return True
             elif configure['select'] == "路径匹配":
@@ -121,7 +147,19 @@ class SENDAPI():
                 except:
                     return False
             elif configure['select'] == "SQL断言":
-                return True
+                left = configure['value'].split(';')[0].strip() + ';'
+                right = configure['value'].split(';')[-1].split('==')[-1].strip()
+                res = self.get_sql(left)
+                if right:
+                    right = eval(right)
+                    try:
+                        if res[0][0] == right:
+                            return True
+                    except:
+                        return False
+                else:
+                    if res:
+                        return True
         elif configure['method'] == "提取":
             if configure['select'] == "路径提取":
                 left = configure['value'].split('=')[0].strip()
@@ -142,12 +180,20 @@ class SENDAPI():
                 except:
                     return False
             elif configure['select'] == "sql提取":
-                return True
+                left = configure['value'].split('=')[0].strip()
+                right = '='.join(configure['value'].split('=')[1:]).strip()
+                res = self.get_sql(right)
+                if res:
+                    self.TQ[left] = res[0][0]
+                    return True
+        elif configure['method'] == "SQL增删改":
+            res = self.get_sql(configure['value'])
+            return True
         elif configure['method'] == "随机变量":
             left = configure['value'].split('=')[0].strip()
             right = configure['value'].split('=')[1].strip()
             self.TQ[left] = eval(right)
-            print(self.TQ)
+            # print(self.TQ)
             return True
         elif configure['method'] == "mock":
             if configure['select'] == "写死返回值":
@@ -200,11 +246,16 @@ class SENDAPI():
         if self.api['payload_method'] == 'none':
             self.response = requests.request(self.method, self.url, headers=self.headers, data={})
         elif self.api['payload_method'] == 'form-data':  # {"a":1,"b":2}
-            file = []
+            files = []
             payload = {}
             for i in self.api['payload_fd']:
-                payload[i['key']] = i['value']
-            self.response = requests.request(self.method, self.url, headers=self.headers, data=payload, files=file)
+                if '*FILE*' in i['value']:  # 是文件参数
+                    file_name = i['value'].split('*FILE*')[1]
+                    files.append(
+                        (i['key'], (file_name, open('Api_app/static/tmp/' + file_name, 'rb'), get_MIME(file_name))))
+                else:
+                    payload[i['key']] = i['value']
+            self.response = requests.request(self.method, self.url, headers=self.headers, data=payload, files=files)
         elif self.api['payload_method'] == 'x-www-form-urlencode':  # a=1&b=2
             # payload = ''
             # for i in self.api['payload_xwfu']:
@@ -212,7 +263,6 @@ class SENDAPI():
             payload = '&'.join([('%s=%s' % (i['key'], i['value'])) for i in self.api['payload_xwfu']])
             self.headers['Content-type'] = 'application/x-www-form-urlencode'
             self.response = requests.request(self.method, self.url, headers=self.headers, data=payload)
-
         elif self.api['payload_method'] == 'raw':
             if self.api['payload_raw_method'] == 'Text':
                 self.headers['Content-Type'] = 'text/plain'
@@ -234,6 +284,8 @@ class SENDAPI():
             self.headers['Content-Type'] = 'application/json'
             payload = json.dumps({"query": self.api['payload_GQL_q'], "variables": eval(self.api['payload_GQL_q'])})
             self.response = requests.request(self.method, self.url, headers=self.headers, data=payload)
+        else:
+            self.response = requests.request(self.method, self.url, headers=self.headers, data={})
         try:
             # 优先用字典接收，如果不是则用text接收
             self.R = json.dumps(self.response.json(), ensure_ascii=False)  # 防止中文乱码
@@ -245,7 +297,7 @@ class SENDAPI():
         """入口函数"""
         self.CR = []
         children = self.api['children']
-        print(children)
+        # print(children)
         for i in children:
             if i['do_time'] == 'before':
                 self.CR.append('【%s】 = %s' % (i['label'], self.do_configure(i)))
