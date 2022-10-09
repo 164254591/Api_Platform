@@ -26452,3 +26452,313 @@ requests.exceptions.MissingSchema: Invalid URL '?': No scheme supplied. Perhaps 
 [2022-10-09 21:16:09,003][INFO]"POST /save_api/?project_id=68 HTTP/1.1" 200 1371
 [2022-10-09 21:16:11,434][INFO]"POST /test/ HTTP/1.1" 200 43
 [2022-10-09 21:16:11,434][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-09 21:24:32,682][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-10-09 21:24:32,687][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:24:33,901][INFO]"GET /get_project_list/ HTTP/1.1" 200 954
+[2022-10-09 21:24:34,866][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 277
+[2022-10-09 21:24:34,870][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1371
+[2022-10-09 21:24:34,870][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-10-09 21:24:39,900][INFO]"OPTIONS /send_api/?project_id=68 HTTP/1.1" 200 0
+[2022-10-09 21:24:41,941][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-09 21:24:41,944][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-09 21:24:42,367][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:24:52,367][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:25:00,461][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-09 21:25:00,462][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-09 21:25:00,900][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-09 21:25:00,900][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-09 21:25:01,087][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-09 21:25:01,088][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-09 21:25:02,372][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:25:12,746][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:25:22,752][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:25:32,742][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:25:42,749][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:25:52,760][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:25:55,952][ERROR]Internal Server Error: /send_api/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 216, in send_api
+    response_data = s.index()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 306, in index
+    self.send()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 288, in send
+    self.response = requests.request(self.method, self.url, headers=self.headers, data={})
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 515, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 453, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\models.py", line 318, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\models.py", line 392, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '?': No scheme supplied. Perhaps you meant http://??
+[2022-10-09 21:25:55,952][ERROR]"POST /send_api/?project_id=68 HTTP/1.1" 500 100703
+[2022-10-09 21:26:02,751][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:26:03,578][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-09 21:26:03,578][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-09 21:26:06,636][ERROR]Internal Server Error: /send_api/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 216, in send_api
+    response_data = s.index()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 306, in index
+    self.send()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 258, in send
+    self.response = requests.request(self.method, self.url, headers=self.headers, data=payload, files=files)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1280, in _send_request
+    self.putheader(hdr, value)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 224, in putheader
+    _HTTPConnection.putheader(self, header, *values)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1207, in putheader
+    raise ValueError('Invalid header name %r' % (header,))
+ValueError: Invalid header name b''
+[2022-10-09 21:26:06,638][ERROR]"POST /send_api/?project_id=68 HTTP/1.1" 500 134043
+[2022-10-09 21:26:07,307][ERROR]Internal Server Error: /send_api/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 216, in send_api
+    response_data = s.index()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 306, in index
+    self.send()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 258, in send
+    self.response = requests.request(self.method, self.url, headers=self.headers, data=payload, files=files)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1280, in _send_request
+    self.putheader(hdr, value)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 224, in putheader
+    _HTTPConnection.putheader(self, header, *values)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1207, in putheader
+    raise ValueError('Invalid header name %r' % (header,))
+ValueError: Invalid header name b''
+[2022-10-09 21:26:07,308][ERROR]"POST /send_api/?project_id=68 HTTP/1.1" 500 134043
+[2022-10-09 21:26:07,497][ERROR]Internal Server Error: /send_api/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 216, in send_api
+    response_data = s.index()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 306, in index
+    self.send()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 258, in send
+    self.response = requests.request(self.method, self.url, headers=self.headers, data=payload, files=files)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1280, in _send_request
+    self.putheader(hdr, value)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 224, in putheader
+    _HTTPConnection.putheader(self, header, *values)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1207, in putheader
+    raise ValueError('Invalid header name %r' % (header,))
+ValueError: Invalid header name b''
+[2022-10-09 21:26:07,499][ERROR]"POST /send_api/?project_id=68 HTTP/1.1" 500 134043
+[2022-10-09 21:26:07,674][ERROR]Internal Server Error: /send_api/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 216, in send_api
+    response_data = s.index()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 306, in index
+    self.send()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 258, in send
+    self.response = requests.request(self.method, self.url, headers=self.headers, data=payload, files=files)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1280, in _send_request
+    self.putheader(hdr, value)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 224, in putheader
+    _HTTPConnection.putheader(self, header, *values)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1207, in putheader
+    raise ValueError('Invalid header name %r' % (header,))
+ValueError: Invalid header name b''
+[2022-10-09 21:26:07,675][ERROR]"POST /send_api/?project_id=68 HTTP/1.1" 500 134043
+[2022-10-09 21:26:07,850][ERROR]Internal Server Error: /send_api/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 216, in send_api
+    response_data = s.index()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 306, in index
+    self.send()
+  File "D:\Git\dlz\Api_Platform\Api_app\view_api_send.py", line 258, in send
+    self.response = requests.request(self.method, self.url, headers=self.headers, data=payload, files=files)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\adapters.py", line 450, in send
+    timeout=timeout
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1280, in _send_request
+    self.putheader(hdr, value)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\urllib3\connection.py", line 224, in putheader
+    _HTTPConnection.putheader(self, header, *values)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1207, in putheader
+    raise ValueError('Invalid header name %r' % (header,))
+ValueError: Invalid header name b''
+[2022-10-09 21:26:07,851][ERROR]"POST /send_api/?project_id=68 HTTP/1.1" 500 134042
+[2022-10-09 21:26:12,744][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:26:22,752][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:26:32,744][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:26:42,744][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:26:52,743][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:27:02,752][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:27:12,747][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:27:22,748][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:27:32,743][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:27:42,754][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:27:52,753][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:28:02,743][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:28:12,736][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:28:22,735][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:28:32,748][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:28:42,739][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:28:52,745][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:29:02,748][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:29:12,740][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:29:22,736][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:29:32,737][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:29:42,743][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:29:52,737][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:29:56,083][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-10-09 21:29:56,126][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:29:57,756][INFO]"GET /get_project_list/ HTTP/1.1" 200 954
+[2022-10-09 21:29:58,903][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 277
+[2022-10-09 21:29:58,909][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1371
+[2022-10-09 21:29:58,909][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-10-09 21:30:06,091][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:30:09,252][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-09 21:30:09,253][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-09 21:30:10,752][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:30:16,093][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:30:19,781][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1371
+[2022-10-09 21:30:19,781][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 277
+[2022-10-09 21:30:19,785][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-10-09 21:30:33,878][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-09 21:30:33,881][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-09 21:31:10,742][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:32:10,742][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:33:10,737][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:34:10,739][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:35:10,737][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:36:10,741][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:37:10,754][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:38:10,737][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:39:10,754][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:39:17,773][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 277
+[2022-10-09 21:39:17,776][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1371
+[2022-10-09 21:39:17,780][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-10-09 21:40:10,745][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:41:10,751][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:42:10,743][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:43:10,759][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:44:10,753][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:44:25,169][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1371
+[2022-10-09 21:44:25,175][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-10-09 21:44:31,706][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-09 21:44:31,706][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-09 21:44:54,020][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-09 21:44:54,020][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-09 21:45:06,596][INFO]"GET /remove_ac?project_id=68&id=78_1 HTTP/1.1" 301 0
+[2022-10-09 21:45:06,607][INFO]"GET /remove_ac/?project_id=68&id=78_1 HTTP/1.1" 200 1244
+[2022-10-09 21:45:10,744][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:45:31,686][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1244
+[2022-10-09 21:45:31,694][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-10-09 21:45:36,686][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-09 21:45:36,686][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-09 21:46:10,740][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:47:10,753][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:48:10,742][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:49:10,744][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:49:52,086][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-09 21:49:52,517][INFO]Watching for file changes with StatReloader
+[2022-10-09 21:50:02,774][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-09 21:50:03,265][INFO]Watching for file changes with StatReloader
+[2022-10-09 21:50:11,059][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:50:20,399][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-09 21:50:20,915][INFO]Watching for file changes with StatReloader

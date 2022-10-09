@@ -552,10 +552,16 @@ export default {
         this.right_api = true;
         this.right_configure = false;
         this.setting_api = data;
+        this.response_data = {
+        R: '',  // Response
+        RD: '', // ResponseData
+        CR: '', // ConfigureResult
+      };
       } else {
         this.right_api = false;
         this.right_configure = true;
         this.setting_configure = data;
+
       }
 
     },
@@ -703,7 +709,10 @@ export default {
   font-size: xx-small;
   color: gray;
 }
-
+.el-table{
+  max-height: 400px;
+  overflow-y: scroll;
+}
 P {
   font-size: xx-small;
   color: gray;
