@@ -351,10 +351,11 @@
         :data="apis"
         show-checkbox
         node-key="id"
-        :check-strictly="true"
         :default-checked-keys="dck"
         :default-expanded-keys="dek"
-        @check-change="handleCheckChange">
+        @check-change="handleCheckChange"
+        ref="tree"
+        :check-strictly="true">
       <span slot-scope="{data}">
 <!--        <span size="mini">{{ data.label }} &#12288</span>-->
         <span size="mini" v-text="get_label(data.label)"></span>&nbsp;
@@ -387,11 +388,11 @@
     <el-card style="position: fixed;bottom: 15px;width:-webkit-calc(100% - 240px);min-height:100px;">
       <el-input v-model="userable_par" type="textarea" :row="5" style="float:right;width: -webkit-calc(100% - 300px)"
                 placeholder="当前可用变量"></el-input>
-      <el-button size="mini" type="success">执行</el-button> &nbsp;<span>正在执行：</span> <span
-        style="color: #42b983">{{ doing_api }}...</span>
+      <el-button size="mini" type="success" @click="run">执行</el-button> &nbsp;<span>正在执行：</span >
+      <span id='doing_api' style="color: #42b983" ></span>
       <br>
       <el-button style="margin-top: 10px" size="mini" type="primary">报告</el-button> &nbsp;<span>执行结果：</span>
-      <strong><span style="color: darkgreen">成功</span><br></strong>
+      <strong><span id="end_result" style="color: darkgreen"></span><br></strong>
 
 
     </el-card>
@@ -411,7 +412,6 @@ export default {
       choose_tab_pane: '',
       right_api: false,
       right_configure: false,
-      doing_api: '添加好友',
       userable_par: '',
       setting_api: {},
       setting_configure: {},
@@ -544,7 +544,7 @@ export default {
       console.log(data, checked);
       axios.get('http://localhost:8000/set_dck', {
         params: {
-          project: this.project_id,
+          project_id: this.project_id,
           dck: this.$refs.tree.getCheckedKeys().toString(),
         }
       }).then(res => {
@@ -668,6 +668,37 @@ export default {
 
     },
     run() {
+      if(confirm('执行大用例之前请确保当前接口或配置的设置已经保存')==false){ return }
+      var end_result = document.getElementById('end_result');
+      var doing_api = document.getElementById('doing_api');
+      var project_id = this.project_id;
+      var t = setInterval( function (){
+        axios.get('/doing_api/',{
+          params:{
+            project_id:project_id, // 由于作用域的问题，定时器无法获取this.project_id,所以在外面定义变量var
+
+          }
+        }).then(res=>{
+          doing_api.innerText = res.data
+
+        })
+      },500)
+
+      axios.get('/run/',{
+        params:{
+          project_id:this.project_id,
+          dck:this.dck.toString(),
+        }
+      }).then(res=>{
+        clearInterval(t);
+        end_result.innerText = res.data;
+        if(res.data == 'True'){
+          end_result.style.color = 'green'
+        }else{
+          end_result.style.color = 'red'
+        }
+        doing_api.innerText = '全部执行完毕'
+      })
 
     },
     report() {

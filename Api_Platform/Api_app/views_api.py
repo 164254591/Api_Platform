@@ -33,7 +33,7 @@ def get_apis(request):
 # 获取项目默认选中的接口和配置列表
 def get_dck(request):
     project_id = request.GET['project_id']
-    dck = DB_project_list.objects.filter(id=project_id)[0].dck.split(',')
+    dck = DB_project_list.objects.filter(id=int(project_id))[0].dck.split(',')
     return HttpResponse(json.dumps(dck), content_type='application/json')
 
 
@@ -41,6 +41,7 @@ def get_dck(request):
 def set_dck(request):
     project_id = request.GET['project_id']
     dck = request.GET['dck']
+    print(dck)
     DB_project_list.objects.filter(id=project_id).update(dck=dck)
     return get_dck(request)
 
@@ -246,10 +247,37 @@ def upload_fd_file(request):
 def get_userable_par(request):
     api_id = request.GET['api_id']
     project_id = request.GET['project_id']
-    res = 'dlz125'
+    res = ''
     apis = DB_apis.objects.filter(project_id=project_id, id__lt=int(api_id))
-    print(apis)
+    # print(apis)
+    for i in apis:
+        children = eval(i.children)
+        res += '【%s】:' % i.label
+        for j in children:
+            if j['method'] == '提取':
+                res += j['value'] + ' '
+        res += '\n'
     return HttpResponse(res)
+
+
+# 获取正在执行的接口名
+def doing_api(request):
+    project_id = request.GET['project_id']
+    doing_api = DB_project_list.objects.filter(id=int(project_id))[0].doing_api
+    return HttpResponse(doing_api)
+
+
+# 执行大用例
+def run(request):
+    project_id = request.GET['project_id']
+    dck = request.GET['dck'].split(',')
+    print(project_id)
+    print(dck)
+    TQ = {}
+    for i in range(len(dck)):
+        print(i)
+
+    return HttpResponse('True')
 
 
 def test(request):

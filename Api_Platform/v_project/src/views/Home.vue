@@ -179,7 +179,7 @@ export default {
       axios.get('/get_real_time_datas').then(res=>{
         this.real_time_datas = res.data;
     }
-      )},10000
+      )},1000000
     )
   }
 }
