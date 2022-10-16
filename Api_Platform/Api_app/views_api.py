@@ -41,7 +41,7 @@ def get_dck(request):
 def set_dck(request):
     project_id = request.GET['project_id']
     dck = request.GET['dck']
-    print(dck)
+    # print(dck)
     DB_project_list.objects.filter(id=project_id).update(dck=dck)
     return get_dck(request)
 
@@ -146,15 +146,15 @@ def down_configure(request):
 
 # 接口上移
 def up_api(request):
-    print('---' * 8)
+    # print('---' * 8)
     api_id = int(request.GET['api_id'])
     project_id = request.GET['project_id']
     all_api = DB_apis.objects.filter(project_id=project_id)
-    print(all_api)
+    # print(all_api)
     for i in range(len(all_api)):
-        print(all_api[i].id, api_id)
+        # print(all_api[i].id, api_id)
         if all_api[i].id == api_id:
-            print('1111')
+            # print('1111')
             if i > 0:
                 all_api[i].id, all_api[i - 1].id = all_api[i - 1].id, all_api[i].id
                 children = eval(all_api[i].children)
@@ -271,15 +271,43 @@ def doing_api(request):
 def run(request):
     project_id = request.GET['project_id']
     dck = request.GET['dck'].split(',')
-    print(project_id)
     print(dck)
     TQ = {}
     for i in range(len(dck)):
-        print(i)
+        if '_' not in dck[i]:  # 判断是否为接口还是配置
+            need_children = []
+            print(dck[i])
+            for j in range(i + 1, len(dck)):
+                if '%s_' % dck[i] in dck[j]:
+                    need_children.append(dck[j])
+                else:
+                    break
+            print(need_children)
+            # 实际去请求该接口了
+            api = DB_apis.objects.filter(id=int(dck[i])).values()[0]
+            DB_project_list.objects.filter(id=int(project_id)).update(doing_api=api['label'])
+            api['children'] = eval(api['children'])
+            children = []
+            for c in api['children']:
+                if c['id'] in need_children:
+                    children.append(c)
+            api['params'] = eval(api['params'])
+            api['headers'] = eval(api['headers'])
+            api['payload_fd'] = eval(api['payload_fd'])
+            api['payload_xwfu'] = eval(api['payload_xwfu'])
+            # 调用类执行
+            s = SENDAPI(api, TQ)
+            response_data = s.index()
+            TQ = response_data['TQ']
 
     return HttpResponse('True')
 
 
-def test(request):
+def test_a(request):
     print(request.body)
-    return HttpResponse('{"a": "22", "b": {"c": [22,33], "d": "02"}}', content_type='application/json')
+    return HttpResponse('{"a": "111", "b": {"c": [1,123], "d": "01"}}', content_type='application/json')
+
+
+def test_b(request):
+    print(request.body)
+    return HttpResponse('{"a": "222", "b": {"c": [2,456], "d": "02"}}', content_type='application/json')

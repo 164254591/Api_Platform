@@ -42,12 +42,14 @@ urlpatterns = [
     path('down_api/', down_api),
     path('save_api/', save_api),
     path('send_api/', send_api),
-    path('test/', test),
+
     path('upload_binary_file/', upload_binary_file),
     path('upload_fd_file/', upload_fd_file),
     path('get_userable_par/', get_userable_par),  # 获取可用变量
     path('doing_api/', doing_api),  # 获取正在执行的接口名称
     path('run/', run),  # 执行大用例
+    path('test_a/', test_a),
+    path('test_b/', test_b),
 
     # -----------------------------------------权限系统可以管理的，但不一定监管（接口path只有一级，且path和函数名必须相同）---------
     re_path('(?P<path>.+)/', diy_power),

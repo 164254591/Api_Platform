@@ -542,7 +542,7 @@ export default {
     },
     handleCheckChange(data, checked) {
       console.log(data, checked);
-      axios.get('http://localhost:8000/set_dck', {
+      axios.get('http://localhost:8000/set_dck/', {
         params: {
           project_id: this.project_id,
           dck: this.$refs.tree.getCheckedKeys().toString(),
@@ -676,11 +676,9 @@ export default {
         axios.get('/doing_api/',{
           params:{
             project_id:project_id, // 由于作用域的问题，定时器无法获取this.project_id,所以在外面定义变量var
-
           }
         }).then(res=>{
           doing_api.innerText = res.data
-
         })
       },500)
 
