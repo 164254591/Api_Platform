@@ -109,7 +109,7 @@
                       <template slot-scope="scope">
                         <el-upload
                             class="upload-demo"
-                            :action="'http://localhost:8000/upload_fd_file/?ApiID='+setting_api.id"
+                            :action="get_action_fd()"
                             :limit="1"
                             name="fd_file"
                             :on-success="upload_fd_file">
@@ -180,7 +180,7 @@
                   <el-upload
                       class="upload-demo"
                       drag
-                      :action=" 'http://localhost:8000/upload_binary_file/?ApiID='+setting_api.id "
+                      :action="get_action_binary()"
                       :limit="1"
                       name='binary_file'
                       :on-success="upload_binary_file">
@@ -453,6 +453,12 @@ export default {
 
   },
   methods: {
+    get_action_binary(){
+      return  process.env.VUE_APP_BASE_URL+'/upload_binary_file/?ApiID='+this.setting_api.id
+    },
+    get_action_fd(){
+      return process.env.VUE_APP_BASE_URL+'/upload_fd_file/?ApiID='+this.setting_api.id
+    },
     get_json(){
       try {
         return JSON.parse(this.response_data.R)
@@ -553,10 +559,19 @@ export default {
         this.right_configure = false;
         this.setting_api = data;
         this.response_data = {
-        R: '',  // Response
-        RD: '', // ResponseData
-        CR: '', // ConfigureResult
-      };
+                                R: '',  // Response
+                                RD: '', // ResponseData
+                                CR: '', // ConfigureResult
+                              };
+        // 获取可用变量
+        axios.get('/get_userable_par/',{
+          params:{
+            api_id : data.id,
+            project_id:this.project_id,
+          }
+        }).then(res=>{
+          this.userable_par = res.data
+        })
       } else {
         this.right_api = false;
         this.right_configure = true;

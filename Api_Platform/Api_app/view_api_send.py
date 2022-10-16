@@ -113,7 +113,8 @@ class SENDAPI():
         """请求头"""
         self.headers = {}
         for i in self.api['headers']:
-            self.headers[i['key']] = i['value']
+            if i['key']:  # 去掉空值
+                self.headers[i['key']] = i['value']
         # print(self.headers)
 
     def make_method(self):
@@ -243,6 +244,8 @@ class SENDAPI():
 
     def send(self):
         """执行接口"""
+        print(self.url)
+        print(self.headers)
         if self.api['payload_method'] == 'none':
             self.response = requests.request(self.method, self.url, headers=self.headers, data={})
         elif self.api['payload_method'] == 'form-data':  # {"a":1,"b":2}

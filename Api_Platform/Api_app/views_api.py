@@ -242,6 +242,16 @@ def upload_fd_file(request):
     return HttpResponse('')
 
 
+# 获取可用变量
+def get_userable_par(request):
+    api_id = request.GET['api_id']
+    project_id = request.GET['project_id']
+    res = 'dlz125'
+    apis = DB_apis.objects.filter(project_id=project_id, id__lt=int(api_id))
+    print(apis)
+    return HttpResponse(res)
+
+
 def test(request):
     print(request.body)
     return HttpResponse('{"a": "22", "b": {"c": [22,33], "d": "02"}}', content_type='application/json')

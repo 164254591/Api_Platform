@@ -167,16 +167,16 @@ export default {
   },
   // 进入页面先刷新请求数据
   mounted:function () {
-    axios('http://localhost:8000/get_tj_datas/').then(res=>{
+    axios('/get_tj_datas/').then(res=>{
       this.tj_datas = res.data;
     });
-     axios.get('http://localhost:8000/get_real_time_datas').then(res=>{
+     axios.get('/get_real_time_datas').then(res=>{
         this.real_time_datas = res.data;
     });
 
      // 刷新间隔，每1000毫秒刷新一次
     setInterval(()=>{
-      axios.get('http://localhost:8000/get_real_time_datas').then(res=>{
+      axios.get('/get_real_time_datas').then(res=>{
         this.real_time_datas = res.data;
     }
       )},10000
