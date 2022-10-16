@@ -668,7 +668,7 @@ export default {
     },
     // 新增参数
     add_params() {
-      this.setting_api.params.push({})
+      this.setting_api.params.push({"key":"","value":""})
     },
     // 删除参数
     del_params(index) {

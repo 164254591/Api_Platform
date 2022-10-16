@@ -26762,3 +26762,16 @@ ValueError: Invalid header name b''
 [2022-10-09 21:50:11,059][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
 [2022-10-09 21:50:20,399][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
 [2022-10-09 21:50:20,915][INFO]Watching for file changes with StatReloader
+[2022-10-09 21:51:06,840][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-09 21:51:06,840][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-09 21:51:10,744][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:51:15,336][INFO]"POST /test/ HTTP/1.1" 200 43
+[2022-10-09 21:51:15,336][INFO]"POST /send_api/?project_id=68 HTTP/1.1" 200 361
+[2022-10-09 21:52:10,755][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:53:10,746][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:54:10,753][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:55:10,746][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:56:10,742][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:57:10,754][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:58:10,738][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-09 21:59:10,755][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86

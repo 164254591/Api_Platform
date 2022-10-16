@@ -106,7 +106,7 @@ class SENDAPI():
         path = self.api['path']
         params = self.api['params']
         # 列表推导式------高级用法
-        self.url = host + path + '?' + '&'.join(["%s=%s" % (i['key'], i['value']) for i in params if i])
+        self.url = host + path + '?' + '&'.join(["%s=%s" % (i['key'], i['value']) for i in params if i])  # 过滤空行
         # print(self.url)
 
     def make_header(self):
