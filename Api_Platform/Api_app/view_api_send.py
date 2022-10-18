@@ -68,13 +68,22 @@ class SENDAPI():
     def __init__(self, api, TQ):
         self.api = api
         # print(api)
-        self.make_url()
+
         self.make_header()
         self.make_method()
         self.TQ = TQ  # 设置传入的提取TQ作为类变量
         self.CR = []
         self.send_real = True
         self.api['payload_method'] = self.api['payload_method'].lower()
+
+    # 替换提取的变量
+    def TQ_replace(self):
+        # headers
+        for key in self.headers.keys():
+            tqs = re.findall(r'{%(.?)%}', self.headers[key])
+            for tq in tqs:
+                self.headers[key] = self.headers[key].replace('{%'+tq+'%}', str(self.TQ[tq]))
+            print(self.headers)
 
     def get_sql(self, sql):
         project_id = self.api['project_id']
@@ -298,6 +307,12 @@ class SENDAPI():
 
     def index(self):
         """入口函数"""
+        try:
+            self.TQ_replace()
+        except:
+            return {"R": '执行失败，存在未定义变量', "RD": '', "CR": '', 'TQ': self.TQ}
+
+        self.make_url()
         self.CR = []
         children = self.api['children']
         # print(children)
