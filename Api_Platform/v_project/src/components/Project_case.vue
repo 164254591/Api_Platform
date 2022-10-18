@@ -6,6 +6,7 @@
         <el-button @click="save_api" size="mini" type="primary">保存</el-button>
         <el-button @click="up_api" size="mini" type="text">up</el-button>
         <el-button @click="down_api" size="mini" type="text">down</el-button>
+        &#12288<span style="font-size: xx-small;color: grey">使用变量请用占位符:{%变量名%}，可用在请求头、url、请求体中</span>
         <span style="float: right">接口ID:{{ setting_api.id }}</span><br><br>
         <el-form ref="form" label-width="100px" label-position="left">
           <el-form-item label="接口名称/描述">
