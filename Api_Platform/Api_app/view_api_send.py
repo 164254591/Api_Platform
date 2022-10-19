@@ -82,8 +82,49 @@ class SENDAPI():
         for key in self.headers.keys():
             tqs = re.findall(r'{%(.?)%}', self.headers[key])
             for tq in tqs:
-                self.headers[key] = self.headers[key].replace('{%'+tq+'%}', str(self.TQ[tq]))
-            print(self.headers)
+                self.headers[key] = self.headers[key].replace('{%' + tq + '%}', str(self.TQ[tq]))
+            # print(self.headers)
+        # params
+        for i in range(len(self.api['params'])):
+            tqs = re.findall(r'{%(.?)%}', self.api['params'][i]['value'])
+            for tq in tqs:
+                self.api['params'][i]['value'] = self.api['params'][i]['value'].replace('{%' + tq + '%}', str(self.TQ[tq]))
+        # print(self.api['params'])
+        # payload_fd
+        for i in range(len(self.api['payload_fd'])):
+            tqs = re.findall(r'{%(.?)%}', self.api['payload_fd'][i]['value'])
+            for tq in tqs:
+                self.api['payload_fd'][i]['value'] = self.api['payload_fd'][i]['value'].replace('{%' + tq + '%}', str(self.TQ[tq]))
+        # print(self.api['payload_fd'])
+        # payload_xwfu
+        for i in range(len(self.api['payload_xwfu'])):
+            tqs = re.findall(r'{%(.?)%}', self.api['payload_xwfu'][i]['value'])
+            for tq in tqs:
+                self.api['payload_xwfu'][i]['value'] = self.api['payload_xwfu'][i]['value'].replace('{%' + tq + '%}', str(self.TQ[tq]))
+        print(self.api['payload_xwfu'])
+
+        # payload_raw
+        print(self.api['payload_raw'])
+        tqs = re.findall(r'{%(.?)%}', self.api['payload_raw'])
+        for tq in tqs:
+            self.api['payload_raw'] = self.api['payload_raw'].replace('{%' + tq + '%}', str(self.TQ[tq]))
+        print(self.api['payload_raw'])
+
+        # # payload_GQL_q
+        # print(self.api['payload_GQL_q'])
+        tqs = re.findall(r'{%(.?)%}', self.api['payload_GQL_q'])
+        for tq in tqs:
+            self.api['payload_GQL_q'] = self.api['payload_GQL_q'].replace('{%' + tq + '%}', str(self.TQ[tq]))
+        # print(self.api['payload_GQL_q'])
+        
+        # payload_GQL_g
+        tqs = re.findall(r'{%(.?)%}', self.api['payload_GQL_g'])
+        for tq in tqs:
+            self.api['payload_GQL_g'] = self.api['payload_GQL_g'].replace('{%' + tq + '%}', str(self.TQ[tq]))
+        # print(self.api['payload_GQL_g'])
+
+
+
 
     def get_sql(self, sql):
         project_id = self.api['project_id']

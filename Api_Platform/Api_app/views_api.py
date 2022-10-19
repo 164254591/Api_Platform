@@ -304,7 +304,7 @@ def run(request):
 
 
 def test_a(request):
-    print(request.body)
+    # print(request.body)
     return HttpResponse('{"a": "111", "b": {"c": [1,123], "d": "01"}}', content_type='application/json')
 
 
