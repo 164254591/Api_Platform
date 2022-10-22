@@ -14,7 +14,25 @@
             <el-input v-model="setting_api.des" style="width: 45%"></el-input>
           </el-form-item>
           <el-form-item label="Host">
-            <el-input v-model="setting_api.host"></el-input>
+<!--            <el-input v-model="setting_api.host"></el-input>-->
+            <el-autocomplete
+            class="inline-input"
+            v-model="setting_api.host"
+            :fetch-suggestions="querySearch"
+            placeholder="请输入域名"
+            @select="handleSelect"
+            :trigger-on-focus="true"
+            style="float: left;width: 100%"
+          >
+            <template slot-scope="{item}">
+              <div style="color: #0d0e0e"><strong>{{item.host}}</strong></div>
+              <span>【标签：{{item.type}}】</span>
+              <span>【{{item.des}}】</span>
+              <el-divider></el-divider>
+            </template>
+          </el-autocomplete>
+
+
           </el-form-item>
           <el-form-item label="方式/路径">
             <el-select v-model="setting_api.method" style="width: 100px" placeholder="请求方式">
@@ -409,6 +427,7 @@ export default {
   name: "Project_case",
   data() {
     return {
+      env_list:[],
       fd_index: '',  //fd参数对应行的下标
       choose_tab_pane: '',
       right_api: false,
@@ -451,9 +470,31 @@ export default {
     }).then(res => {
       this.dck = res.data
     });
+    axios.get('http://localhost:8000/get_env_list/').then(res => {
+      this.env_list = res.data;
+      this.user_info = this.loadAll();
+    })
 
   },
   methods: {
+    querySearch(queryString, cb) {
+        var user = this.user_info;
+        var results = queryString ? user.filter(this.createFilter(queryString)) : user;
+        // 调用 callback 返回建议列表的数据
+        cb(results);
+      },
+      createFilter(queryString) {
+        return (user) => {
+          return (user.host.toLowerCase().indexOf(queryString.toLowerCase()) === 0);
+        };
+      },
+      loadAll() {
+        return this.env_list
+      },
+    handleSelect(item) {
+        this.setting_api.host=item.host;
+      },
+
     get_action_binary(){
       return  process.env.VUE_APP_BASE_URL+'/upload_binary_file/?ApiID='+this.setting_api.id
     },

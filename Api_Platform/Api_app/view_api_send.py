@@ -101,14 +101,14 @@ class SENDAPI():
             tqs = re.findall(r'{%(.?)%}', self.api['payload_xwfu'][i]['value'])
             for tq in tqs:
                 self.api['payload_xwfu'][i]['value'] = self.api['payload_xwfu'][i]['value'].replace('{%' + tq + '%}', str(self.TQ[tq]))
-        print(self.api['payload_xwfu'])
+        # print(self.api['payload_xwfu'])
 
         # payload_raw
-        print(self.api['payload_raw'])
+        # print(self.api['payload_raw'])
         tqs = re.findall(r'{%(.?)%}', self.api['payload_raw'])
         for tq in tqs:
             self.api['payload_raw'] = self.api['payload_raw'].replace('{%' + tq + '%}', str(self.TQ[tq]))
-        print(self.api['payload_raw'])
+        # print(self.api['payload_raw'])
 
         # # payload_GQL_q
         # print(self.api['payload_GQL_q'])
@@ -116,7 +116,7 @@ class SENDAPI():
         for tq in tqs:
             self.api['payload_GQL_q'] = self.api['payload_GQL_q'].replace('{%' + tq + '%}', str(self.TQ[tq]))
         # print(self.api['payload_GQL_q'])
-        
+
         # payload_GQL_g
         tqs = re.findall(r'{%(.?)%}', self.api['payload_GQL_g'])
         for tq in tqs:

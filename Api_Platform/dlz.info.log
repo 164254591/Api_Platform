@@ -29906,3 +29906,46 @@ ValueError: invalid literal for int() with base 10: ''
 [2022-10-19 21:17:35,489][INFO]"GET /run/?project_id=68&dck=80,80_1,81 HTTP/1.1" 200 4
 [2022-10-19 21:17:58,162][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
 [2022-10-19 21:17:58,728][INFO]Watching for file changes with StatReloader
+[2022-10-22 20:29:38,330][INFO]Watching for file changes with StatReloader
+[2022-10-22 20:29:38,670][INFO]"GET / HTTP/1.1" 200 4830
+[2022-10-22 20:29:38,702][INFO]"GET /static/dlz_download_login/assets/css/demo.css HTTP/1.1" 304 0
+[2022-10-22 20:29:38,702][INFO]"GET /static/dlz_download_login/assets/js/TweenMax.min.js HTTP/1.1" 304 0
+[2022-10-22 20:29:38,703][INFO]"GET /static/dlz_download_login/assets/js/demo.js HTTP/1.1" 304 0
+[2022-10-22 20:29:38,703][INFO]"GET /static/dlz_download_login/assets/js/jquery-1.11.0.min.js HTTP/1.1" 304 0
+[2022-10-22 20:29:59,588][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-10-22 20:29:59,591][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-10-22 20:30:02,756][INFO]"GET /get_project_list/ HTTP/1.1" 200 986
+[2022-10-22 20:30:04,180][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 288
+[2022-10-22 20:30:04,189][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 20
+[2022-10-22 20:30:04,189][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1135
+[2022-10-22 20:30:04,215][INFO]"GET /set_dck/?project_id=68&dck=80,80_1,81 HTTP/1.1" 200 20
+[2022-10-22 20:30:04,221][INFO]"GET /set_dck/?project_id=68&dck=80,80_1,81 HTTP/1.1" 200 20
+[2022-10-22 20:30:06,302][INFO]"GET /get_userable_par/?api_id=80&project_id=68 HTTP/1.1" 200 0
+[2022-10-22 20:30:08,801][INFO]"GET /get_userable_par/?api_id=81&project_id=68 HTTP/1.1" 200 27
+[2022-10-22 20:30:22,406][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 3
+[2022-10-22 20:30:22,904][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 3
+[2022-10-22 20:30:23,410][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 3
+[2022-10-22 20:30:23,905][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 3
+[2022-10-22 20:30:23,961][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-10-22 20:30:24,418][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 1
+[2022-10-22 20:30:24,913][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 1
+[2022-10-22 20:30:25,426][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 1
+[2022-10-22 20:30:25,906][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 1
+[2022-10-22 20:30:25,995][INFO]"GET /test_b/?zz=123 HTTP/1.1" 200 44
+[2022-10-22 20:30:25,995][INFO]"GET /run/?project_id=68&dck=80,80_1,81 HTTP/1.1" 200 4
+[2022-10-22 20:31:01,877][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-22 20:31:02,344][INFO]Watching for file changes with StatReloader
+[2022-10-22 20:31:04,677][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 3
+[2022-10-22 20:31:05,112][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 3
+[2022-10-22 20:31:05,612][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 3
+[2022-10-22 20:31:06,103][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 3
+[2022-10-22 20:31:06,461][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-10-22 20:31:06,608][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 1
+[2022-10-22 20:31:07,104][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 1
+[2022-10-22 20:31:07,614][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 1
+[2022-10-22 20:31:08,105][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 1
+[2022-10-22 20:31:08,509][INFO]"GET /test_b/?zz=123 HTTP/1.1" 200 44
+[2022-10-22 20:31:08,509][INFO]"GET /run/?project_id=68&dck=80,80_1,81 HTTP/1.1" 200 4
+[2022-10-22 20:31:33,436][INFO]D:\Git\dlz\Api_Platform\Api_app\view_api_send.py changed, reloading.
+[2022-10-22 20:31:33,880][INFO]Watching for file changes with StatReloader
+[2022-10-22 20:40:33,049][INFO]"GET /get_env_list/ HTTP/1.1" 200 549
