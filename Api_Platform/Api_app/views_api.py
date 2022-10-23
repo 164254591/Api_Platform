@@ -213,7 +213,7 @@ def save_api(request):
 def send_api(request):
     api = json.loads(request.body.decode('utf-8'))
     project_id = request.GET['project_id']
-    s = SENDAPI(api, {})
+    s = SENDAPI(api, {}, api['children'])
     response_data = s.index()
     return HttpResponse(json.dumps(response_data), content_type='application/json')
 
@@ -273,6 +273,12 @@ def run(request):
     dck = request.GET['dck'].split(',')
     print(dck)
     TQ = {}
+    # 生成新的报告
+    report = DB_report.objects.create()
+    report.project_id = project_id
+    report.ctime = time.strftime("%Y-%m-%d %H:%M:%S")
+    apis_result = []
+
     for i in range(len(dck)):
         if '_' not in dck[i]:  # 判断是否为接口还是配置
             need_children = []
@@ -296,11 +302,31 @@ def run(request):
             api['payload_fd'] = eval(api['payload_fd'])
             api['payload_xwfu'] = eval(api['payload_xwfu'])
             # 调用类执行
-            s = SENDAPI(api, TQ)
+            s = SENDAPI(api, TQ, children)
             response_data = s.index()
             TQ = response_data['TQ']
+            apis_result.append(response_data['REPORT'])
+            if response_data['REPORT']['result'] == False:
+                report.all_result = False
+    report.api_result = str(apis_result)
+    report.save()
 
-    return HttpResponse('True')
+    return HttpResponse(str(report.all_result))
+
+
+# 清空所有报告
+def clear_all_reports(request):
+    project_id = request.GET['project_id']
+    DB_report.objects.filter(project_id=project_id).delete()
+    return HttpResponse('')
+
+
+def get_all_reports(request):
+    project_id = request.GET['project_id']
+    all_reports = list(DB_report.objects.filter(project_id=project_id).values())[::-1]
+    for report in all_reports:
+        report['api_result'] = eval(report['api_result'])
+    return HttpResponse(json.dumps(all_reports), content_type='application/json')
 
 
 def test_a(request):

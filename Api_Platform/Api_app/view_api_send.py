@@ -65,7 +65,8 @@ def get_MIME(filename):
 # 第三个接口调用SENDAPI，传进来刚刚已经有内容的字典TQ {}，并把自己提取的变量也塞进这个字典TQ，然后再返回TQ
 # --------------------------------------文件作用：发送接口请求
 class SENDAPI():
-    def __init__(self, api, TQ):
+    def __init__(self, api, TQ, children):
+        self.children = children
         self.api = api
         # print(api)
 
@@ -75,6 +76,10 @@ class SENDAPI():
         self.CR = []
         self.send_real = True
         self.api['payload_method'] = self.api['payload_method'].lower()
+        self.REPORT = {}
+        self.REPORT['label'] = self.api['label']
+        self.REPORT['result'] = True
+        self.REPORT['method'] = self.api['method']
 
     # 替换提取的变量
     def TQ_replace(self):
@@ -88,19 +93,22 @@ class SENDAPI():
         for i in range(len(self.api['params'])):
             tqs = re.findall(r'{%(.?)%}', self.api['params'][i]['value'])
             for tq in tqs:
-                self.api['params'][i]['value'] = self.api['params'][i]['value'].replace('{%' + tq + '%}', str(self.TQ[tq]))
+                self.api['params'][i]['value'] = self.api['params'][i]['value'].replace('{%' + tq + '%}',
+                                                                                        str(self.TQ[tq]))
         # print(self.api['params'])
         # payload_fd
         for i in range(len(self.api['payload_fd'])):
             tqs = re.findall(r'{%(.?)%}', self.api['payload_fd'][i]['value'])
             for tq in tqs:
-                self.api['payload_fd'][i]['value'] = self.api['payload_fd'][i]['value'].replace('{%' + tq + '%}', str(self.TQ[tq]))
+                self.api['payload_fd'][i]['value'] = self.api['payload_fd'][i]['value'].replace('{%' + tq + '%}',
+                                                                                                str(self.TQ[tq]))
         # print(self.api['payload_fd'])
         # payload_xwfu
         for i in range(len(self.api['payload_xwfu'])):
             tqs = re.findall(r'{%(.?)%}', self.api['payload_xwfu'][i]['value'])
             for tq in tqs:
-                self.api['payload_xwfu'][i]['value'] = self.api['payload_xwfu'][i]['value'].replace('{%' + tq + '%}', str(self.TQ[tq]))
+                self.api['payload_xwfu'][i]['value'] = self.api['payload_xwfu'][i]['value'].replace('{%' + tq + '%}',
+                                                                                                    str(self.TQ[tq]))
         # print(self.api['payload_xwfu'])
 
         # payload_raw
@@ -122,9 +130,6 @@ class SENDAPI():
         for tq in tqs:
             self.api['payload_GQL_g'] = self.api['payload_GQL_g'].replace('{%' + tq + '%}', str(self.TQ[tq]))
         # print(self.api['payload_GQL_g'])
-
-
-
 
     def get_sql(self, sql):
         project_id = self.api['project_id']
@@ -176,6 +181,10 @@ class SENDAPI():
         self.RD = ''
         self.RD += '\n[%s]:%s\n' % ('status_code', self.response.status_code)
         self.RD += '\n[%s]:%s\n' % ('header', self.response.headers)
+        self.REPORT['status_code'] = self.response.status_code
+        self.REPORT['response_header'] = self.response.headers
+        if int(self.REPORT['status_code'])>399:
+            self.REPORT['result'] = False
 
     def do_configure(self, configure):
         """执行配置函数"""
@@ -207,6 +216,7 @@ class SENDAPI():
                         if res[0][0] == right:
                             return True
                     except:
+                        self.REPORT['result'] = False
                         return False
                 else:
                     if res:
@@ -221,6 +231,7 @@ class SENDAPI():
                     self.TQ[left] = S['s']
                     return True
                 except:
+                    self.REPORT['result'] = False
                     return False
             elif configure['select'] == "正则提取":
                 left = configure['value'].split('=')[0].strip()
@@ -229,6 +240,7 @@ class SENDAPI():
                     self.TQ[left] = re.findall(right, self.R)[0]
                     return True
                 except:
+                    self.REPORT['result'] = False
                     return False
             elif configure['select'] == "sql提取":
                 left = configure['value'].split('=')[0].strip()
@@ -289,7 +301,7 @@ class SENDAPI():
             elif configure['select'] == 'params':
                 self.url += '&' + left + '=' + str(right)
             return True
-
+        self.REPORT['result'] = False
         return False
 
     def send(self):
@@ -350,20 +362,26 @@ class SENDAPI():
         """入口函数"""
         try:
             self.TQ_replace()
-        except:
+        except Exception as e:
+            print(e)
+            self.REPORT['result'] = False
             return {"R": '执行失败，存在未定义变量', "RD": '', "CR": '', 'TQ': self.TQ}
 
         self.make_url()
         self.CR = []
-        children = self.api['children']
+
         # print(children)
-        for i in children:
+        for i in self.children:
             if i['do_time'] == 'before':
                 self.CR.append('【%s】 = %s' % (i['label'], self.do_configure(i)))
-                children.remove(i)
+                self.children.remove(i)
         if self.send_real == True:
-            self.send()
-        for i in children:
+            try:
+                self.send()
+            except:
+                self.REPORT['result'] = False
+                return {"R": '执行失败，接口请求失败', "RD": '', "CR": '', 'TQ': self.TQ}
+        for i in self.children:
             self.CR.append('【%s】 = %s' % (i['label'], self.do_configure(i)))
         self.make_RD()
         self.CR = '\n'.join(self.CR)
@@ -371,5 +389,20 @@ class SENDAPI():
 
     def response_data(self):
         """获取返回结果"""""
-        r = {"R": self.R, "RD": self.RD, "CR": self.CR, 'TQ': self.TQ}
+        self.REPORT['R'] = self.R
+        self.REPORT['CR'] = self.CR
+        self.REPORT['TQ'] = self.TQ
+        self.REPORT['url'] = self.url
+        self.REPORT['request_headers'] = self.headers
+        self.REPORT['payload_method'] = self.api['payload_method']
+        self.REPORT['payload_raw_method'] = self.api['payload_raw_method']
+        self.REPORT['payload'] = json.dumps({
+            "payload_fd": self.api['payload_fd'],
+            "payload_xwfu": self.api['payload_xwfu'],
+            "payload_raw": self.api['payload_raw'],
+            "payload_GQL_q": self.api['payload_GQL_q'],
+            "payload_GQL_g": self.api['payload_GQL_g'],
+        })
+
+        r = {"R": self.R, "RD": self.RD, "CR": self.CR, 'TQ': self.TQ, 'REPORT': self.REPORT}
         return r

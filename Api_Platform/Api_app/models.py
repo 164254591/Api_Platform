@@ -112,3 +112,13 @@ class DB_apis(models.Model):
 
     def __str__(self):
         return self.label
+
+
+class DB_report(models.Model):
+    project_id = models.CharField(max_length=10, null=True, blank=True, default='')
+    ctime = models.CharField(max_length=10, null=True, blank=True, default='')
+    all_result = models.BooleanField(default=True)  # 最终结果
+    api_result = models.TextField(default='[]')  # 详细接口数据
+
+    def __str__(self):
+        return self.ctime

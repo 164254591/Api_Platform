@@ -14,23 +14,23 @@
             <el-input v-model="setting_api.des" style="width: 45%"></el-input>
           </el-form-item>
           <el-form-item label="Host">
-<!--            <el-input v-model="setting_api.host"></el-input>-->
+            <!--            <el-input v-model="setting_api.host"></el-input>-->
             <el-autocomplete
-            class="inline-input"
-            v-model="setting_api.host"
-            :fetch-suggestions="querySearch"
-            placeholder="请输入域名"
-            @select="handleSelect"
-            :trigger-on-focus="true"
-            style="float: left;width: 100%"
-          >
-            <template slot-scope="{item}">
-              <div style="color: #0d0e0e"><strong>{{item.host}}</strong></div>
-              <span>【标签：{{item.type}}】</span>
-              <span>【{{item.des}}】</span>
-              <el-divider></el-divider>
-            </template>
-          </el-autocomplete>
+                class="inline-input"
+                v-model="setting_api.host"
+                :fetch-suggestions="querySearch"
+                placeholder="请输入域名"
+                @select="handleSelect"
+                :trigger-on-focus="true"
+                style="float: left;width: 100%"
+            >
+              <template slot-scope="{item}">
+                <div style="color: #0d0e0e"><strong>{{ item.host }}</strong></div>
+                <span>【标签：{{ item.type }}】</span>
+                <span>【{{ item.des }}】</span>
+                <el-divider></el-divider>
+              </template>
+            </el-autocomplete>
 
 
           </el-form-item>
@@ -217,7 +217,7 @@
               </el-tabs>
             </el-tab-pane>
             <el-tab-pane name="Response" label="Response">
-<!--              <el-input v-model="response_data.R" type="textarea" style="height: 100%" :rows="6"></el-input>-->
+              <!--              <el-input v-model="response_data.R" type="textarea" style="height: 100%" :rows="6"></el-input>-->
               <json-viewer :value="get_json()"></json-viewer>
             </el-tab-pane>
             <el-tab-pane label="ResponseData">
@@ -359,6 +359,32 @@
 
         </el-tabs>
       </div>
+      <div v-else-if="right_report">
+        <el-button style="float: right" type="danger" @click="clear_all_reports">清空报告</el-button>
+        <el-table :data="all_reports" stripe style="max-width: 100%;max-height: 500px;overflow-y: auto">
+          <el-table-column label="报告id" width="100">
+            <template slot-scope="scope">
+              <span>{{scope.row.id}}</span>
+            </template>
+          </el-table-column>
+          <el-table-column label="生成时间" width="200">
+            <template slot-scope="scope">
+              <span>{{scope.row.ctime}}</span>
+            </template>
+          </el-table-column>
+          <el-table-column label="总结果" width="200">
+            <template slot-scope="scope">
+              <span>{{scope.row.all_result}}</span>
+            </template>
+          </el-table-column>
+          <el-table-column>
+            <template slot-scope="scope">
+              <el-button type="primary" size="mini" @click="look_report_detail(scope.$index)">查看详情</el-button>
+            </template>
+          </el-table-column>
+
+        </el-table>
+      </div>
       <div v-else="">请点击左侧设置节点...</div>
     </el-card>
     <h1>接口用例页 &#12288
@@ -407,10 +433,10 @@
     <el-card style="position: fixed;bottom: 15px;width:-webkit-calc(100% - 240px);min-height:100px;">
       <el-input v-model="userable_par" type="textarea" :row="5" style="float:right;width: -webkit-calc(100% - 300px)"
                 placeholder="当前可用变量"></el-input>
-      <el-button size="mini" type="success" @click="run">执行</el-button> &nbsp;<span>正在执行：</span >
-      <span id='doing_api' style="color: #42b983" ></span>
+      <el-button size="mini" type="success" @click="run">执行</el-button> &nbsp;<span>正在执行：</span>
+      <span id='doing_api' style="color: #42b983"></span>
       <br>
-      <el-button style="margin-top: 10px" size="mini" type="primary">报告</el-button> &nbsp;<span>执行结果：</span>
+      <el-button @click="look_report" style="margin-top: 10px" size="mini" type="primary">报告</el-button> &nbsp;<span>执行结果：</span>
       <strong><span id="end_result" style="color: darkgreen"></span><br></strong>
 
 
@@ -427,7 +453,9 @@ export default {
   name: "Project_case",
   data() {
     return {
-      env_list:[],
+      all_reports:[],
+      right_report: false,
+      env_list: [],
       fd_index: '',  //fd参数对应行的下标
       choose_tab_pane: '',
       right_api: false,
@@ -472,39 +500,61 @@ export default {
     });
     axios.get('http://localhost:8000/get_env_list/').then(res => {
       this.env_list = res.data;
-      this.user_info = this.loadAll();
+      this.env_info = this.loadAll();
     })
 
   },
   methods: {
+    clear_all_reports(){
+      axios.get('/clear_all_reports/',{
+        params:{
+          project_id:this.project_id
+        }
+      }).then(res=>{
+        this.all_reports=[]
+      })
+    },
+    look_report() {
+      this.right_configure = false;
+      this.right_api = false;
+      this.right_report = true;
+      axios.get('/get_all_reports/',{
+        params:{
+          project_id:this.project_id
+        }
+      }).then(res=>{
+        this.all_reports = res.data
+        console.log(this.all_reports)
+      })
+    },
     querySearch(queryString, cb) {
-        var user = this.user_info;
-        var results = queryString ? user.filter(this.createFilter(queryString)) : user;
-        // 调用 callback 返回建议列表的数据
-        cb(results);
-      },
-      createFilter(queryString) {
-        return (user) => {
-          return (user.host.toLowerCase().indexOf(queryString.toLowerCase()) === 0);
-        };
-      },
-      loadAll() {
-        return this.env_list
-      },
+      var env = this.env_info;
+      var results = queryString ? env.filter(this.createFilter(queryString)) : env;
+      // 调用 callback 返回建议列表的数据
+      cb(results);
+    },
+    createFilter(queryString) {
+      return (env) => {
+        return (env.host.toLowerCase().indexOf(queryString.toLowerCase()) === 0);
+      };
+    },
+    loadAll() {
+      return this.env_list
+    },
     handleSelect(item) {
-        this.setting_api.host=item.host;
-      },
+      this.setting_api.host = item.host;
+    },
 
-    get_action_binary(){
-      return  process.env.VUE_APP_BASE_URL+'/upload_binary_file/?ApiID='+this.setting_api.id
+    get_action_binary() {
+      return process.env.VUE_APP_BASE_URL + '/upload_binary_file/?ApiID=' + this.setting_api.id
     },
-    get_action_fd(){
-      return process.env.VUE_APP_BASE_URL+'/upload_fd_file/?ApiID='+this.setting_api.id
+    get_action_fd() {
+      return process.env.VUE_APP_BASE_URL + '/upload_fd_file/?ApiID=' + this.setting_api.id
     },
-    get_json(){
+    get_json() {
       try {
         return JSON.parse(this.response_data.R)
-      }catch (e){
+      } catch (e) {
         return this.response_data.R
       }
     },
@@ -599,23 +649,25 @@ export default {
       if (data.type == 'api') {
         this.right_api = true;
         this.right_configure = false;
+        this.right_report = false;
         this.setting_api = data;
         this.response_data = {
-                                R: '',  // Response
-                                RD: '', // ResponseData
-                                CR: '', // ConfigureResult
-                              };
+          R: '',  // Response
+          RD: '', // ResponseData
+          CR: '', // ConfigureResult
+        };
         // 获取可用变量
-        axios.get('/get_userable_par/',{
-          params:{
-            api_id : data.id,
-            project_id:this.project_id,
+        axios.get('/get_userable_par/', {
+          params: {
+            api_id: data.id,
+            project_id: this.project_id,
           }
-        }).then(res=>{
+        }).then(res => {
           this.userable_par = res.data
         })
       } else {
         this.right_api = false;
+        this.right_report = false;
         this.right_configure = true;
         this.setting_configure = data;
 
@@ -637,6 +689,7 @@ export default {
         this.apis = res.data;
         this.right_api = false;  // 删除后设置右侧不显示
         this.right_configure = false;
+        this.dck.remove(data.id);
       })
     },
 
@@ -710,31 +763,33 @@ export default {
 
     },
     run() {
-      if(confirm('执行大用例之前请确保当前接口或配置的设置已经保存')==false){ return }
+      if (confirm('执行大用例之前请确保当前接口或配置的设置已经保存') == false) {
+        return
+      }
       var end_result = document.getElementById('end_result');
       var doing_api = document.getElementById('doing_api');
       var project_id = this.project_id;
-      var t = setInterval( function (){
-        axios.get('/doing_api/',{
-          params:{
-            project_id:project_id, // 由于作用域的问题，定时器无法获取this.project_id,所以在外面定义变量var
+      var t = setInterval(function () {
+        axios.get('/doing_api/', {
+          params: {
+            project_id: project_id, // 由于作用域的问题，定时器无法获取this.project_id,所以在外面定义变量var
           }
-        }).then(res=>{
+        }).then(res => {
           doing_api.innerText = res.data
         })
-      },500)
+      }, 500)
 
-      axios.get('/run/',{
-        params:{
-          project_id:this.project_id,
-          dck:this.dck.toString(),
+      axios.get('/run/', {
+        params: {
+          project_id: this.project_id,
+          dck: this.dck.toString(),
         }
-      }).then(res=>{
+      }).then(res => {
         clearInterval(t);
         end_result.innerText = res.data;
-        if(res.data == 'True'){
+        if (res.data == 'True') {
           end_result.style.color = 'green'
-        }else{
+        } else {
           end_result.style.color = 'red'
         }
         doing_api.innerText = '全部执行完毕'
@@ -754,7 +809,7 @@ export default {
     },
     // 新增参数
     add_params() {
-      this.setting_api.params.push({"key":"","value":""})
+      this.setting_api.params.push({"key": "", "value": ""})
     },
     // 删除参数
     del_params(index) {
@@ -795,10 +850,12 @@ export default {
   font-size: xx-small;
   color: gray;
 }
-.el-table{
+
+.el-table {
   max-height: 400px;
   overflow-y: scroll;
 }
+
 P {
   font-size: xx-small;
   color: gray;
