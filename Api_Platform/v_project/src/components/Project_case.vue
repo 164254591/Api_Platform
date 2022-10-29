@@ -364,17 +364,17 @@
         <el-table :data="all_reports" stripe style="max-width: 100%;max-height: 500px;overflow-y: auto">
           <el-table-column label="报告id" width="100">
             <template slot-scope="scope">
-              <span>{{scope.row.id}}</span>
+              <span>{{ scope.row.id }}</span>
             </template>
           </el-table-column>
           <el-table-column label="生成时间" width="200">
             <template slot-scope="scope">
-              <span>{{scope.row.ctime}}</span>
+              <span>{{ scope.row.ctime }}</span>
             </template>
           </el-table-column>
           <el-table-column label="总结果" width="200">
             <template slot-scope="scope">
-              <span>{{scope.row.all_result}}</span>
+              <span :style="{color:getColor(scope.row.all_result)}">{{ scope.row.all_result }}</span>
             </template>
           </el-table-column>
           <el-table-column>
@@ -453,7 +453,7 @@ export default {
   name: "Project_case",
   data() {
     return {
-      all_reports:[],
+      all_reports: [],
       right_report: false,
       env_list: [],
       fd_index: '',  //fd参数对应行的下标
@@ -505,24 +505,31 @@ export default {
 
   },
   methods: {
-    clear_all_reports(){
-      axios.get('/clear_all_reports/',{
-        params:{
-          project_id:this.project_id
+    getColor(result) {
+      if (result.toString() == 'true') {
+        return 'green'
+      } else {
+        return 'red'
+      }
+    },
+    clear_all_reports() {
+      axios.get('/clear_all_reports/', {
+        params: {
+          project_id: this.project_id
         }
-      }).then(res=>{
-        this.all_reports=[]
+      }).then(res => {
+        this.all_reports = []
       })
     },
     look_report() {
       this.right_configure = false;
       this.right_api = false;
       this.right_report = true;
-      axios.get('/get_all_reports/',{
-        params:{
-          project_id:this.project_id
+      axios.get('/get_all_reports/', {
+        params: {
+          project_id: this.project_id
         }
-      }).then(res=>{
+      }).then(res => {
         this.all_reports = res.data
         console.log(this.all_reports)
       })
@@ -770,7 +777,7 @@ export default {
       var doing_api = document.getElementById('doing_api');
       var project_id = this.project_id;
       var t = setInterval(function () {
-        axios.get('/doing_api/', {
+        axios.get('http://localhost:8000/doing_api/', {
           params: {
             project_id: project_id, // 由于作用域的问题，定时器无法获取this.project_id,所以在外面定义变量var
           }
@@ -778,6 +785,8 @@ export default {
           doing_api.innerText = res.data
         })
       }, 500)
+      console.log(t)
+      console.log('222')
 
       axios.get('/run/', {
         params: {
@@ -785,7 +794,10 @@ export default {
           dck: this.dck.toString(),
         }
       }).then(res => {
+        console.log('开始run。。。。')
         clearInterval(t);
+        console.log(t)
+        console.log('run  end')
         end_result.innerText = res.data;
         if (res.data == 'True') {
           end_result.style.color = 'green'
@@ -794,8 +806,8 @@ export default {
         }
         doing_api.innerText = '全部执行完毕'
       })
-
     },
+
     report() {
 
     },

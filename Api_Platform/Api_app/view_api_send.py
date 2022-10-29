@@ -73,9 +73,10 @@ class SENDAPI():
         self.make_header()
         self.make_method()
         self.TQ = TQ  # 设置传入的提取TQ作为类变量
-        self.CR = []
+        # self.CR = []
         self.send_real = True
         self.api['payload_method'] = self.api['payload_method'].lower()
+        self.api['payload_raw_method'] = self.api['payload_raw_method'].lower()
         self.REPORT = {}
         self.REPORT['label'] = self.api['label']
         self.REPORT['result'] = True
@@ -85,27 +86,27 @@ class SENDAPI():
     def TQ_replace(self):
         # headers
         for key in self.headers.keys():
-            tqs = re.findall(r'{%(.?)%}', self.headers[key])
+            tqs = re.findall(r'{%(.*?)%}', self.headers[key])
             for tq in tqs:
                 self.headers[key] = self.headers[key].replace('{%' + tq + '%}', str(self.TQ[tq]))
             # print(self.headers)
         # params
         for i in range(len(self.api['params'])):
-            tqs = re.findall(r'{%(.?)%}', self.api['params'][i]['value'])
+            tqs = re.findall(r'{%(.*?)%}', self.api['params'][i]['value'])
             for tq in tqs:
                 self.api['params'][i]['value'] = self.api['params'][i]['value'].replace('{%' + tq + '%}',
                                                                                         str(self.TQ[tq]))
         # print(self.api['params'])
         # payload_fd
         for i in range(len(self.api['payload_fd'])):
-            tqs = re.findall(r'{%(.?)%}', self.api['payload_fd'][i]['value'])
+            tqs = re.findall(r'{%(.*?)%}', self.api['payload_fd'][i]['value'])
             for tq in tqs:
                 self.api['payload_fd'][i]['value'] = self.api['payload_fd'][i]['value'].replace('{%' + tq + '%}',
                                                                                                 str(self.TQ[tq]))
         # print(self.api['payload_fd'])
         # payload_xwfu
         for i in range(len(self.api['payload_xwfu'])):
-            tqs = re.findall(r'{%(.?)%}', self.api['payload_xwfu'][i]['value'])
+            tqs = re.findall(r'{%(.*?)%}', self.api['payload_xwfu'][i]['value'])
             for tq in tqs:
                 self.api['payload_xwfu'][i]['value'] = self.api['payload_xwfu'][i]['value'].replace('{%' + tq + '%}',
                                                                                                     str(self.TQ[tq]))
@@ -113,20 +114,20 @@ class SENDAPI():
 
         # payload_raw
         # print(self.api['payload_raw'])
-        tqs = re.findall(r'{%(.?)%}', self.api['payload_raw'])
+        tqs = re.findall(r'{%(.*?)%}', self.api['payload_raw'])
         for tq in tqs:
             self.api['payload_raw'] = self.api['payload_raw'].replace('{%' + tq + '%}', str(self.TQ[tq]))
         # print(self.api['payload_raw'])
 
         # # payload_GQL_q
         # print(self.api['payload_GQL_q'])
-        tqs = re.findall(r'{%(.?)%}', self.api['payload_GQL_q'])
+        tqs = re.findall(r'{%(.*?)%}', self.api['payload_GQL_q'])
         for tq in tqs:
             self.api['payload_GQL_q'] = self.api['payload_GQL_q'].replace('{%' + tq + '%}', str(self.TQ[tq]))
         # print(self.api['payload_GQL_q'])
 
         # payload_GQL_g
-        tqs = re.findall(r'{%(.?)%}', self.api['payload_GQL_g'])
+        tqs = re.findall(r'{%(.*?)%}', self.api['payload_GQL_g'])
         for tq in tqs:
             self.api['payload_GQL_g'] = self.api['payload_GQL_g'].replace('{%' + tq + '%}', str(self.TQ[tq]))
         # print(self.api['payload_GQL_g'])
@@ -141,7 +142,7 @@ class SENDAPI():
         sql_db = project.sql_db
         try:
             connect = pymysql.Connect(host=sql_host, port=int(sql_port), user=sql_user, password=sql_pwd,
-                                      database=sql_db, charset='utf-8')
+                                      database=sql_db, charset='utf8')
             cursor = connect.cursor()
             cursor.execute(sql)
             cursor.commit()
@@ -183,7 +184,7 @@ class SENDAPI():
         self.RD += '\n[%s]:%s\n' % ('header', self.response.headers)
         self.REPORT['status_code'] = self.response.status_code
         self.REPORT['response_header'] = self.response.headers
-        if int(self.REPORT['status_code'])>399:
+        if int(self.REPORT['status_code']) > 399:
             self.REPORT['result'] = False
 
     def do_configure(self, configure):
@@ -268,12 +269,12 @@ class SENDAPI():
                 self.headers = json.loads(configure['value'].split('\n')[2])
                 if 'raw' in configure['value'].split['\n'][3]:
                     self.api['payload_method'] = 'raw'
-                    self.api['payload_raw_method'] = configure['value'].split['\n'][3].split('-')[1]
+                    self.api['payload_raw_method'] = configure['value'].split('\n')[3].split('-')[1]
                 else:
-                    self.api['payload_method'] = configure['value'].split['\n'][3]
-                self.api['payload_fd'] = configure['value'].split['\n'][4]
-                self.api['payload_xwfu'] = configure['value'].split['\n'][4]
-                self.api['payload_raw'] = configure['value'].split['\n'][4]
+                    self.api['payload_method'] = configure['value'].split('\n')[3]
+                self.api['payload_fd'] = configure['value'].split('\n')[4]
+                self.api['payload_xwfu'] = configure['value'].split('\n')[4]
+                self.api['payload_raw'] = configure['value'].split('\n')[4]
             return True
         elif configure['method'] == "插入参数":
             left = configure['value'].split('=')[0].strip()
@@ -306,6 +307,18 @@ class SENDAPI():
 
     def send(self):
         """执行接口"""
+        self.REPORT['url'] = self.url
+        self.REPORT['request_headers'] = self.headers
+        self.REPORT['payload_method'] = self.api['payload_method']
+        self.REPORT['payload_raw_method'] = self.api['payload_raw_method']
+        self.REPORT['payload'] = json.dumps({
+            "payload_fd": self.api['payload_fd'],
+            "payload_xwfu": self.api['payload_xwfu'],
+            "payload_raw": self.api['payload_raw'],
+            "payload_GQL_q": self.api['payload_GQL_q'],
+            "payload_GQL_g": self.api['payload_GQL_g'],
+        })
+
         print(self.url)
         print(self.headers)
         if self.api['payload_method'] == 'none':
@@ -321,12 +334,12 @@ class SENDAPI():
                 else:
                     payload[i['key']] = i['value']
             self.response = requests.request(self.method, self.url, headers=self.headers, data=payload, files=files)
-        elif self.api['payload_method'] == 'x-www-form-urlencode':  # a=1&b=2
+        elif self.api['payload_method'] == 'x-www-form-urlencoded':  # a=1&b=2
             # payload = ''
             # for i in self.api['payload_xwfu']:
             #     payload += '%s=%s&' % (i['key'], i['value'])
             payload = '&'.join([('%s=%s' % (i['key'], i['value'])) for i in self.api['payload_xwfu']])
-            self.headers['Content-type'] = 'application/x-www-form-urlencode'
+            self.headers['Content-Type'] = 'application/x-www-form-urlencoded'
             self.response = requests.request(self.method, self.url, headers=self.headers, data=payload)
         elif self.api['payload_method'] == 'raw':
             if self.api['payload_raw_method'] == 'Text':
@@ -347,7 +360,7 @@ class SENDAPI():
             self.response = requests.request(self.method, self.url, headers=self.headers, data=payload)
         elif self.api['payload_method'] == 'GraphQL':
             self.headers['Content-Type'] = 'application/json'
-            payload = json.dumps({"query": self.api['payload_GQL_q'], "variables": eval(self.api['payload_GQL_q'])})
+            payload = json.dumps({"query": self.api['payload_GQL_q'], "variables": eval(self.api['payload_GQL_g'])})
             self.response = requests.request(self.method, self.url, headers=self.headers, data=payload)
         else:
             self.response = requests.request(self.method, self.url, headers=self.headers, data={})
@@ -365,11 +378,10 @@ class SENDAPI():
         except Exception as e:
             print(e)
             self.REPORT['result'] = False
-            return {"R": '执行失败，存在未定义变量', "RD": '', "CR": '', 'TQ': self.TQ}
+            return {"R": '执行失败，存在未定义变量', "RD": '', "CR": '', "TQ": self.TQ, "REPORT": str(self.REPORT)}
 
         self.make_url()
         self.CR = []
-
         # print(children)
         for i in self.children:
             if i['do_time'] == 'before':
@@ -380,7 +392,7 @@ class SENDAPI():
                 self.send()
             except:
                 self.REPORT['result'] = False
-                return {"R": '执行失败，接口请求失败', "RD": '', "CR": '', 'TQ': self.TQ}
+                return {"R": '执行失败，接口请求失败', "RD": '', "CR": '', "TQ": self.TQ, "REPORT": str(self.REPORT)}
         for i in self.children:
             self.CR.append('【%s】 = %s' % (i['label'], self.do_configure(i)))
         self.make_RD()
@@ -389,20 +401,9 @@ class SENDAPI():
 
     def response_data(self):
         """获取返回结果"""""
-        self.REPORT['R'] = self.R
-        self.REPORT['CR'] = self.CR
-        self.REPORT['TQ'] = self.TQ
-        self.REPORT['url'] = self.url
-        self.REPORT['request_headers'] = self.headers
-        self.REPORT['payload_method'] = self.api['payload_method']
-        self.REPORT['payload_raw_method'] = self.api['payload_raw_method']
-        self.REPORT['payload'] = json.dumps({
-            "payload_fd": self.api['payload_fd'],
-            "payload_xwfu": self.api['payload_xwfu'],
-            "payload_raw": self.api['payload_raw'],
-            "payload_GQL_q": self.api['payload_GQL_q'],
-            "payload_GQL_g": self.api['payload_GQL_g'],
-        })
+        self.REPORT["R"] = self.R
+        self.REPORT["CR"] = self.CR
+        self.REPORT["TQ"] = self.TQ
 
-        r = {"R": self.R, "RD": self.RD, "CR": self.CR, 'TQ': self.TQ, 'REPORT': self.REPORT}
+        r = {"R": self.R, "RD": self.RD, "CR": self.CR, "TQ": self.TQ, "REPORT": str(self.REPORT)}
         return r

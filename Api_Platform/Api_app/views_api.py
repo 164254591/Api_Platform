@@ -212,9 +212,13 @@ def save_api(request):
 # 发送接口请求
 def send_api(request):
     api = json.loads(request.body.decode('utf-8'))
+    print(api)
     project_id = request.GET['project_id']
     s = SENDAPI(api, {}, api['children'])
     response_data = s.index()
+    print(type(response_data))
+    response_data = dict(response_data)
+    print(response_data)
     return HttpResponse(json.dumps(response_data), content_type='application/json')
 
 
@@ -264,6 +268,7 @@ def get_userable_par(request):
 def doing_api(request):
     project_id = request.GET['project_id']
     doing_api = DB_project_list.objects.filter(id=int(project_id))[0].doing_api
+    print('正在执行：'+str(doing_api))
     return HttpResponse(doing_api)
 
 
@@ -306,11 +311,12 @@ def run(request):
             response_data = s.index()
             TQ = response_data['TQ']
             apis_result.append(response_data['REPORT'])
-            if response_data['REPORT']['result'] == False:
+            print('dlz22222')
+            print(response_data)
+            if eval(response_data['REPORT'])['result'] == False:
                 report.all_result = False
     report.api_result = str(apis_result)
     report.save()
-
     return HttpResponse(str(report.all_result))
 
 
