@@ -36770,3 +36770,117 @@ SyntaxError: unexpected EOF while parsing
 [2022-10-30 16:29:38,233][INFO]"GET /run/?project_id=68&dck=80,86,87 HTTP/1.1" 200 4
 [2022-10-30 16:46:38,167][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
 [2022-10-30 16:46:38,605][INFO]Watching for file changes with StatReloader
+[2022-10-30 16:46:42,097][INFO]"GET /set_dck/?project_id=68&dck=86,87 HTTP/1.1" 200 12
+[2022-10-30 16:46:42,272][INFO]"GET /set_dck/?project_id=68&dck=87 HTTP/1.1" 200 6
+[2022-10-30 16:46:42,767][INFO]"GET /set_dck/?project_id=68&dck= HTTP/1.1" 200 4
+[2022-10-30 16:46:44,694][INFO]"GET /run/?project_id=68&dck= HTTP/1.1" 200 4
+[2022-10-30 16:55:05,945][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-10-30 16:55:06,483][INFO]Watching for file changes with StatReloader
+[2022-10-30 16:55:06,858][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1898
+[2022-10-30 16:55:06,858][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 4
+[2022-10-30 16:55:06,858][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
+[2022-10-30 16:55:08,002][INFO]"GET /set_dck/?project_id=68&dck=80 HTTP/1.1" 200 6
+[2022-10-30 16:55:10,762][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 16:55:11,265][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 16:55:11,759][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 16:55:12,270][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 16:55:12,295][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-10-30 16:55:12,304][INFO]"GET /run/?project_id=68 HTTP/1.1" 200 4
+[2022-10-30 17:02:14,054][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 6
+[2022-10-30 17:02:14,054][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1898
+[2022-10-30 17:02:14,055][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
+[2022-10-30 17:04:17,267][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 6
+[2022-10-30 17:04:17,267][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1898
+[2022-10-30 17:04:17,268][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
+[2022-10-30 17:04:17,283][INFO]"GET /set_dck/?project_id=68&dck=80 HTTP/1.1" 200 6
+[2022-10-30 17:04:40,294][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 6
+[2022-10-30 17:04:40,294][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1898
+[2022-10-30 17:04:40,295][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
+[2022-10-30 17:06:35,700][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1898
+[2022-10-30 17:06:35,700][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 6
+[2022-10-30 17:06:35,700][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
+[2022-10-30 17:06:35,713][INFO]"GET /set_dck/?project_id=68&dck=80 HTTP/1.1" 200 6
+[2022-10-30 17:07:41,928][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 6
+[2022-10-30 17:07:41,928][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 294
+[2022-10-30 17:07:41,929][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1898
+[2022-10-30 17:07:41,932][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
+[2022-10-30 17:07:41,953][INFO]"GET /set_dck/?project_id=68&dck=80 HTTP/1.1" 200 6
+[2022-10-30 17:10:16,378][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 294
+[2022-10-30 17:10:16,378][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1898
+[2022-10-30 17:10:16,382][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 6
+[2022-10-30 17:10:16,382][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
+[2022-10-30 17:10:19,299][ERROR]Internal Server Error: /get_all_reports/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'project_id'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views_api.py", line 332, in get_all_reports
+    project_id = request.GET['project_id']
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\utils\datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'project_id'
+[2022-10-30 17:10:19,300][ERROR]"GET /get_all_reports/ HTTP/1.1" 500 71650
+[2022-10-30 17:10:25,222][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:10:25,720][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:10:26,237][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:10:26,725][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:10:26,766][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-10-30 17:10:26,773][INFO]"GET /run/?project_id=68 HTTP/1.1" 200 4
+[2022-10-30 17:12:28,384][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 6
+[2022-10-30 17:12:28,384][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1898
+[2022-10-30 17:12:28,385][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 294
+[2022-10-30 17:12:28,389][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
+[2022-10-30 17:12:28,407][INFO]"GET /set_dck/?project_id=68&dck=80 HTTP/1.1" 200 6
+[2022-10-30 17:15:16,989][INFO]"GET /get_all_reports/?project_id=68 HTTP/1.1" 200 24311
+[2022-10-30 17:30:54,828][INFO]"GET /clear_all_reports/?project_id=68 HTTP/1.1" 200 0
+[2022-10-30 17:30:57,797][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:30:58,288][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:30:58,784][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:30:59,285][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:30:59,330][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-10-30 17:30:59,342][INFO]"GET /run/?project_id=68 HTTP/1.1" 200 4
+[2022-10-30 17:32:02,285][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 294
+[2022-10-30 17:32:02,288][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 6
+[2022-10-30 17:32:02,288][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1898
+[2022-10-30 17:32:02,291][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
+[2022-10-30 17:32:04,236][INFO]"GET /get_all_reports/?project_id=68 HTTP/1.1" 200 858
+[2022-10-30 17:32:09,846][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:32:10,339][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:32:10,840][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:32:11,334][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:32:11,381][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-10-30 17:32:11,385][INFO]"GET /run/?project_id=68 HTTP/1.1" 200 4
+[2022-10-30 17:34:07,684][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1898
+[2022-10-30 17:34:07,685][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 6
+[2022-10-30 17:34:07,688][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
+[2022-10-30 17:34:07,698][INFO]"GET /set_dck/?project_id=68&dck=80 HTTP/1.1" 200 6
+[2022-10-30 17:34:14,604][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 6
+[2022-10-30 17:34:14,604][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1898
+[2022-10-30 17:34:14,605][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
+[2022-10-30 17:34:14,621][INFO]"GET /set_dck/?project_id=68&dck=80 HTTP/1.1" 200 6
+[2022-10-30 17:34:36,486][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:34:36,987][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:34:37,485][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:34:38,001][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:34:38,040][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-10-30 17:34:38,057][INFO]"GET /run/?project_id=68 HTTP/1.1" 200 4
+[2022-10-30 17:34:39,378][INFO]"GET /get_all_reports/?project_id=68 HTTP/1.1" 200 2574
+[2022-10-30 17:34:43,159][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:34:43,646][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:34:44,145][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:34:44,657][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-10-30 17:34:44,683][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-10-30 17:34:44,690][INFO]"GET /run/?project_id=68 HTTP/1.1" 200 4
+[2022-10-30 17:34:46,434][INFO]"GET /get_all_reports/?project_id=68 HTTP/1.1" 200 3432
+[2022-10-30 17:38:42,751][INFO]"GET /get_all_reports/?project_id=68 HTTP/1.1" 200 3432
+[2022-10-30 17:40:13,101][INFO]"GET /get_all_reports/?project_id=68 HTTP/1.1" 200 3432
+[2022-10-30 17:40:28,666][INFO]"GET /get_all_reports/?project_id=68 HTTP/1.1" 200 3432
+[2022-10-30 17:40:34,831][INFO]"GET /get_all_reports/?project_id=68 HTTP/1.1" 200 3432

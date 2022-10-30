@@ -275,7 +275,8 @@ def doing_api(request):
 # 执行大用例
 def run(request):
     project_id = request.GET['project_id']
-    dck = request.GET['dck'].split(',')
+    dck = DB_project_list.objects.filter(id=int(project_id))[0].dck.split(',')
+    # dck = request.GET['dck'].split(',')
     print(dck)
     TQ = {}
     # 生成新的报告
