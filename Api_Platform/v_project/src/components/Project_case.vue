@@ -360,6 +360,34 @@
         </el-tabs>
       </div>
       <div v-else-if="right_report">
+        <el-dialog title="报告详情如下：" :visible.sync="dialogFormVisible3" width="90%">
+          <el-collapse v-for="i in apis_result">
+            <el-collapse-item >
+              <template slot="title">
+                <strong  :style="{color:getColor(i.result)}">{{i.label}}</strong>
+              </template>
+              <span style="color: grey">【接口执行结果】：</span><strong>{{i.result}}</strong><br>
+              <span style="color: grey">【HttpStatus】：</span><strong>{{i.status_code}}</strong><br>
+              <span style="color: grey">【请求类型】：</span><strong>{{i.method}}</strong><br>
+              <span style="color: grey">【请求URL】：</span><strong>{{i.url}}</strong><br>
+              <span style="color: grey">【请求头】：</span><strong>{{i.request_headers}}</strong><br>
+              <span style="color: grey">【请求体】：</span><strong>{{i.payload}}</strong><br>
+              <span style="color: grey">【请求体类型】：</span><strong>{{i.payload_method}}</strong><br>
+              <span style="color: grey">【请求体raw类型】：</span><strong>{{i.payload_raw_method}}</strong><br>
+              <span style="color: grey">【返回头】：</span><strong>{{i.response_header}}</strong><br>
+              <span style="color: grey">【返回体】：</span><strong>{{i.R}}</strong><br>
+              <span style="color: grey">【配置执行结果】：</span><strong>{{i.CR}}</strong><br>
+              <span style="color: grey">【变量提取结果】：</span><strong>{{i.TQ}}</strong><br>
+
+
+
+
+
+            </el-collapse-item>
+          </el-collapse>
+
+        </el-dialog>
+
         <el-button style="float: right" type="danger" @click="clear_all_reports">清空报告</el-button>
         <el-table :data="all_reports" stripe style="max-width: 100%;max-height: 500px;overflow-y: auto">
           <el-table-column label="报告id" width="100">
@@ -453,6 +481,8 @@ export default {
   name: "Project_case",
   data() {
     return {
+      apis_result:[],
+      dialogFormVisible3:false,
       all_reports: [],
       right_report: false,
       env_list: [],
@@ -512,6 +542,12 @@ export default {
         return 'red'
       }
     },
+    look_report_detail(index){
+      this.apis_result=[];
+      this.dialogFormVisible3=true;
+      this.apis_result = this.all_reports[index].api_result;
+      // console.log(this.apis_result)
+    },
     clear_all_reports() {
       axios.get('/clear_all_reports/', {
         params: {
@@ -531,7 +567,7 @@ export default {
         }
       }).then(res => {
         this.all_reports = res.data
-        console.log(this.all_reports)
+        // console.log(this.all_reports)
       })
     },
     querySearch(queryString, cb) {
@@ -785,19 +821,13 @@ export default {
           doing_api.innerText = res.data
         })
       }, 500)
-      console.log(t)
-      console.log('222')
-
       axios.get('/run/', {
         params: {
           project_id: this.project_id,
           dck: this.dck.toString(),
         }
       }).then(res => {
-        console.log('开始run。。。。')
         clearInterval(t);
-        console.log(t)
-        console.log('run  end')
         end_result.innerText = res.data;
         if (res.data == 'True') {
           end_result.style.color = 'green'

@@ -268,7 +268,7 @@ def get_userable_par(request):
 def doing_api(request):
     project_id = request.GET['project_id']
     doing_api = DB_project_list.objects.filter(id=int(project_id))[0].doing_api
-    print('正在执行：'+str(doing_api))
+    print('正在执行：' + str(doing_api))
     return HttpResponse(doing_api)
 
 
@@ -285,7 +285,7 @@ def run(request):
     apis_result = []
 
     for i in range(len(dck)):
-        if '_' not in dck[i]:  # 判断是否为接口还是配置
+        if dck[i] and '_' not in dck[i]:  # 判断是否为接口还是配置
             need_children = []
             print(dck[i])
             for j in range(i + 1, len(dck)):
@@ -307,11 +307,11 @@ def run(request):
             api['payload_fd'] = eval(api['payload_fd'])
             api['payload_xwfu'] = eval(api['payload_xwfu'])
             # 调用类执行
+            print('开始在执行接口：'+str(api['label']))
             s = SENDAPI(api, TQ, children)
             response_data = s.index()
             TQ = response_data['TQ']
             apis_result.append(response_data['REPORT'])
-            print('dlz22222')
             print(response_data)
             if eval(response_data['REPORT'])['result'] == False:
                 report.all_result = False
@@ -332,6 +332,8 @@ def get_all_reports(request):
     all_reports = list(DB_report.objects.filter(project_id=project_id).values())[::-1]
     for report in all_reports:
         report['api_result'] = eval(report['api_result'])
+        for i in range(len(report['api_result'])):
+            report['api_result'][i] = eval(report['api_result'][i])
     return HttpResponse(json.dumps(all_reports), content_type='application/json')
 
 

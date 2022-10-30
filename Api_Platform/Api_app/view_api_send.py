@@ -69,7 +69,6 @@ class SENDAPI():
         self.children = children
         self.api = api
         # print(api)
-
         self.make_header()
         self.make_method()
         self.TQ = TQ  # 设置传入的提取TQ作为类变量
@@ -88,14 +87,27 @@ class SENDAPI():
         for key in self.headers.keys():
             tqs = re.findall(r'{%(.*?)%}', self.headers[key])
             for tq in tqs:
-                self.headers[key] = self.headers[key].replace('{%' + tq + '%}', str(self.TQ[tq]))
-            # print(self.headers)
+                try:
+                    self.headers[key] = self.headers[key].replace('{%' + tq + '%}', str(self.TQ[tq]))
+                except:
+                    self.headers[key] = self.headers[key]
+        self.REPORT['request_headers'] = self.headers
+
         # params
         for i in range(len(self.api['params'])):
             tqs = re.findall(r'{%(.*?)%}', self.api['params'][i]['value'])
             for tq in tqs:
-                self.api['params'][i]['value'] = self.api['params'][i]['value'].replace('{%' + tq + '%}',
+                try:
+                    self.api['params'][i]['value'] = self.api['params'][i]['value'].replace('{%' + tq + '%}',
                                                                                         str(self.TQ[tq]))
+                except:
+                    self.api['params'][i]['value'] = self.api['params'][i]['value']
+            host = self.api['host']
+            path = self.api['path']
+            params = self.api['params']
+            self.REPORT['url'] = host + path + '?' + '&'.join(["%s=%s" % (i['key'], i['value']) for i in params if i])  # 过滤空行
+
+
         # print(self.api['params'])
         # payload_fd
         for i in range(len(self.api['payload_fd'])):
@@ -319,8 +331,6 @@ class SENDAPI():
             "payload_GQL_g": self.api['payload_GQL_g'],
         })
 
-        print(self.url)
-        print(self.headers)
         if self.api['payload_method'] == 'none':
             self.response = requests.request(self.method, self.url, headers=self.headers, data={})
         elif self.api['payload_method'] == 'form-data':  # {"a":1,"b":2}
@@ -373,10 +383,11 @@ class SENDAPI():
 
     def index(self):
         """入口函数"""
+
         try:
             self.TQ_replace()
         except Exception as e:
-            print(e)
+            # print(e)
             self.REPORT['result'] = False
             return {"R": '执行失败，存在未定义变量', "RD": '', "CR": '', "TQ": self.TQ, "REPORT": str(self.REPORT)}
 
@@ -390,7 +401,8 @@ class SENDAPI():
         if self.send_real == True:
             try:
                 self.send()
-            except:
+            except Exception as e:
+                # print(e)
                 self.REPORT['result'] = False
                 return {"R": '执行失败，接口请求失败', "RD": '', "CR": '', "TQ": self.TQ, "REPORT": str(self.REPORT)}
         for i in self.children:
@@ -404,6 +416,5 @@ class SENDAPI():
         self.REPORT["R"] = self.R
         self.REPORT["CR"] = self.CR
         self.REPORT["TQ"] = self.TQ
-
         r = {"R": self.R, "RD": self.RD, "CR": self.CR, "TQ": self.TQ, "REPORT": str(self.REPORT)}
         return r
