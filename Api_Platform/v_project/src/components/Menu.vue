@@ -13,7 +13,7 @@
               <el-menu-item index="/project_list/">项目管理</el-menu-item>
               <el-menu-item index="/env_list/">环境管理</el-menu-item>
               <el-menu-item index="/api_shop/">接口商店</el-menu-item>
-              <el-menu-item index="1-4">线上监控</el-menu-item>
+              <el-menu-item index="/monitor/">线上监控</el-menu-item>
 
           <el-menu-item-group title="接口导入">
               <el-menu-item index="1-5">接口文档</el-menu-item>

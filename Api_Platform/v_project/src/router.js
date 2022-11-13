@@ -10,6 +10,7 @@ import Send_news from "@/views/Send_news";
 import Send_notice from "@/views/Send_notice";
 import Look_log from "@/views/Look_log";
 import Power_list from "@/views/Power_list";
+import Monitor from "@/views/Monitor";
 
 Vue.use(Router)
 
@@ -64,6 +65,11 @@ export default new Router({
       path: '/power_list',
       name: 'Power_list',
       component: Power_list
+    },
+    {
+      path: '/Monitor',
+      name: 'Monitor',
+      component: Monitor
     },
   ]
 })
