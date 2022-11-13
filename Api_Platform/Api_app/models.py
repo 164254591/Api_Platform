@@ -122,3 +122,17 @@ class DB_report(models.Model):
 
     def __str__(self):
         return self.ctime
+
+
+class DB_monitor(models.Model):
+    label = models.CharField(max_length=100, default='', null=True, blank=True)
+    project_id = models.CharField(max_length=10, default='', null=True, blank=True)
+    method = models.CharField(max_length=10, default='', null=True, blank=True)  # 间隔时间，每日定时，接口触发
+    value = models.CharField(max_length=100, default='', null=True, blank=True)
+    status = models.BooleanField(default=False)  # 开关
+    next = models.CharField(max_length=100, default='', null=True, blank=True)
+    email = models.CharField(max_length=100, default='', null=True, blank=True)
+    robot = models.CharField(max_length=100, default='', null=True, blank=True)  # 机器人接口、钉钉、企业微信、飞书
+
+    def __str__(self):
+        return self.label
