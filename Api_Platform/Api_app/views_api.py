@@ -308,7 +308,7 @@ def run(request):
             api['payload_fd'] = eval(api['payload_fd'])
             api['payload_xwfu'] = eval(api['payload_xwfu'])
             # 调用类执行
-            print('开始在执行接口：'+str(api['label']))
+            print('开始在执行接口：' + str(api['label']))
             s = SENDAPI(api, TQ, children)
             response_data = s.index()
             TQ = response_data['TQ']

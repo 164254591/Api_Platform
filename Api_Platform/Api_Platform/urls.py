@@ -53,6 +53,12 @@ urlpatterns = [
     path('clear_all_reports/', clear_all_reports),
     path('get_all_reports/', get_all_reports),
 
+    path('get_monitor_list/', get_monitor_list),
+    path('add_monitor/', add_monitor),
+    path('change_monitor_status/', change_monitor_status),
+    path('delete_monitor/', delete_monitor),
+    path('save_monitor/', save_monitor),
+
     # -----------------------------------------权限系统可以管理的，但不一定监管（接口path只有一级，且path和函数名必须相同）---------
     re_path('(?P<path>.+)/', diy_power),
 

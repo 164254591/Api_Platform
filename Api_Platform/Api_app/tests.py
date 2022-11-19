@@ -27,7 +27,7 @@ m()
 A = '{"a": "22", "b": {"c": "001", "d": "02"}}'
 B = "['d']['c']"
 C = eval('{"a": "22", "b": {"c": "001", "d": "02"}}' + "['b']['c']")
-print(C)
+# print(C)
 
 # print(str(A))
 # d = json.loads(str(A))
@@ -41,7 +41,7 @@ for i in list2:
     if i == 8:
         list1.append(i)
         list2.remove(i)
-        print(list2)
+        # print(list2)
 
 # def num(lis):
 #     lis = np.array(lis)
@@ -60,5 +60,21 @@ for i in list2:
 v = 'aaa= select name from table where name ="dlz"'
 d = v.split('=',1)
 right = '='.join(v.split('=')[1:]).strip()
-print(d)
-print(right)
+# print(d)
+# print(right)
+
+import time
+print(time.time())
+print(int(time.time() - time.timezone)% 86400)
+print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time())))
+print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(time.time() - time.timezone))))
+print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(time.time() - time.timezone)% 86400)))
+print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(time.time() - int(time.time() - time.timezone) % 86400))))
+print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+
+
+
+# print(time.localtime(time.time()))
+
+
+

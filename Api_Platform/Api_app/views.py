@@ -400,6 +400,7 @@ def default_power(request, path):
     return r['r']
 
 
+# 接口商店下载
 def download_api(request):
     project_id = request.GET['project_id']
     api_id = request.GET['api_id']
@@ -408,3 +409,72 @@ def download_api(request):
     api['project_id'] = project_id
     DB_apis.objects.create(**api)
     return HttpResponse('')
+
+
+# 查询
+def get_monitor_list(request):
+    moniter_list = list(DB_monitor.objects.all().values())
+    for i in moniter_list:
+        if i['method'] in ('间隔时间', '每日定时') and i['next']:
+            i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+    return HttpResponse(json.dumps(moniter_list), content_type='application/json')
+
+
+# 增加
+def add_monitor(request):
+    DB_monitor.objects.create()
+    return get_monitor_list(request)
+
+
+# 更改
+def change_monitor_status(request):
+    id = request.GET['id']
+    monitor = DB_monitor.objects.filter(id=int(id))[0]
+    if monitor.status == True:  # 我要关上
+        monitor.status = False
+    else:  # 我要打开
+        monitor.status = True
+        set_monitor_next(monitor, 'human')
+    monitor.save()
+    return get_monitor_list(request)
+
+
+# 保存
+def save_monitor(request):
+    form_data = json.loads(request.body.decode('utf-8'))
+    print(form_data)
+    monitor = DB_monitor.objects.filter(id=int(form_data['id']))
+    monitor.update(**form_data)
+    monitor.update(status=False)
+    return get_monitor_list(request)
+
+
+# 删除
+def delete_monitor(request):
+    id = request.GET['id']
+    DB_monitor.objects.filter(id=int(id)).delete()
+    return get_monitor_list(request)
+
+
+# 计算下一次执行时间
+def set_monitor_next(monitor, which):
+    if monitor.method == '间隔时间':
+        if which == 'human':
+            monitor.next = int(time.time()) + int(monitor.value) * 60
+        else:  # 巡逻线程调用
+            monitor.next = int(monitor.next) + int(monitor.value) * 60
+    elif monitor.method == '每日定时':
+        h = int(monitor.value.split(':')[0])
+        m = int(monitor.value.split(':')[1])
+        hm = h * 3600 + m * 60
+        today_s = int(time.time()) - int(time.time() - time.timezone) % 86400 + hm
+        print(today_s)
+        if which == 'human':
+            if today_s <= time.time():  # 今天来不及了
+                monitor.next = today_s + 86400
+            else:
+                monitor.next = today_s
+        else:  # 巡逻线程
+            monitor.next = monitor.next + 86400
+    elif monitor.method == 'jenkins':
+        ...
