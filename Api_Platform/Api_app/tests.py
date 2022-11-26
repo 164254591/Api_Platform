@@ -1,7 +1,9 @@
 import json
 
 from django.test import TestCase
-
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+import smtplib
 
 # Create your tests here.
 def a():
@@ -72,8 +74,32 @@ print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(time.time() - time.t
 print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(time.time() - int(time.time() - time.timezone) % 86400))))
 print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
 
+def email(adresss, content):
+    adresss = '164254591@qq.com'
+    mail_to = adresss.split(',')
+    mail_to =['164254591@qq.com','1343311617@qq.com ']
+    mail_to = ','.join(mail_to)
+    mail_host = 'smtp.qq.com'
+    mail_user = '164254591@qq.com'  # 发送者邮箱地址
+    mail_pass = 'nfsesqiwyzjacafj'  # smtp授权码
 
+    c = MIMEText(content, 'html', 'utf-8')
+    msg = MIMEMultipart('related')
+    msg['From'] = mail_user
+    msg['To'] = mail_to
+    msg['Subject'] = '接口测试平台线上监控报告'
+    msg.attach(c)
 
+    # try:
+    server = smtplib.SMTP()
+    server.connect(mail_host, 25)
+    server.login(mail_user, mail_pass)
+    server.sendmail(mail_user, str(mail_to), msg.as_string())
+    print('发送邮件成功')
+    server.close()
+    # except:
+    #     print('邮件发送失败')
+email('164254591@qq.com','dddddd')
 # print(time.localtime(time.time()))
 
 

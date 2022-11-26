@@ -443,6 +443,7 @@ def change_monitor_status(request):
 def save_monitor(request):
     form_data = json.loads(request.body.decode('utf-8'))
     # print(form_data)
+    del form_data['next']
     monitor = DB_monitor.objects.filter(id=int(form_data['id']))
     monitor.update(**form_data)
     monitor.update(status=False)

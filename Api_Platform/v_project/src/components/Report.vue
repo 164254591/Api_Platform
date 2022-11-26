@@ -6,7 +6,7 @@
               <template slot="title">
                 <strong  :style="{color:getColor(i.result)}">{{i.label}}</strong>
               </template>
-              <span style="color: grey">【接口执行结果】：</span><strong>{{i.result}}</strong><br>
+              <span style="color: grey;float: left" >【接口执行结果】：</span><strong>{{i.result}}</strong><br>
               <span style="color: grey">【HttpStatus】：</span><strong>{{i.status_code}}</strong><br>
               <span style="color: grey">【请求类型】：</span><strong>{{i.method}}</strong><br>
               <span style="color: grey">【请求URL】：</span><strong>{{i.url}}</strong><br>
@@ -109,5 +109,8 @@ export default {
 </script>
 
 <style scoped>
-
+span,strong
+{
+  float: left;
+}
 </style>
