@@ -195,7 +195,7 @@ class SENDAPI():
         self.RD += '\n[%s]:%s\n' % ('status_code', self.response.status_code)
         self.RD += '\n[%s]:%s\n' % ('header', self.response.headers)
         self.REPORT['status_code'] = self.response.status_code
-        self.REPORT['response_header'] = self.response.headers
+        self.REPORT['response_header'] = str(self.response.headers)
         if int(self.REPORT['status_code']) > 399:
             self.REPORT['result'] = False
 

@@ -37385,3 +37385,651 @@ ValueError: invalid literal for int() with base 10: ''
 [2022-11-19 21:59:03,267][ERROR]"GET /change_monitor_status/?id=9 HTTP/1.1" 500 67638
 [2022-11-19 21:59:42,500][INFO]"POST /save_monitor/ HTTP/1.1" 200 525
 [2022-11-19 21:59:44,012][INFO]"GET /change_monitor_status/?id=9 HTTP/1.1" 200 524
+[2022-11-26 12:24:09,564][INFO]Watching for file changes with StatReloader
+[2022-11-26 12:24:09,968][INFO]"GET / HTTP/1.1" 200 4830
+[2022-11-26 12:24:10,004][INFO]"GET /static/dlz_download_login/assets/js/jquery-1.11.0.min.js HTTP/1.1" 304 0
+[2022-11-26 12:24:10,004][INFO]"GET /static/dlz_download_login/assets/css/demo.css HTTP/1.1" 304 0
+[2022-11-26 12:24:10,004][INFO]"GET /static/dlz_download_login/assets/js/TweenMax.min.js HTTP/1.1" 304 0
+[2022-11-26 12:24:10,005][INFO]"GET /static/dlz_download_login/assets/js/demo.js HTTP/1.1" 304 0
+[2022-11-26 12:24:10,118][INFO]"GET /static/favicon.ico HTTP/1.1" 200 1150
+[2022-11-26 12:24:49,678][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-11-26 12:24:49,681][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 12:24:51,409][INFO]"GET /get_monitor_list/ HTTP/1.1" 200 524
+[2022-11-26 12:24:57,295][INFO]"GET /change_monitor_status/?id=6 HTTP/1.1" 200 525
+[2022-11-26 12:24:58,057][INFO]"GET /change_monitor_status/?id=6 HTTP/1.1" 200 524
+[2022-11-26 12:24:59,916][INFO]"GET /change_monitor_status/?id=6 HTTP/1.1" 200 525
+[2022-11-26 12:25:00,602][INFO]"GET /change_monitor_status/?id=6 HTTP/1.1" 200 524
+[2022-11-26 12:25:01,981][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 525
+[2022-11-26 12:25:02,664][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 524
+[2022-11-26 12:25:12,565][INFO]"GET /get_all_reports/?project_id= HTTP/1.1" 200 2
+[2022-11-26 12:25:15,090][INFO]"GET /get_all_reports/?project_id= HTTP/1.1" 200 2
+[2022-11-26 12:25:34,514][INFO]"GET /get_project_list/ HTTP/1.1" 200 992
+[2022-11-26 12:25:36,512][INFO]"GET /get_project_detail/?id=68 HTTP/1.1" 200 294
+[2022-11-26 12:25:36,519][INFO]"GET /get_dck/?project_id=68 HTTP/1.1" 200 6
+[2022-11-26 12:25:36,520][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
+[2022-11-26 12:25:36,520][INFO]"GET /get_apis/?project_id=68 HTTP/1.1" 200 1898
+[2022-11-26 12:25:42,046][INFO]"GET /get_userable_par/?api_id=80&project_id=68 HTTP/1.1" 200 0
+[2022-11-26 12:25:45,933][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-11-26 12:25:46,425][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-11-26 12:25:46,930][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-11-26 12:25:47,428][INFO]"GET /doing_api/?project_id=68 HTTP/1.1" 200 9
+[2022-11-26 12:25:47,485][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-11-26 12:25:47,492][INFO]"GET /run/?project_id=68 HTTP/1.1" 200 4
+[2022-11-26 12:25:49,812][INFO]"GET /get_all_reports/?project_id=68 HTTP/1.1" 200 4292
+[2022-11-26 12:26:07,907][INFO]"OPTIONS /save_project/ HTTP/1.1" 200 0
+[2022-11-26 12:26:07,914][INFO]"POST /save_project/ HTTP/1.1" 200 0
+[2022-11-26 12:26:14,102][INFO]"GET /get_project_list/ HTTP/1.1" 200 992
+[2022-11-26 12:26:18,669][INFO]"GET /get_monitor_list/ HTTP/1.1" 200 524
+[2022-11-26 12:26:25,842][INFO]"OPTIONS /save_monitor/ HTTP/1.1" 200 0
+[2022-11-26 12:26:25,922][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 449, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 419, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 23:20:00'
+[2022-11-26 12:26:25,923][ERROR]"POST /save_monitor/ HTTP/1.1" 500 69157
+[2022-11-26 12:26:28,493][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 449, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 419, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 23:20:00'
+[2022-11-26 12:26:28,494][ERROR]"POST /save_monitor/ HTTP/1.1" 500 69157
+[2022-11-26 12:28:02,348][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 449, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 419, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(i['next']))
+ValueError: invalid literal for int() with base 10: '2022-11-26 23:20:00'
+[2022-11-26 12:28:02,349][ERROR]"POST /save_monitor/ HTTP/1.1" 500 69147
+[2022-11-26 12:28:02,719][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 12:28:03,157][INFO]Watching for file changes with StatReloader
+[2022-11-26 12:28:08,398][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 449, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 419, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(i['next']))
+TypeError: an integer is required (got type str)
+[2022-11-26 12:28:08,399][ERROR]"POST /save_monitor/ HTTP/1.1" 500 69005
+[2022-11-26 12:28:34,287][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 12:28:34,796][INFO]Watching for file changes with StatReloader
+[2022-11-26 12:28:37,761][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 449, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 419, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(str(i['next'])))
+TypeError: an integer is required (got type str)
+[2022-11-26 12:28:37,762][ERROR]"POST /save_monitor/ HTTP/1.1" 500 69028
+[2022-11-26 12:29:03,594][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 449, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 419, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(str(i['next'])))
+TypeError: an integer is required (got type str)
+[2022-11-26 12:29:03,594][ERROR]"POST /save_monitor/ HTTP/1.1" 500 69016
+[2022-11-26 12:29:27,609][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 12:29:28,178][INFO]Watching for file changes with StatReloader
+[2022-11-26 12:29:31,725][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 449, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 419, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 23:20:00'
+[2022-11-26 12:29:31,726][ERROR]"POST /save_monitor/ HTTP/1.1" 500 69158
+[2022-11-26 12:30:35,819][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 12:30:36,387][INFO]Watching for file changes with StatReloader
+[2022-11-26 12:31:37,472][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 12:31:37,996][INFO]Watching for file changes with StatReloader
+[2022-11-26 12:31:56,839][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 449, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 419, in get_monitor_list
+    i['next_date'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 23:20:00'
+[2022-11-26 12:31:56,840][ERROR]"POST /save_monitor/ HTTP/1.1" 500 69216
+[2022-11-26 12:32:45,243][ERROR]Internal Server Error: /add_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 426, in add_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 419, in get_monitor_list
+    i['next_date'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 23:20:00'
+[2022-11-26 12:32:45,243][ERROR]"GET /add_monitor/ HTTP/1.1" 500 68868
+[2022-11-26 12:32:56,504][ERROR]Internal Server Error: /add_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 426, in add_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 419, in get_monitor_list
+    i['next_date'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 23:20:00'
+[2022-11-26 12:32:56,505][ERROR]"GET /add_monitor/ HTTP/1.1" 500 69170
+[2022-11-26 12:33:05,131][ERROR]Internal Server Error: /add_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 426, in add_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 419, in get_monitor_list
+    i['next_date'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 23:20:00'
+[2022-11-26 12:33:05,132][ERROR]"GET /add_monitor/ HTTP/1.1" 500 69472
+[2022-11-26 12:34:13,684][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 12:34:14,164][INFO]Watching for file changes with StatReloader
+[2022-11-26 12:34:14,412][ERROR]Internal Server Error: /add_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 426, in add_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 419, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 23:20:00'
+[2022-11-26 12:34:14,413][ERROR]"GET /add_monitor/ HTTP/1.1" 500 69759
+[2022-11-26 12:34:24,674][INFO]"GET /change_monitor_status/?id=6 HTTP/1.1" 200 1027
+[2022-11-26 12:34:37,247][INFO]"POST /save_monitor/ HTTP/1.1" 200 999
+[2022-11-26 12:34:39,416][ERROR]Internal Server Error: /change_monitor_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 437, in change_monitor_status
+    set_monitor_next(monitor, 'human')
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 467, in set_monitor_next
+    h = int(monitor.value.split(':')[0])
+ValueError: invalid literal for int() with base 10: '14：20'
+[2022-11-26 12:34:39,417][ERROR]"GET /change_monitor_status/?id=9 HTTP/1.1" 500 67795
+[2022-11-26 12:34:40,456][ERROR]Internal Server Error: /change_monitor_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 437, in change_monitor_status
+    set_monitor_next(monitor, 'human')
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 467, in set_monitor_next
+    h = int(monitor.value.split(':')[0])
+ValueError: invalid literal for int() with base 10: '14：20'
+[2022-11-26 12:34:40,457][ERROR]"GET /change_monitor_status/?id=9 HTTP/1.1" 500 67795
+[2022-11-26 12:34:52,194][INFO]"POST /save_monitor/ HTTP/1.1" 200 994
+[2022-11-26 12:34:53,576][INFO]"GET /change_monitor_status/?id=9 HTTP/1.1" 200 1012
+[2022-11-26 12:35:15,037][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 449, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 419, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 14:20:00'
+[2022-11-26 12:35:15,038][ERROR]"POST /save_monitor/ HTTP/1.1" 500 70404
+[2022-11-26 12:35:27,957][INFO]"GET /change_monitor_status/?id=9 HTTP/1.1" 200 1012
+[2022-11-26 12:35:29,519][INFO]"GET /change_monitor_status/?id=9 HTTP/1.1" 200 1013
+[2022-11-26 12:35:30,230][INFO]"GET /change_monitor_status/?id=9 HTTP/1.1" 200 1012
+[2022-11-26 12:35:31,208][INFO]"GET /change_monitor_status/?id=9 HTTP/1.1" 200 1013
+[2022-11-26 12:35:33,788][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 449, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 419, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 14:20:00'
+[2022-11-26 12:35:33,789][ERROR]"POST /save_monitor/ HTTP/1.1" 500 70405
+[2022-11-26 12:35:35,014][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 449, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 419, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 14:20:00'
+[2022-11-26 12:35:35,014][ERROR]"POST /save_monitor/ HTTP/1.1" 500 70405
+[2022-11-26 12:35:50,160][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 12:35:50,627][INFO]Watching for file changes with StatReloader
+[2022-11-26 12:35:53,369][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 450, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 14:20:00'
+[2022-11-26 12:35:53,370][ERROR]"POST /save_monitor/ HTTP/1.1" 500 70439
+[2022-11-26 12:36:33,182][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 12:36:33,667][INFO]Watching for file changes with StatReloader
+[2022-11-26 12:36:35,673][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 450, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 14:20:00'
+[2022-11-26 12:36:35,674][ERROR]"POST /save_monitor/ HTTP/1.1" 500 70441
+[2022-11-26 12:37:24,833][INFO]"GET /change_monitor_status/?id=9 HTTP/1.1" 200 1012
+[2022-11-26 12:37:36,186][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 450, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 14:20:00'
+[2022-11-26 12:37:36,186][ERROR]"POST /save_monitor/ HTTP/1.1" 500 70440
+[2022-11-26 12:37:54,144][INFO]"GET /change_monitor_status/?id=9 HTTP/1.1" 200 1012
+[2022-11-26 12:37:55,553][INFO]"GET /change_monitor_status/?id=9 HTTP/1.1" 200 1013
+[2022-11-26 12:37:58,373][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 450, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 14:20:00'
+[2022-11-26 12:37:58,374][ERROR]"POST /save_monitor/ HTTP/1.1" 500 70441
+[2022-11-26 12:41:29,626][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 12:58:09,932][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 13:14:49,940][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 13:31:29,954][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 13:48:09,941][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 14:04:49,933][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 14:21:29,954][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 14:38:09,933][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 14:54:49,927][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 15:11:29,935][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 15:28:09,939][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 15:44:49,943][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 16:01:29,934][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 16:18:09,939][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 16:34:49,945][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 16:51:29,941][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 17:08:09,943][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 17:24:49,933][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 17:41:29,955][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 17:58:09,948][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 18:14:49,941][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 18:31:29,949][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 18:48:09,950][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 19:04:49,953][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 19:19:01,445][INFO]"OPTIONS /save_monitor/ HTTP/1.1" 200 0
+[2022-11-26 19:19:01,476][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 450, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 14:20:00'
+[2022-11-26 19:19:01,476][ERROR]"POST /save_monitor/ HTTP/1.1" 500 70441
+[2022-11-26 19:19:55,773][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 450, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 14:20:00'
+[2022-11-26 19:19:55,774][ERROR]"POST /save_monitor/ HTTP/1.1" 500 70441
+[2022-11-26 19:19:56,243][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 19:19:56,830][INFO]Watching for file changes with StatReloader
+[2022-11-26 19:20:00,704][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 450, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 14:20:00'
+[2022-11-26 19:20:00,704][ERROR]"POST /save_monitor/ HTTP/1.1" 500 70441
+[2022-11-26 19:20:25,425][INFO]"GET /change_monitor_status/?id=9 HTTP/1.1" 200 1012
+[2022-11-26 19:20:34,765][INFO]"GET /change_monitor_status/?id=9 HTTP/1.1" 200 1013
+[2022-11-26 19:20:42,480][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 450, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:20:42,481][ERROR]"POST /save_monitor/ HTTP/1.1" 500 70441
+[2022-11-26 19:21:29,369][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 19:22:11,214][ERROR]Internal Server Error: /change_monitor_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 440, in change_monitor_status
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:22:11,214][ERROR]"GET /change_monitor_status/?id=8 HTTP/1.1" 500 70535
+[2022-11-26 19:22:13,624][ERROR]Internal Server Error: /change_monitor_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 440, in change_monitor_status
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:22:13,625][ERROR]"GET /change_monitor_status/?id=8 HTTP/1.1" 500 70534
+[2022-11-26 19:22:14,289][ERROR]Internal Server Error: /change_monitor_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 440, in change_monitor_status
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:22:14,290][ERROR]"GET /change_monitor_status/?id=8 HTTP/1.1" 500 70535
+[2022-11-26 19:22:21,858][ERROR]Internal Server Error: /get_monitor_list/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:22:21,859][ERROR]"GET /get_monitor_list/ HTTP/1.1" 500 66282
+[2022-11-26 19:22:25,364][INFO]"GET /get_api_shop_list/ HTTP/1.1" 200 983
+[2022-11-26 19:22:26,366][ERROR]Internal Server Error: /get_monitor_list/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:22:26,367][ERROR]"GET /get_monitor_list/ HTTP/1.1" 500 66282
+[2022-11-26 19:22:32,178][ERROR]Internal Server Error: /add_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 427, in add_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:22:32,179][ERROR]"GET /add_monitor/ HTTP/1.1" 500 70088
+[2022-11-26 19:22:37,643][INFO]"GET /get_api_shop_list/ HTTP/1.1" 200 983
+[2022-11-26 19:22:40,789][ERROR]Internal Server Error: /get_monitor_list/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'].split('.')[0])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:22:40,790][ERROR]"GET /get_monitor_list/ HTTP/1.1" 500 66584
+[2022-11-26 19:22:51,685][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 19:22:52,141][INFO]Watching for file changes with StatReloader
+[2022-11-26 19:22:56,365][INFO]"GET /get_api_shop_list/ HTTP/1.1" 200 983
+[2022-11-26 19:22:56,741][ERROR]Internal Server Error: /get_monitor_list/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:22:56,742][ERROR]"GET /get_monitor_list/ HTTP/1.1" 500 66536
+[2022-11-26 19:23:06,492][ERROR]Internal Server Error: /add_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 427, in add_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:23:06,493][ERROR]"GET /add_monitor/ HTTP/1.1" 500 70318
+[2022-11-26 19:23:16,045][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-11-26 19:23:16,090][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-26 19:23:17,608][ERROR]Internal Server Error: /get_monitor_list/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:23:17,609][ERROR]"GET /get_monitor_list/ HTTP/1.1" 500 66838
+[2022-11-26 19:23:24,620][INFO]Watching for file changes with StatReloader
+[2022-11-26 19:23:24,847][INFO]"GET / HTTP/1.1" 200 4830
+[2022-11-26 19:23:28,895][ERROR]Internal Server Error: /get_monitor_list/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:23:28,895][ERROR]"GET /get_monitor_list/ HTTP/1.1" 500 66838
+[2022-11-26 19:23:29,817][ERROR]Internal Server Error: /add_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 427, in add_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:23:29,817][ERROR]"GET /add_monitor/ HTTP/1.1" 500 70620
+[2022-11-26 19:28:42,189][ERROR]Internal Server Error: /get_monitor_list/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:28:42,190][ERROR]"GET /get_monitor_list/ HTTP/1.1" 500 67140
+[2022-11-26 19:35:49,426][ERROR]Internal Server Error: /get_monitor_list/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:35:49,427][ERROR]"GET /get_monitor_list/ HTTP/1.1" 500 67140
+[2022-11-26 19:35:50,188][ERROR]Internal Server Error: /get_monitor_list/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: '2022-11-27 14:20:00'
+[2022-11-26 19:35:50,189][ERROR]"GET /get_monitor_list/ HTTP/1.1" 500 67140
+[2022-11-26 19:36:47,998][INFO]"GET /get_monitor_list/ HTTP/1.1" 200 1370
+[2022-11-26 19:38:36,562][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 1369
+[2022-11-26 19:38:37,676][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 1370
+[2022-11-26 19:38:38,570][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 1369
+[2022-11-26 19:38:39,412][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 1370
+[2022-11-26 19:38:40,037][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 1369
+[2022-11-26 19:38:40,694][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 1370
+[2022-11-26 19:38:41,230][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 1369
+[2022-11-26 19:38:41,742][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 1370
+[2022-11-26 19:38:42,176][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 1369
+[2022-11-26 19:38:49,618][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 1370
+[2022-11-26 19:38:50,410][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 1369
+[2022-11-26 19:38:51,139][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 1370
+[2022-11-26 19:38:55,183][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 1369
+[2022-11-26 19:38:55,937][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 1370
+[2022-11-26 19:38:56,891][INFO]"GET /change_monitor_status/?id=8 HTTP/1.1" 200 1369
+[2022-11-26 19:39:07,777][ERROR]Internal Server Error: /save_monitor/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 450, in save_monitor
+    return get_monitor_list(request)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 20:08:56'
+[2022-11-26 19:39:07,778][ERROR]"POST /save_monitor/ HTTP/1.1" 500 71274
+[2022-11-26 19:39:47,530][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 19:39:48,063][INFO]Watching for file changes with StatReloader
+[2022-11-26 19:39:49,060][ERROR]Internal Server Error: /get_monitor_list/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: '2022-11-26 20:08:56'
+[2022-11-26 19:39:49,062][ERROR]"GET /get_monitor_list/ HTTP/1.1" 500 67124
+[2022-11-26 19:42:44,564][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 19:42:45,048][INFO]Watching for file changes with StatReloader
+[2022-11-26 19:42:46,427][ERROR]Internal Server Error: /get_monitor_list/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: ''
+[2022-11-26 19:42:46,428][ERROR]"GET /get_monitor_list/ HTTP/1.1" 500 67053
+[2022-11-26 19:43:02,794][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 19:43:03,253][INFO]Watching for file changes with StatReloader
+[2022-11-26 19:43:03,639][ERROR]Internal Server Error: /get_monitor_list/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 420, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: ''
+[2022-11-26 19:43:03,639][ERROR]"GET /get_monitor_list/ HTTP/1.1" 500 67073
+[2022-11-26 19:43:24,002][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 19:43:24,438][INFO]Watching for file changes with StatReloader
+[2022-11-26 19:43:24,917][ERROR]Internal Server Error: /get_monitor_list/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 421, in get_monitor_list
+    i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
+ValueError: invalid literal for int() with base 10: ''
+[2022-11-26 19:43:24,918][ERROR]"GET /get_monitor_list/ HTTP/1.1" 500 67111
+[2022-11-26 19:43:57,581][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 19:43:58,069][INFO]Watching for file changes with StatReloader
+[2022-11-26 19:43:59,027][INFO]"GET /get_monitor_list/ HTTP/1.1" 200 1370
+[2022-11-26 19:44:16,757][INFO]"POST /save_monitor/ HTTP/1.1" 200 1370
+[2022-11-26 19:44:17,987][INFO]"GET /change_monitor_status/?id=9 HTTP/1.1" 200 1388
+[2022-11-26 19:44:21,099][INFO]"POST /save_monitor/ HTTP/1.1" 200 1389
+[2022-11-26 19:45:05,076][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-11-26 19:45:05,617][INFO]Watching for file changes with StatReloader

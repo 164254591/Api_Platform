@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404
 import json
 import logging
-
+from python_jenkins_monitor.python_jenkins_monitor import get_next_time
 logger = logging.getLogger('django')
 
 
@@ -405,7 +405,7 @@ def download_api(request):
     project_id = request.GET['project_id']
     api_id = request.GET['api_id']
     api = list(DB_api_shop_list.objects.filter(id=int(api_id)).values())[0]
-    print(api)
+    # print(api)
     api['project_id'] = project_id
     DB_apis.objects.create(**api)
     return HttpResponse('')
@@ -415,7 +415,7 @@ def download_api(request):
 def get_monitor_list(request):
     moniter_list = list(DB_monitor.objects.all().values())
     for i in moniter_list:
-        if i['method'] in ('间隔时间', '每日定时') and i['next']:
+        if i['method'] in ('间隔时间', '每日定时') and i['next'] and '-' not in i['next']:
             i['next'] = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(i['next'])))
     return HttpResponse(json.dumps(moniter_list), content_type='application/json')
 
@@ -442,7 +442,7 @@ def change_monitor_status(request):
 # 保存
 def save_monitor(request):
     form_data = json.loads(request.body.decode('utf-8'))
-    print(form_data)
+    # print(form_data)
     monitor = DB_monitor.objects.filter(id=int(form_data['id']))
     monitor.update(**form_data)
     monitor.update(status=False)
@@ -468,7 +468,7 @@ def set_monitor_next(monitor, which):
         m = int(monitor.value.split(':')[1])
         hm = h * 3600 + m * 60
         today_s = int(time.time()) - int(time.time() - time.timezone) % 86400 + hm
-        print(today_s)
+        # print(today_s)
         if which == 'human':
             if today_s <= time.time():  # 今天来不及了
                 monitor.next = today_s + 86400
@@ -477,4 +477,4 @@ def set_monitor_next(monitor, which):
         else:  # 巡逻线程
             monitor.next = monitor.next + 86400
     elif monitor.method == 'jenkins':
-        ...
+        monitor.next = get_next_time(monitor.value)
