@@ -11,6 +11,9 @@ import Send_notice from "@/views/Send_notice";
 import Look_log from "@/views/Look_log";
 import Power_list from "@/views/Power_list";
 import Monitor from "@/views/Monitor";
+import Api_doc from "@/views/Api_doc";
+import Api_postman from "@/views/Api_postman";
+
 
 Vue.use(Router)
 
@@ -70,6 +73,16 @@ export default new Router({
       path: '/Monitor',
       name: 'Monitor',
       component: Monitor
+    },
+    {
+      path: '/Api_doc',
+      name: 'Api_doc',
+      component: Api_doc
+    },
+    {
+      path: '/Api_postman',
+      name: 'Api_postman',
+      component: Api_postman
     },
   ]
 })

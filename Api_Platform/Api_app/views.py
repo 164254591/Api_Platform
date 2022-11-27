@@ -8,7 +8,9 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404
 import json
 import logging
+import requests
 from python_jenkins_monitor.python_jenkins_monitor import get_next_time
+
 logger = logging.getLogger('django')
 
 
@@ -479,3 +481,64 @@ def set_monitor_next(monitor, which):
             monitor.next = monitor.next + 86400
     elif monitor.method == 'jenkins':
         monitor.next = get_next_time(monitor.value)
+
+
+# 解析接口文档
+def jx_apiDoc(request):
+    ad_url = request.GET['ad_url']
+    response = requests.get(ad_url)
+    # 发送请求，解析
+    form_data = {}
+
+    return HttpResponse(json.dumps(form_data), content_type='application/json')
+
+
+# 导入接口文档
+def import_api_ad(request):
+    project_id = request.GET['project_id']
+    form_data = json.loads(request.body.decode('utf-8'))
+    form_data['project_id'] = project_id
+    DB_apis.objects.create(**form_data)
+    return HttpResponse('')
+
+
+# postman文件上传
+def upload_postman_file(request):
+    myFile = request.FILES.get('postman_file', None)
+    file_name = str(myFile)
+    fp = open('Api_Platform/Api_app/static/postmanFile/' + file_name, 'wb+')
+    for i in myFile.chunks():
+        fp.write(i)
+    fp.close()
+    return HttpResponse('')
+
+
+# postman文件导入
+def import_api_postman(request):
+    project_id = request.GET['project_id']
+    file_name = request.GET['file_name']
+    with open('Api_Platform/Api_app/static/postmanFile/' + file_name, 'r') as fp:
+        s = fp.read()
+    s = json.loads(s)
+    items = s['item']
+    for i in items:
+        form_data = {
+            'project_id': project_id,
+            'label': i['name'],
+            'type': 'api',
+            'children': '[]',
+            'desc': '[%s]postman导入的接口' % s['info']['name'],
+            'host': i['request']['url']['protocol'] + '://' + '.'.join(i['request']['url']['host']),
+            'path': '/' + '/'.join(i['request']['url']['path']),
+            'method': i['request']['method'],
+            'params': str(i['request']['url'].get('query', [])),
+            'headers': str(i['request']['header']),
+            'payload_method': i['request'].get('body', {}).get('mode', ''),
+
+        }
+        if i['request']['url'].get('port', None):
+            form_data['host'] += ':' + str(i['request']['url']['port'])
+        form_data['payload_method'] = form_data['payload_method'].replace('urlencoded',
+                                                                          'x-www-form-urlencoded').replace('graphql',
+                                                                                                           'GraphQL').replace(
+            'formdata', 'form-data')

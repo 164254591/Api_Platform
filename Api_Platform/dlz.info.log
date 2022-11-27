@@ -38194,3 +38194,180 @@ ValueError: invalid literal for int() with base 10: ''
 [2022-11-26 23:09:16,535][INFO]"GET /change_monitor_status/?id=6 HTTP/1.1" 200 956
 [2022-11-26 23:09:16,936][INFO]"GET /change_monitor_status/?id=6 HTTP/1.1" 200 955
 [2022-11-26 23:09:18,999][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-11-26 23:09:39,506][INFO]"GET / HTTP/1.1" 200 4830
+[2022-11-26 23:09:43,026][INFO]"GET /get_monitor_list/ HTTP/1.1" 200 955
+[2022-11-26 23:09:44,067][INFO]"GET /change_monitor_status/?id=6 HTTP/1.1" 200 956
+[2022-11-26 23:09:44,552][INFO]"GET /change_monitor_status/?id=6 HTTP/1.1" 200 955
+[2022-11-26 23:09:46,612][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-11-26 23:10:46,053][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-11-26 23:11:46,049][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-11-26 23:12:46,052][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-11-26 23:13:46,062][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-11-27 11:26:36,022][INFO]"GET / HTTP/1.1" 200 4830
+[2022-11-27 11:26:58,538][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-11-27 11:26:58,541][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-27 11:27:01,925][INFO]"GET /get_monitor_list/ HTTP/1.1" 200 955
+[2022-11-27 11:27:04,506][INFO]"GET /change_monitor_status/?id=6 HTTP/1.1" 200 956
+[2022-11-27 11:27:05,936][INFO]"GET /change_monitor_status/?id=6 HTTP/1.1" 200 955
+[2022-11-27 11:27:07,994][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-11-27 11:27:54,229][INFO]"GET / HTTP/1.1" 200 4830
+[2022-11-27 11:27:59,986][INFO]"GET /get_monitor_list/ HTTP/1.1" 200 955
+[2022-11-27 11:28:07,052][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-11-27 11:29:07,067][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-11-27 11:29:22,700][INFO]"OPTIONS /save_monitor/ HTTP/1.1" 200 0
+[2022-11-27 11:29:22,724][INFO]"POST /save_monitor/ HTTP/1.1" 200 958
+[2022-11-27 11:29:25,729][INFO]"GET /change_monitor_status/?id=6 HTTP/1.1" 200 957
+[2022-11-27 11:35:18,189][INFO]"GET /get_monitor_list/ HTTP/1.1" 200 957
+[2022-11-27 11:35:19,947][INFO]"GET /get_api_shop_list/ HTTP/1.1" 200 983
+[2022-11-27 11:36:24,399][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-11-27 11:36:24,403][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-27 11:44:00,403][INFO]"GET /get_api_shop_list/ HTTP/1.1" 200 983
+[2022-11-27 11:44:02,214][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
+[2022-11-27 11:44:02,904][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 11:53:04,709][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-27 12:09:44,565][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-27 12:11:11,614][INFO]"GET /get_monitor_list/ HTTP/1.1" 200 957
+[2022-11-27 12:28:49,861][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 13:08:27,072][INFO]"GET /test_a/ HTTP/1.1" 200 44
+[2022-11-27 17:42:06,068][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 17:43:37,160][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 17:56:07,485][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 17:56:36,349][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 17:57:08,192][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 17:57:46,330][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 17:58:50,568][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 19:26:27,882][ERROR]Internal Server Error: /jx_apiDoc/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 385, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 399, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'jx_apiDoc' is not defined
+[2022-11-27 19:26:27,885][ERROR]"GET /jx_apiDoc/?ad_url= HTTP/1.1" 500 70508
+[2022-11-27 19:26:50,864][ERROR]Internal Server Error: /jx_apiDoc/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 385, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 399, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'jx_apiDoc' is not defined
+[2022-11-27 19:26:50,866][ERROR]"GET /jx_apiDoc/?ad_url= HTTP/1.1" 500 70508
+[2022-11-27 19:40:58,269][ERROR]Internal Server Error: /jx_apiDoc/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 385, in diy_power
+    return HttpResponse('没有权限')
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 399, in default_power
+    # 有权限
+  File "<string>", line 1, in <module>
+NameError: name 'jx_apiDoc' is not defined
+[2022-11-27 19:40:58,272][ERROR]"GET /jx_apiDoc/?ad_url= HTTP/1.1" 500 70533
+[2022-11-27 19:48:58,912][INFO]"OPTIONS /import_api_ad/?project_id=68 HTTP/1.1" 200 0
+[2022-11-27 19:48:58,931][ERROR]Internal Server Error: /import_api_ad/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 385, in diy_power
+    return HttpResponse('没有权限')
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 399, in default_power
+    # 有权限
+  File "<string>", line 1, in <module>
+NameError: name 'import_api_ad' is not defined
+[2022-11-27 19:48:58,932][ERROR]"POST /import_api_ad/?project_id=68 HTTP/1.1" 500 70712
+[2022-11-27 19:50:13,010][ERROR]Internal Server Error: /jx_apiDoc/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 385, in diy_power
+    return HttpResponse('没有权限')
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 399, in default_power
+    # 有权限
+  File "<string>", line 1, in <module>
+NameError: name 'jx_apiDoc' is not defined
+[2022-11-27 19:50:13,012][ERROR]"GET /jx_apiDoc/?ad_url= HTTP/1.1" 500 70533
+[2022-11-27 19:50:36,101][ERROR]Internal Server Error: /import_api_ad/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 385, in diy_power
+    return HttpResponse('没有权限')
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 399, in default_power
+    # 有权限
+  File "<string>", line 1, in <module>
+NameError: name 'import_api_ad' is not defined
+[2022-11-27 19:50:36,103][ERROR]"POST /import_api_ad/?project_id=68 HTTP/1.1" 500 70712
+[2022-11-27 19:52:28,190][ERROR]Internal Server Error: /jx_apiDoc/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 385, in diy_power
+    return HttpResponse('没有权限')
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 399, in default_power
+    # 有权限
+  File "<string>", line 1, in <module>
+NameError: name 'jx_apiDoc' is not defined
+[2022-11-27 19:52:28,193][ERROR]"GET /jx_apiDoc/?ad_url= HTTP/1.1" 500 70533
+[2022-11-27 19:52:42,580][INFO]"GET / HTTP/1.1" 200 4830
+[2022-11-27 19:52:52,079][ERROR]Internal Server Error: /jx_apiDoc/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 489, in jx_apiDoc
+    response = requests.get(ad_url)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 515, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\sessions.py", line 453, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\models.py", line 318, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\requests\models.py", line 392, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant http://?
+[2022-11-27 19:52:52,083][ERROR]"GET /jx_apiDoc/?ad_url= HTTP/1.1" 500 93645
+[2022-11-27 19:56:56,312][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:00:15,700][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:00:22,922][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:00:25,515][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:01:13,877][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:01:17,491][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:01:22,347][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-11-27 20:01:22,391][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-11-27 20:01:24,081][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:02:21,584][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:02:39,867][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:03:05,804][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:03:46,441][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:04:26,952][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:05:05,632][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:05:40,193][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:07:40,503][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:07:40,518][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:08:03,490][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-11-27 20:08:23,468][INFO]"GET /get_project_list/ HTTP/1.1" 200 981

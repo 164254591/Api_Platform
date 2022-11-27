@@ -21,7 +21,8 @@ admin.site.register(DB_apis)
 
 def email(adresss, content):
     # adresss = '164254591@qq.com'
-    mail_to = adresss.split(',')
+    # mail_to = adresss.split(',')
+    mail_to = adresss
     mail_host = 'smtp.qq.com'
     mail_user = '164254591@qq.com'  # 发送者邮箱地址
     mail_pass = 'nfsesqiwyzjacafj'  # smtp授权码
@@ -76,6 +77,7 @@ def monitor_thread():
                         i = eval(i)
                         r += '\n' + str(i['label']) + ':' + str(i['result'])
                     content = '【%s】线上监控项目报错！详情如下：%s' % (monitor.label, r)
+                    print(monitor.email)
                     email(monitor.email, content)
                     robotApi(monitor.robot, content)
 
