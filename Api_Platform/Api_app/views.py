@@ -542,3 +542,19 @@ def import_api_postman(request):
                                                                           'x-www-form-urlencoded').replace('graphql',
                                                                                                            'GraphQL').replace(
             'formdata', 'form-data')
+        if form_data['payload_method'] == 'form-data':
+            form_data['payload_fd'] = str(i['request']['body']['formdata'])
+        elif form_data['payload_method'] == 'x-www-form-urlencoded':
+            form_data['payload_xwfu'] = str(i['request']['body']['urlencoded'])
+        elif form_data['payload_method'] == 'GraphQL':
+            form_data['payload_GQL_q'] = i['request']['body']['graphql']['query']
+            form_data['payload_GQL_q'] = i['request']['body']['graphql']['variables']
+        elif form_data['payload_method'] == 'raw':
+            form_data['payload_GQL_q'] = i['request']['body']['raw']
+            if i['request']['body'].get('options',None):
+                form_data['payload_raw_method'] = i['request']['body']['raw']['language']
+                form_data['payload_raw_method'] = form_data['payload_raw_method'].replace('javascript','JavaScript').replace('json','JSON').replace('html','HTML').replace('xml','XML')
+            else:
+                form_data['payload_raw_method'] ='Text'
+        DB_apis.objects.create(**form_data)
+    return HttpResponse('')
