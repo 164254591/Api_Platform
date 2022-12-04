@@ -18,7 +18,7 @@
           <el-menu-item-group title="接口导入">
               <el-menu-item index="/Api_doc/">接口文档</el-menu-item>
               <el-menu-item index="/Api_postman/">Postman</el-menu-item>
-              <el-menu-item index="1-7">在线抓包</el-menu-item>
+              <el-menu-item index="/Api_catch/">在线抓包</el-menu-item>
               <el-menu-item index="1-8">其他</el-menu-item>
           </el-menu-item-group>
         </el-submenu>

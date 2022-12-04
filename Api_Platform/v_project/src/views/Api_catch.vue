@@ -6,29 +6,24 @@
         </el-aside>
         <el-container>
           <el-header style="height: 80px;line-height: 80px">
-            <h1>Postman批量导入  <span style="color: grey;font-size: xx-small">（先在postman导出文件，上传到平台，再点击对应项目的导入按钮即可）</span> </h1>
+            <h1>在线抓包导入  <span style="color: grey;font-size: xx-small">（手机挂上代理和端口，触发的请求都会导入到打开开关的项目中）</span> </h1>
           </el-header>
           <el-main>
-            <el-input v-model="ad_url" style="width: 50%;margin-left: 25%;margin-bottom: 10px" placeholder="在此处粘贴文档地址">
-             <el-button  slot="append" @click="jx()">解析</el-button>
-            </el-input>
+
 
             <el-card shadow="hover" style="width: 48%;float: left">
-              <el-upload
-                  class="upload-demo"
-                  :action="get_action()"
-                  :limit="1"
-                  name="postman_file"
-                  :on-success="save_postman_file_name"
-              >
-                <el-button @click="">上传文件</el-button>
-              </el-upload>
+              <h1> 手机挂此代理：<span style="color: #42b983" v-text="get_host()"></span></h1>
             </el-card>
             <el-card shadow="hover" style="width: 48%;float:right;">
               <el-table :data="project_list_data">
                 <el-table-column label-width="100%">
                   <template slot-scope="scope">
-                    <el-button size="mini" type="success" @click="import_api_postman(scope.row.id)">导入到此项目</el-button>
+                    <el-button size="mini" type="success" @click="change_catch_status(scope.row.id)">开关</el-button>
+                  </template>
+                </el-table-column>
+                <el-table-column label="" label-width="100%">
+                   <template slot-scope="scope">
+                    <span>{{scope.row.catch_status}}</span>
                   </template>
                 </el-table-column>
                 <el-table-column label="项目id" label-width="100%">
@@ -57,7 +52,7 @@
 import Menu from "@/components/Menu";
 import axios from "axios";
 export default {
-  name: "Api_postman",
+  name: "Api_catch",
   data() {
     return {
       file_name:'',
@@ -65,24 +60,17 @@ export default {
     }
   },
   methods: {
-    save_postman_file_name(res,file){
-      this.file_name=file.raw.name
+    get_host(){
+      return process.env.VUE_APP_BASE_URL.split('://')[1].split(':')[0]+':8085'
     },
-    get_action(){
-      return process.env.VUE_APP_BASE_URL+'/upload_postman_file/'
-    },
-    import_api_postman(project_id){
-      axios.get('/import_api_postman/',{
-        params:{
-          project_id:project_id,
-          filename:filename,
+    change_catch_status(){
+      axios.get('/change_catch_status/',{params:{
+        project_id:id,
         }}).then(res=>{
-          this.$message({
-            message:"导入成功！",
-            type:"success"
-          })
+
       })
     }
+
 
   },
   mounted() {
