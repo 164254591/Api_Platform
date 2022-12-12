@@ -6,6 +6,16 @@
       </el-aside>
       <el-main>
         <h1>环境管理 <span style="color: crimson;font-size: xx-small"> (此页面不要随意删除信息)</span></h1>
+
+        <download-excel
+        class = "export-excel-wrapper"
+        :data = "json_data"
+        :fields = "json_fields"
+        name = "用户信息列表.xls">
+        <el-button type="primary" size="small" @click="download">导出EXCEL</el-button>
+      </download-excel>
+
+
         <el-table
             :data="env_list_data"
             stripe
@@ -77,6 +87,13 @@ export default {
   name: "Env_list",
   data() {
     return {
+      json_data:[],
+      json_fields:{
+        "id":"id",
+        "host":'host',
+        "type":'type',
+        "des":'des'
+      },
       dialogFormVisible: false,
       env_list_data: [],
       form_data: {
@@ -87,6 +104,12 @@ export default {
     }
   },
   methods: {
+    download(){
+       axios.get('http://localhost:8000/get_env_list/').then(res => {
+         this.json_data = res.data
+    })
+
+    },
 
     Add_env() {
       this.dialogFormVisible=false;
