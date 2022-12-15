@@ -1,8 +1,11 @@
+import subprocess
+
 from django.contrib import admin
 import threading
 import time
 import json
 import requests
+
 # Register your models here.
 from Api_app.models import *
 from Api_app.views_api import run
@@ -19,6 +22,7 @@ admin.site.register(DB_power_list)
 admin.site.register(DB_apis)
 
 
+# 监控
 def email(adresss, content):
     # adresss = '164254591@qq.com'
     # mail_to = adresss.split(',')
@@ -85,3 +89,13 @@ def monitor_thread():
 t = threading.Thread(target=monitor_thread)
 t.setDaemon(True)
 t.start()
+
+
+# 抓包
+def mitm_start():
+    cmd = 'nohup mitmdump -p 8005'
+    subprocess.call(cmd, shell=True)
+
+m = threading.Thread(target=mitm_start)
+m.setDaemon(True)
+m.start()

@@ -551,10 +551,21 @@ def import_api_postman(request):
             form_data['payload_GQL_q'] = i['request']['body']['graphql']['variables']
         elif form_data['payload_method'] == 'raw':
             form_data['payload_GQL_q'] = i['request']['body']['raw']
-            if i['request']['body'].get('options',None):
+            if i['request']['body'].get('options', None):
                 form_data['payload_raw_method'] = i['request']['body']['raw']['language']
-                form_data['payload_raw_method'] = form_data['payload_raw_method'].replace('javascript','JavaScript').replace('json','JSON').replace('html','HTML').replace('xml','XML')
+                form_data['payload_raw_method'] = form_data['payload_raw_method'].replace('javascript',
+                                                                                          'JavaScript').replace('json',
+                                                                                                                'JSON').replace(
+                    'html', 'HTML').replace('xml', 'XML')
             else:
-                form_data['payload_raw_method'] ='Text'
+                form_data['payload_raw_method'] = 'Text'
         DB_apis.objects.create(**form_data)
     return HttpResponse('')
+
+
+def change_catch_status(request):
+    project_id = request.GET['project_id']
+    project = DB_project_list.objects.filter(id=int(project_id))[0]
+    project.catch_status = (project.catch_status == False)
+    project.save()
+    return get_project_list(request)

@@ -43,6 +43,7 @@ class DB_project_list(models.Model):
     end_result = models.TextField(default='')  # 结果
     dck = models.CharField(max_length=500, null=True, blank=True, default='')  # 选中的
     deleted = models.BooleanField(default=False)  # 假删除
+    catch_status = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name

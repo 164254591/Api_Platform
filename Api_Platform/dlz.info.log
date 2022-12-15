@@ -38443,3 +38443,438 @@ requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps y
 [2022-12-11 10:01:02,276][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
 [2022-12-11 10:01:35,695][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
 [2022-12-11 10:03:58,709][INFO]"GET /get_env_list/ HTTP/1.1" 200 652
+[2022-12-15 11:14:06,760][INFO]"GET / HTTP/1.1" 200 4830
+[2022-12-15 11:14:06,775][INFO]"GET /static/dlz_download_login/assets/css/demo.css HTTP/1.1" 200 13815
+[2022-12-15 11:14:06,775][INFO]"GET /static/dlz_download_login/assets/js/demo.js HTTP/1.1" 200 4682
+[2022-12-15 11:14:06,779][INFO]"GET /static/dlz_download_login/assets/js/jquery-1.11.0.min.js HTTP/1.1" 200 96383
+[2022-12-15 11:14:06,780][INFO]"GET /static/dlz_download_login/assets/js/TweenMax.min.js HTTP/1.1" 200 115913
+[2022-12-15 14:54:39,617][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-12-15 14:54:39,624][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-12-15 14:54:39,625][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-15 14:54:41,098][INFO]"GET /get_project_list/ HTTP/1.1" 200 981
+[2022-12-15 15:05:50,859][INFO]"GET / HTTP/1.1" 200 4830
+[2022-12-15 15:05:50,898][INFO]"GET /static/dlz_download_login/assets/css/demo.css HTTP/1.1" 200 13815
+[2022-12-15 15:05:50,900][INFO]"GET /static/dlz_download_login/assets/js/demo.js HTTP/1.1" 200 4682
+[2022-12-15 15:05:50,904][INFO]"GET /static/dlz_download_login/assets/js/jquery-1.11.0.min.js HTTP/1.1" 200 96383
+[2022-12-15 15:05:50,910][INFO]"GET /static/dlz_download_login/assets/js/TweenMax.min.js HTTP/1.1" 200 115913
+[2022-12-15 15:05:52,522][INFO]"GET /static/dlz_download_login/assets/img/close.svg HTTP/1.1" 200 794
+[2022-12-15 15:05:52,526][INFO]"GET /static/dlz_download_login/assets/img/icon-correct.png HTTP/1.1" 200 944
+[2022-12-15 15:05:52,527][INFO]"GET /static/dlz_download_login/assets/img/m-signup.png HTTP/1.1" 200 37187
+[2022-12-15 15:05:52,527][INFO]"GET /static/dlz_download_login/assets/img/m-close.png HTTP/1.1" 200 52947
+[2022-12-15 15:05:52,527][INFO]"GET /static/dlz_download_login/assets/img/m-open-close.png HTTP/1.1" 200 37755
+[2022-12-15 15:05:52,529][INFO]"GET /static/dlz_download_login/assets/img/landscape.png HTTP/1.1" 200 71492
+[2022-12-15 15:05:55,128][INFO]"POST /login_action/ HTTP/1.1" 302 0
+[2022-12-15 15:05:55,132][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-12-15 15:05:55,140][INFO]"GET /static/css/app.72084faf.css HTTP/1.1" 200 3737
+[2022-12-15 15:05:55,148][INFO]"GET /static/js/app.b65ee67a.js HTTP/1.1" 200 90512
+[2022-12-15 15:05:55,157][INFO]"GET /static/css/chunk-vendors.dd50ba92.css HTTP/1.1" 200 240819
+[2022-12-15 15:05:55,162][INFO]"GET /static/js/chunk-vendors.5463d9f7.js HTTP/1.1" 200 944756
+[2022-12-15 15:05:55,239][INFO]"GET /static/fonts/element-icons.535877f5.woff HTTP/1.1" 200 28200
+[2022-12-15 15:05:55,245][INFO]"GET /favicon.ico HTTP/1.1" 301 0
+[2022-12-15 15:05:55,250][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-12-15 15:05:55,530][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-12-15 15:05:55,533][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-12-15 15:05:55,534][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-15 15:06:23,571][INFO]"GET /get_project_list/ HTTP/1.1" 200 1050
+[2022-12-15 15:06:29,638][INFO]"GET /get_project_list/ HTTP/1.1" 200 1050
+[2022-12-15 15:06:31,139][INFO]"GET /add_project/ HTTP/1.1" 200 1390
+[2022-12-15 15:06:34,179][INFO]"GET /get_project_list/ HTTP/1.1" 200 1390
+[2022-12-15 15:06:38,210][INFO]"GET /get_project_list/ HTTP/1.1" 200 1390
+[2022-12-15 15:06:39,648][INFO]"GET /add_project/ HTTP/1.1" 200 1730
+[2022-12-15 15:06:41,961][INFO]"GET /get_project_list/ HTTP/1.1" 200 1730
+[2022-12-15 15:10:51,361][INFO]"GET /get_project_list/ HTTP/1.1" 200 1730
+[2022-12-15 15:22:35,641][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-15 15:39:15,639][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-15 15:55:55,630][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-15 16:12:35,650][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-15 16:29:15,647][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-15 16:45:55,649][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-15 17:02:35,639][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-15 17:14:12,909][INFO]"GET /get_project_list/ HTTP/1.1" 200 1730
+[2022-12-15 17:15:07,112][INFO]"GET /get_project_list/ HTTP/1.1" 200 1730
+[2022-12-15 17:15:26,399][INFO]"GET /get_project_list/ HTTP/1.1" 200 1730
+[2022-12-15 17:19:15,338][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-15 17:20:35,883][INFO]"GET /get_project_list/ HTTP/1.1" 200 1730
+[2022-12-15 17:20:36,252][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:20:36,252][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:20:36,724][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:20:36,726][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:20:37,154][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:20:37,156][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:20:37,315][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:20:37,317][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:20:37,476][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:20:37,478][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:20:37,639][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:20:37,641][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:20:37,764][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:20:37,766][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:20:37,926][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:20:37,928][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:20:38,068][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:20:38,070][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:20:40,890][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:20:40,892][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:20:48,278][INFO]"GET /get_project_list/ HTTP/1.1" 200 1730
+[2022-12-15 17:20:49,976][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:20:49,978][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:23:30,765][INFO]"GET /get_project_list/ HTTP/1.1" 200 1730
+[2022-12-15 17:23:30,777][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-12-15 17:23:33,698][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-12-15 17:23:33,710][INFO]"GET /static/css/chunk-vendors.dd50ba92.css HTTP/1.1" 304 0
+[2022-12-15 17:23:33,711][INFO]"GET /static/css/app.72084faf.css HTTP/1.1" 304 0
+[2022-12-15 17:23:33,712][INFO]"GET /static/js/app.b65ee67a.js HTTP/1.1" 304 0
+[2022-12-15 17:23:33,712][INFO]"GET /static/js/chunk-vendors.5463d9f7.js HTTP/1.1" 304 0
+[2022-12-15 17:23:33,775][INFO]"GET /static/fonts/element-icons.535877f5.woff HTTP/1.1" 304 0
+[2022-12-15 17:23:33,781][INFO]"GET /get_project_list/ HTTP/1.1" 200 1730
+[2022-12-15 17:23:33,786][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-12-15 17:23:54,747][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-12-15 17:23:54,754][INFO]"GET /static/js/app.ed460801.js HTTP/1.1" 200 90661
+[2022-12-15 17:23:54,806][INFO]"GET /get_project_list/ HTTP/1.1" 200 1730
+[2022-12-15 17:23:54,817][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-12-15 17:23:56,543][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:23:56,546][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70671
+[2022-12-15 17:23:57,134][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:23:57,136][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70671
+[2022-12-15 17:23:57,480][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:23:57,482][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70671
+[2022-12-15 17:23:57,681][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:23:57,683][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70671
+[2022-12-15 17:23:57,850][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:23:57,852][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70671
+[2022-12-15 17:23:58,936][INFO]"GET /static/js/app.ed460801.js.map HTTP/1.1" 200 313933
+[2022-12-15 17:23:59,034][INFO]"GET /static/js/chunk-vendors.5463d9f7.js.map HTTP/1.1" 200 3851629
+[2022-12-15 17:23:59,753][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:23:59,755][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70671
+[2022-12-15 17:24:21,156][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:24:21,158][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 71450
+[2022-12-15 17:24:21,274][INFO]"GET /favicon.ico HTTP/1.1" 301 0
+[2022-12-15 17:24:21,278][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-12-15 17:25:21,635][INFO]"GET /get_project_list/ HTTP/1.1" 200 1730
+[2022-12-15 17:25:22,506][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:25:22,508][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:25:23,402][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:25:23,404][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:25:23,818][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:25:23,821][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:25:24,024][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:25:24,026][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:25:24,203][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:25:24,205][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:25:24,396][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:25:24,398][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:25:24,555][ERROR]Internal Server Error: /change_catch_status/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'change_catch_status' is not defined
+[2022-12-15 17:25:24,557][ERROR]"GET /change_catch_status/?project_id=70 HTTP/1.1" 500 70814
+[2022-12-15 17:25:31,887][INFO]"GET / HTTP/1.1" 200 4830
+[2022-12-15 17:25:36,937][INFO]"POST /login_action/ HTTP/1.1" 302 0
+[2022-12-15 17:25:36,941][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-12-15 17:25:36,948][INFO]"GET /static/js/app.ed460801.js HTTP/1.1" 304 0
+[2022-12-15 17:25:37,053][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-12-15 17:25:37,329][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-12-15 17:25:37,332][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-15 17:25:37,988][INFO]"GET /get_project_list/ HTTP/1.1" 200 1730
+[2022-12-15 17:25:37,998][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-12-15 17:25:38,881][INFO]"GET /change_catch_status/?project_id=70 HTTP/1.1" 200 1729
+[2022-12-15 17:25:40,064][INFO]"GET /change_catch_status/?project_id=69 HTTP/1.1" 200 1728
+[2022-12-15 17:25:41,014][INFO]"GET /change_catch_status/?project_id=70 HTTP/1.1" 200 1729
+[2022-12-15 17:26:42,392][INFO]"GET /change_catch_status/?project_id=70 HTTP/1.1" 200 1728
+[2022-12-15 17:26:45,584][INFO]"GET /change_catch_status/?project_id=69 HTTP/1.1" 200 1729
+[2022-12-15 17:26:49,026][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-15 17:26:51,219][INFO]"GET /change_catch_status/?project_id=70 HTTP/1.1" 200 1730
+[2022-12-15 17:26:51,891][INFO]"GET /change_catch_status/?project_id=70 HTTP/1.1" 200 1729
+[2022-12-15 17:26:53,055][INFO]"GET /change_catch_status/?project_id=70 HTTP/1.1" 200 1730
+[2022-12-15 17:26:53,562][INFO]"GET /change_catch_status/?project_id=70 HTTP/1.1" 200 1729
+[2022-12-15 17:42:17,648][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-15 17:46:06,389][INFO]"GET /get_monitor_list/ HTTP/1.1" 200 957
+[2022-12-15 17:46:06,409][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-12-15 17:46:12,942][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-12-15 17:46:12,952][INFO]"GET /static/js/app.ed460801.js HTTP/1.1" 304 0
+[2022-12-15 17:46:12,952][INFO]"GET /static/css/app.72084faf.css HTTP/1.1" 200 3737
+[2022-12-15 17:46:12,966][INFO]"GET /static/css/chunk-vendors.dd50ba92.css HTTP/1.1" 200 240819
+[2022-12-15 17:46:12,989][INFO]"GET /static/js/chunk-vendors.5463d9f7.js HTTP/1.1" 200 944756
+[2022-12-15 17:46:13,051][INFO]"GET /get_monitor_list/ HTTP/1.1" 200 957
+[2022-12-15 17:46:13,051][INFO]"GET /static/fonts/element-icons.535877f5.woff HTTP/1.1" 200 28200
+[2022-12-15 17:46:13,071][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-12-15 17:46:16,365][INFO]"GET /get_monitor_list/ HTTP/1.1" 200 957
+[2022-12-15 17:46:23,889][INFO]"GET /get_monitor_list/ HTTP/1.1" 200 957
+[2022-12-15 17:46:24,947][INFO]"GET /change_monitor_status/?id=6 HTTP/1.1" 200 958
+[2022-12-15 17:46:25,617][INFO]"GET /change_monitor_status/?id=6 HTTP/1.1" 200 957
+[2022-12-15 17:46:31,893][INFO]"GET /change_monitor_status/?id=6 HTTP/1.1" 200 958
+[2022-12-15 17:46:38,824][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-12-15 17:46:38,882][INFO]"GET /get_monitor_list/ HTTP/1.1" 200 958
+[2022-12-15 17:46:38,902][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0

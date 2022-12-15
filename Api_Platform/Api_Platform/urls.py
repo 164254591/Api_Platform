@@ -60,8 +60,10 @@ urlpatterns = [
     path('save_monitor/', save_monitor),
     path('jx_apiDoc/', jx_apiDoc),
     path('import_api_ad/', import_api_ad),
-    path('upload_postman_file/',upload_postman_file),
-    path('import_api_postman/',import_api_postman),
+    path('upload_postman_file/', upload_postman_file),
+    path('import_api_postman/', import_api_postman),
+
+    path('change_catch_status/', change_catch_status),
 
     # -----------------------------------------权限系统可以管理的，但不一定监管（接口path只有一级，且path和函数名必须相同）---------
     re_path('(?P<path>.+)/', diy_power),

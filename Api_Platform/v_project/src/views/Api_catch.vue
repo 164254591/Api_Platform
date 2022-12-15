@@ -21,9 +21,9 @@
                     <el-button size="mini" type="success" @click="change_catch_status(scope.row.id)">开关</el-button>
                   </template>
                 </el-table-column>
-                <el-table-column label="" label-width="100%">
+                <el-table-column label="当前可接收状态" label-width="100%">
                    <template slot-scope="scope">
-                    <span>{{scope.row.catch_status}}</span>
+                    <span :style="{color:get_color(scope.row.catch_status)}">{{scope.row.catch_status}}</span>
                   </template>
                 </el-table-column>
                 <el-table-column label="项目id" label-width="100%">
@@ -63,10 +63,19 @@ export default {
     get_host(){
       return process.env.VUE_APP_BASE_URL.split('://')[1].split(':')[0]+':8085'
     },
-    change_catch_status(){
-      axios.get('/change_catch_status/',{params:{
-        project_id:id,
+    get_color(result){
+      if(result.toString()=='true'){
+        return 'green'
+      }else{
+        return 'red'
+      }
+    },
+    change_catch_status(id){
+      axios.get('/change_catch_status/',{
+        params:{
+          project_id:id,
         }}).then(res=>{
+          this.project_list_data=res.data
 
       })
     }
