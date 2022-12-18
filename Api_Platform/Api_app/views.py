@@ -116,9 +116,10 @@ def get_tj_datas(request):
 
 
 def get_real_time_datas(request):
+    userID = request.user.id
     real_time_datas = {
-        "ApiShop_count": 30,
-        "UnReadNews_count": 50,
+        "ApiShop_count": len(DB_api_shop_list.objects.all()),
+        "UnReadNews_count": len(DB_news.objects.filter(to_user_id=userID, read=False)),
         "RunCase_count": 88,
         "Import_count": 94
     }
@@ -271,7 +272,9 @@ def get_to_user_list(request):
         to_user_list[i]['value'] = to_user_list[i]['username']  # 前端下拉框需要用value进行传值，所以需要增加value字段
     res['to_user_list'] = to_user_list
     # 获取消息
-    news = list(DB_news.objects.filter(to_user_id=request.user.id).values()[::-1])
+    news = DB_news.objects.filter(to_user_id=request.user.id)
+    news.update(read=True)
+    news = list(news.values()[::-1])
     for i in news:
         from_user_name = get_object_or_404(User, pk=i["from_user_id"]).username
         i['from_user_name'] = from_user_name
@@ -411,6 +414,7 @@ def download_api(request):
     api = list(DB_api_shop_list.objects.filter(id=int(api_id)).values())[0]
     # print(api)
     api['project_id'] = project_id
+    del api['id']
     DB_apis.objects.create(**api)
     return HttpResponse('')
 

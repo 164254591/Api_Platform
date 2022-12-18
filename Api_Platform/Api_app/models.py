@@ -17,6 +17,7 @@ class DB_news(models.Model):
     to_user_id = models.IntegerField(default=0)
     content = models.CharField(max_length=50, null=True, default='')
     date = models.CharField(max_length=50, null=True, default='_')
+    read = models.BooleanField(default=False)
 
     def __str__(self):
         return self.content[:20] + '...'
