@@ -14,6 +14,7 @@ import Monitor from "@/views/Monitor";
 import Api_doc from "@/views/Api_doc";
 import Api_postman from "@/views/Api_postman";
 import Api_catch from "@/views/Api_catch";
+import Api_image from "@/views/Api_image";
 
 
 Vue.use(Router)
@@ -90,5 +91,12 @@ export default new Router({
       name: 'Api_catch',
       component: Api_catch
     },
+    {
+      path: '/Api_image',
+      name: 'Api_image',
+      component: Api_image
+    },
+
+
   ]
 })

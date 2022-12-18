@@ -24,7 +24,10 @@ def get_apis(request):
     for i in apis:
         i['children'] = eval(i['children'])
         i['params'] = eval(i['params'])
-        i['headers'] = eval(i['headers'])
+        try:
+            i['headers'] = eval(i['headers'])
+        except:
+            i['headers'] = []
         i['payload_fd'] = eval(i['payload_fd'])
         i['payload_xwfu'] = eval(i['payload_xwfu'])
     return HttpResponse(json.dumps(apis), content_type='application/json')

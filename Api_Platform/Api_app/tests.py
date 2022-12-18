@@ -67,7 +67,7 @@ right = '='.join(v.split('=')[1:]).strip()
 # print(right)
 
 import time
-
+import subprocess
 print(time.time())
 print(int(time.time() - time.timezone) % 86400)
 print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time())))
@@ -81,3 +81,7 @@ a = {'A': 'b',
      "C":'33'
      }
 print(a.get('A3',''))
+cmd = 'nohup mitmdump -p 8005'
+print('哈哈哈哈')
+subprocess.call(cmd, shell=True)
+print('哈1111哈哈哈')

@@ -75,7 +75,7 @@ export default {
       axios.get('/import_api_postman/',{
         params:{
           project_id:project_id,
-          filename:filename,
+          filename:this.file_name,
         }}).then(res=>{
           this.$message({
             message:"导入成功！",

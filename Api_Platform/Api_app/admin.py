@@ -1,3 +1,4 @@
+# -*- coding：utf-8 -*-
 import subprocess
 
 from django.contrib import admin
@@ -88,14 +89,15 @@ def monitor_thread():
 
 t = threading.Thread(target=monitor_thread)
 t.setDaemon(True)
-t.start()
+# t.start() # 关闭监控线程
 
 
 # 抓包
 def mitm_start():
-    cmd = 'nohup mitmdump -p 8005'
+    cmd = 'nohup mitmdump -p 8005'  # 在linux系统下可以执行
+    print('哈哈哈哈')
     subprocess.call(cmd, shell=True)
 
 m = threading.Thread(target=mitm_start)
 m.setDaemon(True)
-m.start()
+# m.start()  # 关闭抓包线程

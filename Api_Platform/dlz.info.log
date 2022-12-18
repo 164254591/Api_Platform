@@ -38878,3 +38878,321 @@ NameError: name 'change_catch_status' is not defined
 [2022-12-15 17:46:38,824][INFO]"GET /index/ HTTP/1.1" 200 1003
 [2022-12-15 17:46:38,882][INFO]"GET /get_monitor_list/ HTTP/1.1" 200 958
 [2022-12-15 17:46:38,902][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-12-16 10:05:17,649][INFO]Watching for file changes with StatReloader
+[2022-12-16 10:05:18,022][INFO]"GET / HTTP/1.1" 200 4830
+[2022-12-16 13:43:24,543][INFO]Watching for file changes with StatReloader
+[2022-12-16 13:43:24,771][INFO]"GET / HTTP/1.1" 200 4830
+[2022-12-16 13:54:46,894][INFO]Watching for file changes with StatReloader
+[2022-12-16 13:54:47,115][INFO]"GET / HTTP/1.1" 200 4830
+[2022-12-16 15:57:22,188][INFO]Watching for file changes with StatReloader
+[2022-12-16 15:57:22,410][INFO]"GET / HTTP/1.1" 200 4830
+[2022-12-16 15:57:58,417][INFO]Watching for file changes with StatReloader
+[2022-12-16 15:57:58,895][INFO]"GET / HTTP/1.1" 200 4830
+[2022-12-16 16:54:49,582][INFO]D:\Git\dlz\Api_Platform\Api_app\admin.py changed, reloading.
+[2022-12-16 16:54:50,433][INFO]Watching for file changes with StatReloader
+[2022-12-18 10:15:41,363][INFO]Watching for file changes with StatReloader
+[2022-12-18 10:15:41,716][INFO]"GET / HTTP/1.1" 200 4830
+[2022-12-18 10:15:41,809][INFO]"GET /static/favicon.ico HTTP/1.1" 200 1150
+[2022-12-18 10:15:46,358][INFO]"POST /login_action/ HTTP/1.1" 302 0
+[2022-12-18 10:15:46,362][INFO]"GET /index/ HTTP/1.1" 200 1003
+[2022-12-18 10:15:46,370][INFO]"GET /static/css/chunk-vendors.dd50ba92.css HTTP/1.1" 304 0
+[2022-12-18 10:15:46,372][INFO]"GET /static/css/app.72084faf.css HTTP/1.1" 304 0
+[2022-12-18 10:15:46,374][INFO]"GET /static/js/app.ed460801.js HTTP/1.1" 304 0
+[2022-12-18 10:15:46,375][INFO]"GET /static/js/chunk-vendors.5463d9f7.js HTTP/1.1" 304 0
+[2022-12-18 10:15:46,462][INFO]"GET /static/fonts/element-icons.535877f5.woff HTTP/1.1" 304 0
+[2022-12-18 10:15:46,478][INFO]"GET /favicon.ico/ HTTP/1.1" 200 0
+[2022-12-18 10:15:46,748][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-12-18 10:15:46,748][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-18 10:16:49,659][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-12-18 10:16:49,661][INFO]"GET /get_real_time_datas HTTP/1.1" 301 0
+[2022-12-18 10:16:49,738][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-18 10:17:08,374][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-12-18 10:17:08,374][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-18 10:17:10,741][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:21:52,939][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:26:20,729][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:26:44,602][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:26:56,652][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:28:06,192][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:28:55,708][INFO]"GET /get_tj_datas/ HTTP/1.1" 200 489
+[2022-12-18 10:28:55,719][INFO]"GET /get_real_time_datas/ HTTP/1.1" 200 86
+[2022-12-18 10:28:57,835][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:30:37,903][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:31:14,568][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:33:16,436][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:34:36,026][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:34:52,318][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:35:27,150][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:36:31,700][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:37:04,600][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:40:47,658][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:41:14,497][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 10:43:32,877][ERROR]Internal Server Error: /jx_img/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 387, in diy_power
+    return default_power(request, path)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 401, in default_power
+    exec('r=%s(request)' % path)
+  File "<string>", line 1, in <module>
+NameError: name 'jx_img' is not defined
+[2022-12-18 10:43:32,877][ERROR]"GET /jx_img/?file_name= HTTP/1.1" 500 70587
+[2022-12-18 10:43:48,662][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 11:12:52,360][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:12:53,193][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:13:39,914][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:13:40,613][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:15:35,795][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:15:36,594][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:16:05,756][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:16:06,534][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:16:20,978][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:16:21,799][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:17:06,516][INFO]D:\Git\dlz\Api_Platform\Api_app\admin.py changed, reloading.
+[2022-12-18 11:17:07,015][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:18:05,884][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:18:06,580][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:18:31,551][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:18:32,195][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:20:22,775][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:20:23,259][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:20:39,824][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:20:40,318][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:21:04,091][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:21:04,677][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:21:17,294][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:21:17,774][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:21:37,402][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:21:37,889][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:22:39,460][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:22:40,079][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:22:48,996][INFO]"OPTIONS /upload_img_file/ HTTP/1.1" 200 0
+[2022-12-18 11:22:49,001][INFO]"POST /upload_img_file/ HTTP/1.1" 200 0
+[2022-12-18 11:24:18,503][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:24:18,987][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:25:31,544][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 11:25:44,532][INFO]"POST /upload_img_file/ HTTP/1.1" 200 0
+[2022-12-18 11:28:23,492][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:28:23,995][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:29:28,067][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:29:28,594][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:29:59,334][INFO]"GET /jx_img/?file_name=20200723163230859.png HTTP/1.1" 200 47
+[2022-12-18 11:32:50,941][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:32:51,461][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:34:41,854][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:34:43,707][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:35:51,705][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:35:53,142][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:36:27,076][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:36:28,436][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:38:18,628][ERROR]Internal Server Error: /jx_img/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 592, in jx_img
+    reader = easyocr.Reader(['ch_sim','en'])
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\easyocr\easyocr.py", line 88, in __init__
+    detector_path = self.getDetectorPath(detect_network)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\easyocr\easyocr.py", line 235, in getDetectorPath
+    from .detection import get_detector, get_textbox
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\easyocr\detection.py", line 11, in <module>
+    from .craft import CRAFT
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\easyocr\craft.py", line 11, in <module>
+    from .model.modules import vgg16_bn, init_weights
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\easyocr\model\modules.py", line 7, in <module>
+    from packaging import version
+ModuleNotFoundError: No module named 'packaging'
+[2022-12-18 11:38:18,628][ERROR]"GET /jx_img/?file_name=20200723163230859.png HTTP/1.1" 500 114536
+[2022-12-18 11:43:00,037][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:43:00,277][INFO]"GET / HTTP/1.1" 200 4830
+[2022-12-18 11:43:27,666][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:43:28,944][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:43:43,912][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:43:45,213][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:43:45,507][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 11:43:48,654][INFO]"POST /upload_img_file/ HTTP/1.1" 200 0
+[2022-12-18 11:43:49,944][ERROR]Internal Server Error: /jx_img/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 592, in jx_img
+    reader = easyocr.Reader(['ch_sim', 'en'])
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\easyocr\easyocr.py", line 88, in __init__
+    detector_path = self.getDetectorPath(detect_network)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\easyocr\easyocr.py", line 235, in getDetectorPath
+    from .detection import get_detector, get_textbox
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\easyocr\detection.py", line 11, in <module>
+    from .craft import CRAFT
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\easyocr\craft.py", line 11, in <module>
+    from .model.modules import vgg16_bn, init_weights
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\easyocr\model\modules.py", line 7, in <module>
+    from packaging import version
+ModuleNotFoundError: No module named 'packaging'
+[2022-12-18 11:43:49,945][ERROR]"GET /jx_img/?file_name=20200723163230859.png HTTP/1.1" 500 114964
+[2022-12-18 11:45:02,652][ERROR]Internal Server Error: /jx_img/
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\urllib\request.py", line 1318, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 964, in send
+    self.connect()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 1392, in connect
+    super().connect()
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\http\client.py", line 936, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\socket.py", line 704, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\socket.py", line 745, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Git\dlz\Api_Platform\Api_app\views.py", line 592, in jx_img
+    reader = easyocr.Reader(['ch_sim', 'en'])
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\easyocr\easyocr.py", line 88, in __init__
+    detector_path = self.getDetectorPath(detect_network)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\easyocr\easyocr.py", line 249, in getDetectorPath
+    download_and_unzip(self.detection_models[self.detect_network]['url'], self.detection_models[self.detect_network]['filename'], self.model_storage_directory, self.verbose)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\site-packages\easyocr\utils.py", line 586, in download_and_unzip
+    urlretrieve(url, zip_path, reporthook=reporthook)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\urllib\request.py", line 248, in urlretrieve
+    with contextlib.closing(urlopen(url, data)) as fp:
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\urllib\request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\urllib\request.py", line 532, in open
+    response = meth(req, response)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\urllib\request.py", line 642, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\urllib\request.py", line 564, in error
+    result = self._call_chain(*args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\urllib\request.py", line 756, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\urllib\request.py", line 526, in open
+    response = self._open(req, data)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\urllib\request.py", line 544, in _open
+    '_open', req)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\urllib\request.py", line 504, in _call_chain
+    result = func(*args)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\urllib\request.py", line 1361, in https_open
+    context=self._context, check_hostname=self._check_hostname)
+  File "C:\Users\admin\AppData\Local\Programs\Python\Python36\lib\urllib\request.py", line 1320, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 11001] getaddrinfo failed>
+[2022-12-18 11:45:02,663][ERROR]"GET /jx_img/?file_name=20200723163230859.png HTTP/1.1" 500 191566
+[2022-12-18 11:45:21,426][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 11:45:24,440][INFO]"POST /upload_img_file/ HTTP/1.1" 200 0
+[2022-12-18 11:45:55,224][INFO]"GET /jx_img/?file_name=20200723163230859.png HTTP/1.1" 200 47
+[2022-12-18 11:52:30,319][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:52:31,215][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:54:45,196][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:54:46,371][INFO]Watching for file changes with StatReloader
+[2022-12-18 11:55:39,425][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 11:55:41,025][INFO]Watching for file changes with StatReloader
+[2022-12-18 12:06:05,521][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 12:06:06,854][INFO]Watching for file changes with StatReloader
+[2022-12-18 12:08:39,613][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 12:08:41,128][INFO]Watching for file changes with StatReloader
+[2022-12-18 12:14:12,962][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 12:14:13,773][INFO]Watching for file changes with StatReloader
+[2022-12-18 12:18:23,559][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 12:18:24,252][INFO]Watching for file changes with StatReloader
+[2022-12-18 12:19:17,981][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 12:19:18,674][INFO]Watching for file changes with StatReloader
+[2022-12-18 12:19:33,625][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 12:19:34,289][INFO]Watching for file changes with StatReloader
+[2022-12-18 12:25:16,048][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 12:25:17,605][INFO]Watching for file changes with StatReloader
+[2022-12-18 12:29:33,636][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 12:29:35,127][INFO]Watching for file changes with StatReloader
+[2022-12-18 12:33:49,652][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 12:33:51,225][INFO]Watching for file changes with StatReloader
+[2022-12-18 12:35:50,634][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 12:35:51,360][INFO]Watching for file changes with StatReloader
+[2022-12-18 12:36:30,213][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 12:36:31,018][INFO]Watching for file changes with StatReloader
+[2022-12-18 12:39:21,595][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 12:39:23,109][INFO]Watching for file changes with StatReloader
+[2022-12-18 12:40:59,362][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 12:41:00,910][INFO]Watching for file changes with StatReloader
+[2022-12-18 12:41:42,293][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 12:41:43,838][INFO]Watching for file changes with StatReloader
+[2022-12-18 13:49:03,852][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 13:49:05,163][INFO]Watching for file changes with StatReloader
+[2022-12-18 13:49:25,678][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 13:49:27,258][INFO]Watching for file changes with StatReloader
+[2022-12-18 13:50:05,712][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 13:50:07,042][INFO]Watching for file changes with StatReloader
+[2022-12-18 13:50:12,648][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 13:50:13,972][INFO]Watching for file changes with StatReloader
+[2022-12-18 13:50:34,386][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 13:50:35,946][INFO]Watching for file changes with StatReloader
+[2022-12-18 13:51:14,522][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 13:51:16,026][INFO]Watching for file changes with StatReloader
+[2022-12-18 13:53:08,849][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 13:53:09,631][INFO]Watching for file changes with StatReloader
+[2022-12-18 13:54:29,208][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 13:54:29,878][INFO]Watching for file changes with StatReloader
+[2022-12-18 13:55:43,145][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 13:55:43,759][INFO]Watching for file changes with StatReloader
+[2022-12-18 13:57:44,288][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 13:57:45,568][INFO]Watching for file changes with StatReloader
+[2022-12-18 13:58:05,968][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 13:58:06,902][INFO]Watching for file changes with StatReloader
+[2022-12-18 13:59:10,812][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 13:59:11,545][INFO]Watching for file changes with StatReloader
+[2022-12-18 13:59:33,744][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 13:59:34,495][INFO]Watching for file changes with StatReloader
+[2022-12-18 13:59:44,127][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 13:59:44,801][INFO]Watching for file changes with StatReloader
+[2022-12-18 13:59:59,810][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 14:00:00,464][INFO]Watching for file changes with StatReloader
+[2022-12-18 14:00:43,484][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 14:00:44,234][INFO]Watching for file changes with StatReloader
+[2022-12-18 14:01:16,832][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 14:01:17,450][INFO]Watching for file changes with StatReloader
+[2022-12-18 14:02:31,972][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 14:02:33,199][INFO]Watching for file changes with StatReloader
+[2022-12-18 14:03:07,382][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 14:03:08,946][INFO]Watching for file changes with StatReloader
+[2022-12-18 14:04:17,041][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 14:04:18,363][INFO]Watching for file changes with StatReloader
+[2022-12-18 14:05:43,130][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 14:05:43,897][INFO]Watching for file changes with StatReloader
+[2022-12-18 14:06:21,805][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 14:06:22,469][INFO]Watching for file changes with StatReloader
+[2022-12-18 14:06:36,288][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 14:06:36,998][INFO]Watching for file changes with StatReloader
+[2022-12-18 14:06:51,810][INFO]D:\Git\dlz\Api_Platform\Api_app\views.py changed, reloading.
+[2022-12-18 14:06:53,009][INFO]Watching for file changes with StatReloader
+[2022-12-18 14:13:54,821][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-12-18 14:13:56,126][INFO]Watching for file changes with StatReloader
+[2022-12-18 14:14:10,232][INFO]D:\Git\dlz\Api_Platform\Api_app\views_api.py changed, reloading.
+[2022-12-18 14:14:11,580][INFO]Watching for file changes with StatReloader
+[2022-12-18 14:16:00,349][INFO]"GET /jx_img/?file_name=20200723163230859.png HTTP/1.1" 200 47
+[2022-12-18 14:16:39,641][INFO]"GET /jx_img/?file_name=20200723163230859.png HTTP/1.1" 200 47
+[2022-12-18 14:16:48,907][INFO]"GET /get_project_list/ HTTP/1.1" 200 1729
+[2022-12-18 14:16:54,305][INFO]"OPTIONS /upload_img_file/ HTTP/1.1" 200 0
+[2022-12-18 14:16:54,309][INFO]"POST /upload_img_file/ HTTP/1.1" 200 0
+[2022-12-18 14:16:58,774][INFO]"GET /jx_img/?file_name=111.png HTTP/1.1" 200 180

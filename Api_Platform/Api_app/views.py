@@ -9,6 +9,8 @@ from django.shortcuts import get_object_or_404
 import json
 import logging
 import requests
+import easyocr
+import Levenshtein
 from python_jenkins_monitor.python_jenkins_monitor import get_next_time
 
 logger = logging.getLogger('django')
@@ -563,9 +565,119 @@ def import_api_postman(request):
     return HttpResponse('')
 
 
+# 改变项目是否可抓包导入的状态
 def change_catch_status(request):
     project_id = request.GET['project_id']
     project = DB_project_list.objects.filter(id=int(project_id))[0]
     project.catch_status = (project.catch_status == False)
     project.save()
     return get_project_list(request)
+
+
+# img文件上传
+def upload_img_file(request):
+    myFile = request.FILES.get('img_file', None)
+    file_name = str(myFile)
+    fp = open('Api_app/static/imgFile/' + file_name, 'wb+')
+    for i in myFile.chunks():
+        fp.write(i)
+    fp.close()
+    return HttpResponse('')
+
+
+# 解析图片
+def jx_img(request):
+    file_name = request.GET['file_name']
+    print(file_name)
+    form_data = {'des': '图片识别导入'}
+    reader = easyocr.Reader(['ch_sim', 'en'])
+    L = reader.readtext('Api_app/static/imgFile/' + file_name, detail=0)
+    print(L)
+    ############# 设计需求锚点，默认误差距离为1 ####
+    pars = {
+        'label': ['接口描述', '接口名字', '接口名称', '接口name'],
+        'host': ['HOST', '域名'],
+        'method': ['METHOD', '请求方式'],
+        'payload_method': ['请求类型', '请求体类型'],
+        'path': ['URL', 'url', 'PATH', '路由'],
+        'headers': ['headers', '请求头'],
+        'params': ['params', 'Params', 'url参数'],
+        '参数锚点': ['参数名', '参数列表', '请求体参数'],
+    }
+    ############## 矫正列表 #########
+    news = {
+        'multipart/form-data': {'payload_method': 'form-data'},
+        'application/x-www-form-urlencoded': {'payload_method': 'x-www-form-urlencoded'},
+        'application/json': {'payload_method': 'raw', 'payload_raw_method': 'JSON'},
+        'text/xml': {'payload_method': 'raw', 'payload_raw_method': 'XML'},
+        'text/html': {'payload_method': 'raw', 'payload_raw_method': 'HTML'},
+        'text/plain': {'payload_method': 'raw', 'payload_raw_method': 'TEXT'},
+        'text/javascript': {'payload_method': 'raw', 'payload_raw_method': 'JavaScript'},
+    }
+    # 参数部分
+    payload_index = 0  # 参数起始位置
+    payload_step = 5  # 根据公司业务具体情况而定
+
+    def write_payload(payload_method):
+        if payload_method == 'form_data':
+            payload_tmp = []
+            for i in range(payload_index, len(L), payload_step):
+                payload_tmp.append({'key': L[i]})
+            form_data['payload_fd'] = str(payload_tmp)
+        elif payload_method == 'x-www-form-urlencoded':
+            payload_tmp = []
+            for i in range(payload_index, len(L), payload_step):
+                payload_tmp.append({'key': L[i]})
+            form_data['payload_xwfu'] = str(payload_tmp)
+        elif payload_method == 'raw':
+            if form_data['payload_raw_method'] == 'JSON':
+                payload_tmp = []
+                for i in range(payload_index, len(L), payload_step):
+                    payload_tmp[L[i]] = ''
+                form_data['payload_raw'] = json.dumps(payload_tmp)
+
+    for par in pars.keys():
+        max = [0, 0]  # 得分，下标
+        for v in pars[par]:
+            for l in range(len(L)):
+                score = Levenshtein.ratio(v, L[l])
+                if score > max[0] and score > 0.5:  # 具体多少根据实际情况设置
+                    max = [score, l]
+                if max[0] == 1:  # 如果已经是满分了
+                    break
+            else:
+                continue
+            break
+        if max[0] > 0.5:
+            # 找到锚点
+            try:
+                old = L[max[1] + 1]
+                max_n = [0, '']  # 存放最可能的矫正值
+                for new in news.keys():
+                    score_n = Levenshtein.ratio(new, old)
+                    if score_n > max_n[0] and score_n > 0.7:
+                        max_n = [score_n, new]
+                    if max_n[0] == 1:
+                        break
+                if max_n[0] > 0.7:
+                    form_data.update(news[max_n[1]])
+                else:
+                    form_data[par] = old
+                # 特殊处理
+                if par == 'url':
+                    params = []
+                    if '?' in old:
+                        for i in old.split('?')[1].split('&'):
+                            params.append({'key': i.split('=')[0], 'value': i.split('=')[1]})
+                    form_data['params'] = str(params)
+                if par == "参数锚点":
+                    payload_index = max[1] + payload_step
+            except:
+                pass
+    if form_data.get('参数锚点', None):
+        # 写入参数
+        write_payload(form_data.get('payload_method', None))
+        # 删除参数锚点
+        del form_data['参数锚点']
+
+    return HttpResponse(json.dumps(form_data), content_type='application/json')

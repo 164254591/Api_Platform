@@ -16,8 +16,8 @@
             <el-card shadow="hover" style="width: 48%;float: left">
               <el-form :model="form_data">
                 <el-form-item label="接口名称:" label-width="120px">
-          <el-input v-model="form_data.label" autocomplete="off"></el-input>
-        </el-form-item>
+                  <el-input v-model="form_data.label" autocomplete="off"></el-input>
+                </el-form-item>
                 <el-form-item label="接口描述:" label-width="120px">
                   <el-input v-model="form_data.des" autocomplete="off"></el-input>
                 </el-form-item>
@@ -49,6 +49,9 @@
                 </el-form-item>
                 <el-form-item label="payload_xwfu:" label-width="120px">
                   <el-input v-model="form_data.payload_xwfu" autocomplete="off"></el-input>
+                </el-form-item>
+                <el-form-item label="payload_raw_method:" label-width="150px">
+                  <el-input v-model="form_data.payload_raw_method" autocomplete="off"></el-input>
                 </el-form-item>
                 <el-form-item label="payload_raw:" label-width="120px">
                   <el-input v-model="form_data.payload_raw" autocomplete="off"></el-input>

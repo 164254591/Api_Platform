@@ -65,6 +65,9 @@ urlpatterns = [
 
     path('change_catch_status/', change_catch_status),
 
+    path('upload_img_file/',upload_img_file),
+    path('jx_img/',jx_img),
+
     # -----------------------------------------权限系统可以管理的，但不一定监管（接口path只有一级，且path和函数名必须相同）---------
     re_path('(?P<path>.+)/', diy_power),
 
